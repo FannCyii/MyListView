@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F839AEE1FBDDBF10014B1C6 /* Demo_Crash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AED1FBDDBF10014B1C6 /* Demo_Crash.m */; };
+		8F839AEF1FBDDBF10014B1C6 /* Demo_Crash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F839AEC1FBDDBF10014B1C6 /* Demo_Crash.h */; };
+		8F839B191FBDDC390014B1C6 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AF51FBDDC380014B1C6 /* Aspects.m */; };
+		8F839B1A1FBDDC390014B1C6 /* NSObject+KIV_Objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AF81FBDDC380014B1C6 /* NSObject+KIV_Objc.m */; };
+		8F839B1B1FBDDC390014B1C6 /* ForwardingHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AFA1FBDDC380014B1C6 /* ForwardingHandle.m */; };
+		8F839B1C1FBDDC390014B1C6 /* NSObject+ForwardingHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AFB1FBDDC380014B1C6 /* NSObject+ForwardingHandle.m */; };
+		8F839B1D1FBDDC390014B1C6 /* KIVChangedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B001FBDDC380014B1C6 /* KIVChangedObject.m */; };
+		8F839B1E1FBDDC390014B1C6 /* KIVKvoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B011FBDDC380014B1C6 /* KIVKvoVC.m */; };
+		8F839B1F1FBDDC390014B1C6 /* NSObject+KIV_KVOSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B041FBDDC380014B1C6 /* NSObject+KIV_KVOSecurity.m */; };
+		8F839B201FBDDC390014B1C6 /* KIVObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B051FBDDC380014B1C6 /* KIVObserver.m */; };
+		8F839B211FBDDC390014B1C6 /* KIVTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B091FBDDC380014B1C6 /* KIVTimer.m */; };
+		8F839B221FBDDC390014B1C6 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B0A1FBDDC380014B1C6 /* TimerViewController.m */; };
+		8F839B241FBDDC390014B1C6 /* KIVLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B121FBDDC380014B1C6 /* KIVLog.m */; };
+		8F839B251FBDDC390014B1C6 /* NSArray+SafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B171FBDDC390014B1C6 /* NSArray+SafeArray.m */; };
+		8F839B261FBDDC390014B1C6 /* KIVSafeDataClassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B181FBDDC390014B1C6 /* KIVSafeDataClassVC.m */; };
+		8F839B401FBDDD670014B1C6 /* NSObject+KIV_Objc.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AF71FBDDC380014B1C6 /* NSObject+KIV_Objc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F839B411FBDDD670014B1C6 /* NSArray+SafeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839B161FBDDC390014B1C6 /* NSArray+SafeArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F839B421FBDDD670014B1C6 /* KIVTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839B0B1FBDDC380014B1C6 /* KIVTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F839B431FBDDD670014B1C6 /* Demo_Crash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AEC1FBDDBF10014B1C6 /* Demo_Crash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F839AE71FBDDBF10014B1C6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8F839AEF1FBDDBF10014B1C6 /* Demo_Crash.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8F839AE91FBDDBF10014B1C6 /* libDemo_Crash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDemo_Crash.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F839AEC1FBDDBF10014B1C6 /* Demo_Crash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_Crash.h; sourceTree = "<group>"; };
+		8F839AED1FBDDBF10014B1C6 /* Demo_Crash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_Crash.m; sourceTree = "<group>"; };
+		8F839AF51FBDDC380014B1C6 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		8F839AF71FBDDC380014B1C6 /* NSObject+KIV_Objc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KIV_Objc.h"; sourceTree = "<group>"; };
+		8F839AF81FBDDC380014B1C6 /* NSObject+KIV_Objc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KIV_Objc.m"; sourceTree = "<group>"; };
+		8F839AFA1FBDDC380014B1C6 /* ForwardingHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForwardingHandle.m; sourceTree = "<group>"; };
+		8F839AFB1FBDDC380014B1C6 /* NSObject+ForwardingHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ForwardingHandle.m"; sourceTree = "<group>"; };
+		8F839AFC1FBDDC380014B1C6 /* ForwardingHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForwardingHandle.h; sourceTree = "<group>"; };
+		8F839AFD1FBDDC380014B1C6 /* NSObject+ForwardingHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ForwardingHandle.h"; sourceTree = "<group>"; };
+		8F839AFF1FBDDC380014B1C6 /* KIVObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVObserver.h; sourceTree = "<group>"; };
+		8F839B001FBDDC380014B1C6 /* KIVChangedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVChangedObject.m; sourceTree = "<group>"; };
+		8F839B011FBDDC380014B1C6 /* KIVKvoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVKvoVC.m; sourceTree = "<group>"; };
+		8F839B031FBDDC380014B1C6 /* NSObject+KIV_KVOSecurity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KIV_KVOSecurity.h"; sourceTree = "<group>"; };
+		8F839B041FBDDC380014B1C6 /* NSObject+KIV_KVOSecurity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KIV_KVOSecurity.m"; sourceTree = "<group>"; };
+		8F839B051FBDDC380014B1C6 /* KIVObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVObserver.m; sourceTree = "<group>"; };
+		8F839B061FBDDC380014B1C6 /* KIVChangedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVChangedObject.h; sourceTree = "<group>"; };
+		8F839B071FBDDC380014B1C6 /* KIVKvoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVKvoVC.h; sourceTree = "<group>"; };
+		8F839B091FBDDC380014B1C6 /* KIVTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVTimer.m; sourceTree = "<group>"; };
+		8F839B0A1FBDDC380014B1C6 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		8F839B0B1FBDDC380014B1C6 /* KIVTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVTimer.h; sourceTree = "<group>"; };
+		8F839B0C1FBDDC380014B1C6 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		8F839B101FBDDC380014B1C6 /* KIVLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVLog.h; sourceTree = "<group>"; };
+		8F839B111FBDDC380014B1C6 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		8F839B121FBDDC380014B1C6 /* KIVLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVLog.m; sourceTree = "<group>"; };
+		8F839B131FBDDC380014B1C6 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		8F839B151FBDDC390014B1C6 /* KIVSafeDataClassVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVSafeDataClassVC.h; sourceTree = "<group>"; };
+		8F839B161FBDDC390014B1C6 /* NSArray+SafeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeArray.h"; sourceTree = "<group>"; };
+		8F839B171FBDDC390014B1C6 /* NSArray+SafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeArray.m"; sourceTree = "<group>"; };
+		8F839B181FBDDC390014B1C6 /* KIVSafeDataClassVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVSafeDataClassVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F839AE61FBDDBF10014B1C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F839AE01FBDDBF00014B1C6 = {
+			isa = PBXGroup;
+			children = (
+				8F839AEB1FBDDBF10014B1C6 /* Demo_Crash */,
+				8F839AEA1FBDDBF10014B1C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F839AEA1FBDDBF10014B1C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F839AE91FBDDBF10014B1C6 /* libDemo_Crash.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F839AEB1FBDDBF10014B1C6 /* Demo_Crash */ = {
+			isa = PBXGroup;
+			children = (
+				8F839B131FBDDC380014B1C6 /* Aspects.h */,
+				8F839AF51FBDDC380014B1C6 /* Aspects.m */,
+				8F839B0F1FBDDC380014B1C6 /* KIVLog */,
+				8F839AFE1FBDDC380014B1C6 /* KVO */,
+				8F839AF61FBDDC380014B1C6 /* ObjcTools */,
+				8F839B141FBDDC390014B1C6 /* Safe */,
+				8F839B081FBDDC380014B1C6 /* Timer */,
+				8F839AF91FBDDC380014B1C6 /* Unrecognise */,
+				8F839AEC1FBDDBF10014B1C6 /* Demo_Crash.h */,
+				8F839AED1FBDDBF10014B1C6 /* Demo_Crash.m */,
+			);
+			path = Demo_Crash;
+			sourceTree = "<group>";
+		};
+		8F839AF61FBDDC380014B1C6 /* ObjcTools */ = {
+			isa = PBXGroup;
+			children = (
+				8F839AF71FBDDC380014B1C6 /* NSObject+KIV_Objc.h */,
+				8F839AF81FBDDC380014B1C6 /* NSObject+KIV_Objc.m */,
+			);
+			path = ObjcTools;
+			sourceTree = "<group>";
+		};
+		8F839AF91FBDDC380014B1C6 /* Unrecognise */ = {
+			isa = PBXGroup;
+			children = (
+				8F839AFA1FBDDC380014B1C6 /* ForwardingHandle.m */,
+				8F839AFB1FBDDC380014B1C6 /* NSObject+ForwardingHandle.m */,
+				8F839AFC1FBDDC380014B1C6 /* ForwardingHandle.h */,
+				8F839AFD1FBDDC380014B1C6 /* NSObject+ForwardingHandle.h */,
+			);
+			path = Unrecognise;
+			sourceTree = "<group>";
+		};
+		8F839AFE1FBDDC380014B1C6 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				8F839AFF1FBDDC380014B1C6 /* KIVObserver.h */,
+				8F839B001FBDDC380014B1C6 /* KIVChangedObject.m */,
+				8F839B011FBDDC380014B1C6 /* KIVKvoVC.m */,
+				8F839B021FBDDC380014B1C6 /* KVO_Security */,
+				8F839B051FBDDC380014B1C6 /* KIVObserver.m */,
+				8F839B061FBDDC380014B1C6 /* KIVChangedObject.h */,
+				8F839B071FBDDC380014B1C6 /* KIVKvoVC.h */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
+		8F839B021FBDDC380014B1C6 /* KVO_Security */ = {
+			isa = PBXGroup;
+			children = (
+				8F839B031FBDDC380014B1C6 /* NSObject+KIV_KVOSecurity.h */,
+				8F839B041FBDDC380014B1C6 /* NSObject+KIV_KVOSecurity.m */,
+			);
+			path = KVO_Security;
+			sourceTree = "<group>";
+		};
+		8F839B081FBDDC380014B1C6 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				8F839B091FBDDC380014B1C6 /* KIVTimer.m */,
+				8F839B0A1FBDDC380014B1C6 /* TimerViewController.m */,
+				8F839B0B1FBDDC380014B1C6 /* KIVTimer.h */,
+				8F839B0C1FBDDC380014B1C6 /* TimerViewController.h */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		8F839B0F1FBDDC380014B1C6 /* KIVLog */ = {
+			isa = PBXGroup;
+			children = (
+				8F839B101FBDDC380014B1C6 /* KIVLog.h */,
+				8F839B111FBDDC380014B1C6 /* readme.md */,
+				8F839B121FBDDC380014B1C6 /* KIVLog.m */,
+			);
+			path = KIVLog;
+			sourceTree = "<group>";
+		};
+		8F839B141FBDDC390014B1C6 /* Safe */ = {
+			isa = PBXGroup;
+			children = (
+				8F839B151FBDDC390014B1C6 /* KIVSafeDataClassVC.h */,
+				8F839B161FBDDC390014B1C6 /* NSArray+SafeArray.h */,
+				8F839B171FBDDC390014B1C6 /* NSArray+SafeArray.m */,
+				8F839B181FBDDC390014B1C6 /* KIVSafeDataClassVC.m */,
+			);
+			path = Safe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8F839B3F1FBDDD4B0014B1C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F839B401FBDDD670014B1C6 /* NSObject+KIV_Objc.h in Headers */,
+				8F839B411FBDDD670014B1C6 /* NSArray+SafeArray.h in Headers */,
+				8F839B421FBDDD670014B1C6 /* KIVTimer.h in Headers */,
+				8F839B431FBDDD670014B1C6 /* Demo_Crash.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8F839AE81FBDDBF10014B1C6 /* Demo_Crash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F839AF21FBDDBF10014B1C6 /* Build configuration list for PBXNativeTarget "Demo_Crash" */;
+			buildPhases = (
+				8F839AE51FBDDBF10014B1C6 /* Sources */,
+				8F839AE61FBDDBF10014B1C6 /* Frameworks */,
+				8F839AE71FBDDBF10014B1C6 /* CopyFiles */,
+				8F839B3F1FBDDD4B0014B1C6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo_Crash;
+			productName = Demo_Crash;
+			productReference = 8F839AE91FBDDBF10014B1C6 /* libDemo_Crash.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F839AE11FBDDBF00014B1C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = kivan;
+				TargetAttributes = {
+					8F839AE81FBDDBF10014B1C6 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8F839AE41FBDDBF00014B1C6 /* Build configuration list for PBXProject "Demo_Crash" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8F839AE01FBDDBF00014B1C6;
+			productRefGroup = 8F839AEA1FBDDBF10014B1C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F839AE81FBDDBF10014B1C6 /* Demo_Crash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F839AE51FBDDBF10014B1C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F839B221FBDDC390014B1C6 /* TimerViewController.m in Sources */,
+				8F839B1D1FBDDC390014B1C6 /* KIVChangedObject.m in Sources */,
+				8F839B1F1FBDDC390014B1C6 /* NSObject+KIV_KVOSecurity.m in Sources */,
+				8F839B261FBDDC390014B1C6 /* KIVSafeDataClassVC.m in Sources */,
+				8F839B1B1FBDDC390014B1C6 /* ForwardingHandle.m in Sources */,
+				8F839B201FBDDC390014B1C6 /* KIVObserver.m in Sources */,
+				8F839B251FBDDC390014B1C6 /* NSArray+SafeArray.m in Sources */,
+				8F839B211FBDDC390014B1C6 /* KIVTimer.m in Sources */,
+				8F839B241FBDDC390014B1C6 /* KIVLog.m in Sources */,
+				8F839B1E1FBDDC390014B1C6 /* KIVKvoVC.m in Sources */,
+				8F839B1C1FBDDC390014B1C6 /* NSObject+ForwardingHandle.m in Sources */,
+				8F839AEE1FBDDBF10014B1C6 /* Demo_Crash.m in Sources */,
+				8F839B1A1FBDDC390014B1C6 /* NSObject+KIV_Objc.m in Sources */,
+				8F839B191FBDDC390014B1C6 /* Aspects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8F839AF01FBDDBF10014B1C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8F839AF11FBDDBF10014B1C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F839AF31FBDDBF10014B1C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WTFJP34N3T;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../Pods/Headers/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F839AF41FBDDBF10014B1C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WTFJP34N3T;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../Pods/Headers/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F839AE41FBDDBF00014B1C6 /* Build configuration list for PBXProject "Demo_Crash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F839AF01FBDDBF10014B1C6 /* Debug */,
+				8F839AF11FBDDBF10014B1C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F839AF21FBDDBF10014B1C6 /* Build configuration list for PBXNativeTarget "Demo_Crash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F839AF31FBDDBF10014B1C6 /* Debug */,
+				8F839AF41FBDDBF10014B1C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F839AE11FBDDBF00014B1C6 /* Project object */;
+}

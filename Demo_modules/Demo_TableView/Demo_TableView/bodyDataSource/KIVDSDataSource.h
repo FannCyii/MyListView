@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "UITableView+KIVDS.h"
+//base
+#import "KIVDSBaseTVCell.h"
+#import "KIVDSBaseSection.h"
+#import "KIVDSBaseRow.h"
 
 UIKIT_EXTERN NSString * const BASE_CELL_IDENTIFIER;
 
@@ -19,15 +23,6 @@ UIKIT_EXTERN NSString * const BASE_CELL_IDENTIFIER;
 
 @property (nonatomic, weak) id delegate;
 
-//- (instancetype)initWithTableView:(UITableView *)tableView;
-
-//- (void)addSection:(KIVDSBaseSection *)section;
-//- (void)addSections:(NSArray <KIVDSBaseSection *>*)sections;
-
-//- (void)reload;
-//- (void)clearData;
-
 - (void)connectDataWithSections:(NSArray <KIVDSBaseSection *> *)sections;
-
 
 @end

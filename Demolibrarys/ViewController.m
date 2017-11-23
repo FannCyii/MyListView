@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DemoTVC.h"
+#import "KIVLogVC.h"
 @interface ViewController ()
 
 @end
@@ -16,10 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self test1];
-    
-    
 }
 
 
@@ -33,16 +30,9 @@
     [self.navigationController pushViewController:tvc animated:YES];
 }
 
-- (void)test1
-{
-//    NSArray *array = @[@"1",@"ab",@"cdddds",@"ddasdd",@"eaaaaaa"];
-//    ;
-//    NSLog(@"%@",[array valueForKeyPath:@"length"]);
-    
-    NSDictionary *dir = @{@"ab":@"123",@"cd":@"3435",@"abc":@{@"a1b":@"abcahah"}};
-    NSLog(@"===:%@",dir);
-    NSLog(@"===:%@",[dir valueForKeyPath:@"@count"]);
-    NSLog(@"===:%@",dir[@"a1b"]);
+- (IBAction)goToListLogAction:(UIButton *)sender {
+    KIVLogVC *tvc = [KIVLogVC new];
+    [self.navigationController pushViewController:tvc animated:YES];
 }
 
 @end

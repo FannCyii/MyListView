@@ -10,6 +10,12 @@
 		8D853529454A0F672ED2E4D1 /* libPods-Demolibrarys.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D80796F6D9FCE1E2C84A1C1A /* libPods-Demolibrarys.a */; };
 		8F12F5F01FC719E400D65E9A /* KIVDemo01Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F5EE1FC719E400D65E9A /* KIVDemo01Cell.m */; };
 		8F12F5F11FC719E400D65E9A /* KIVDemo01Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F5EF1FC719E400D65E9A /* KIVDemo01Cell.xib */; };
+		8F12F5F71FC72BF800D65E9A /* KIVLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F5F51FC72BF800D65E9A /* KIVLogVC.m */; };
+		8F12F5F81FC72BF800D65E9A /* KIVLogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F5F61FC72BF800D65E9A /* KIVLogVC.xib */; };
+		8F12F6001FC72EEC00D65E9A /* KIVLogMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F5FE1FC72EEC00D65E9A /* KIVLogMainCell.m */; };
+		8F12F6011FC72EEC00D65E9A /* KIVLogMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F5FF1FC72EEC00D65E9A /* KIVLogMainCell.xib */; };
+		8F12F6061FC7324900D65E9A /* KIVWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F6041FC7324900D65E9A /* KIVWebVC.m */; };
+		8F12F6071FC7324900D65E9A /* KIVWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F6051FC7324900D65E9A /* KIVWebVC.xib */; };
 		8F839A811FBDC4A30014B1C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839A801FBDC4A30014B1C6 /* AppDelegate.m */; };
 		8F839A841FBDC4A30014B1C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839A831FBDC4A30014B1C6 /* ViewController.m */; };
 		8F839A871FBDC4A30014B1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F839A851FBDC4A30014B1C6 /* Main.storyboard */; };
@@ -30,6 +36,15 @@
 		8F12F5ED1FC719E400D65E9A /* KIVDemo01Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVDemo01Cell.h; sourceTree = "<group>"; };
 		8F12F5EE1FC719E400D65E9A /* KIVDemo01Cell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVDemo01Cell.m; sourceTree = "<group>"; };
 		8F12F5EF1FC719E400D65E9A /* KIVDemo01Cell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVDemo01Cell.xib; sourceTree = "<group>"; };
+		8F12F5F41FC72BF800D65E9A /* KIVLogVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVLogVC.h; sourceTree = "<group>"; };
+		8F12F5F51FC72BF800D65E9A /* KIVLogVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVLogVC.m; sourceTree = "<group>"; };
+		8F12F5F61FC72BF800D65E9A /* KIVLogVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVLogVC.xib; sourceTree = "<group>"; };
+		8F12F5FD1FC72EEC00D65E9A /* KIVLogMainCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVLogMainCell.h; sourceTree = "<group>"; };
+		8F12F5FE1FC72EEC00D65E9A /* KIVLogMainCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVLogMainCell.m; sourceTree = "<group>"; };
+		8F12F5FF1FC72EEC00D65E9A /* KIVLogMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVLogMainCell.xib; sourceTree = "<group>"; };
+		8F12F6031FC7324900D65E9A /* KIVWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVWebVC.h; sourceTree = "<group>"; };
+		8F12F6041FC7324900D65E9A /* KIVWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVWebVC.m; sourceTree = "<group>"; };
+		8F12F6051FC7324900D65E9A /* KIVWebVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVWebVC.xib; sourceTree = "<group>"; };
 		8F839A7C1FBDC4A30014B1C6 /* Demolibrarys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demolibrarys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F839A7F1FBDC4A30014B1C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F839A801FBDC4A30014B1C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +106,45 @@
 			path = cell;
 			sourceTree = "<group>";
 		};
+		8F12F5F21FC72BC900D65E9A /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8F12F5F31FC72BCE00D65E9A /* MyLogList */ = {
+			isa = PBXGroup;
+			children = (
+				8F12F6021FC7322F00D65E9A /* Web */,
+				8F12F5F91FC72E8400D65E9A /* Cell */,
+				8F12F5F41FC72BF800D65E9A /* KIVLogVC.h */,
+				8F12F5F51FC72BF800D65E9A /* KIVLogVC.m */,
+				8F12F5F61FC72BF800D65E9A /* KIVLogVC.xib */,
+			);
+			path = MyLogList;
+			sourceTree = "<group>";
+		};
+		8F12F5F91FC72E8400D65E9A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8F12F5FD1FC72EEC00D65E9A /* KIVLogMainCell.h */,
+				8F12F5FE1FC72EEC00D65E9A /* KIVLogMainCell.m */,
+				8F12F5FF1FC72EEC00D65E9A /* KIVLogMainCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8F12F6021FC7322F00D65E9A /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				8F12F6031FC7324900D65E9A /* KIVWebVC.h */,
+				8F12F6041FC7324900D65E9A /* KIVWebVC.m */,
+				8F12F6051FC7324900D65E9A /* KIVWebVC.xib */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 		8F839A731FBDC4A30014B1C6 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +166,7 @@
 		8F839A7E1FBDC4A30014B1C6 /* Demolibrarys */ = {
 			isa = PBXGroup;
 			children = (
+				8F12F5F31FC72BCE00D65E9A /* MyLogList */,
 				8F839B461FBDDF250014B1C6 /* Lib_TableView */,
 				8F839A7F1FBDC4A30014B1C6 /* AppDelegate.h */,
 				8F839A801FBDC4A30014B1C6 /* AppDelegate.m */,
@@ -129,6 +184,7 @@
 		8F839B461FBDDF250014B1C6 /* Lib_TableView */ = {
 			isa = PBXGroup;
 			children = (
+				8F12F5F21FC72BC900D65E9A /* New Group */,
 				8F12F5EC1FC719C100D65E9A /* cell */,
 				8F839B471FBDDF4E0014B1C6 /* DemoTVC.h */,
 				8F839B481FBDDF4E0014B1C6 /* DemoTVC.m */,
@@ -213,6 +269,9 @@
 				8F839A891FBDC4A30014B1C6 /* Assets.xcassets in Resources */,
 				8F12F5F11FC719E400D65E9A /* KIVDemo01Cell.xib in Resources */,
 				8F839B4B1FBDDF4E0014B1C6 /* DemoTVC.xib in Resources */,
+				8F12F6011FC72EEC00D65E9A /* KIVLogMainCell.xib in Resources */,
+				8F12F5F81FC72BF800D65E9A /* KIVLogVC.xib in Resources */,
+				8F12F6071FC7324900D65E9A /* KIVWebVC.xib in Resources */,
 				8F839A871FBDC4A30014B1C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,10 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F12F5F71FC72BF800D65E9A /* KIVLogVC.m in Sources */,
 				8F839A841FBDC4A30014B1C6 /* ViewController.m in Sources */,
 				8F839B5A1FBDE4360014B1C6 /* DemoTVC+DataHandle.m in Sources */,
 				8F12F5F01FC719E400D65E9A /* KIVDemo01Cell.m in Sources */,
+				8F12F6001FC72EEC00D65E9A /* KIVLogMainCell.m in Sources */,
 				8F839A8F1FBDC4A30014B1C6 /* main.m in Sources */,
+				8F12F6061FC7324900D65E9A /* KIVWebVC.m in Sources */,
 				8F839B4A1FBDDF4E0014B1C6 /* DemoTVC.m in Sources */,
 				8F839A811FBDC4A30014B1C6 /* AppDelegate.m in Sources */,
 			);

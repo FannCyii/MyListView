@@ -117,10 +117,17 @@
     return [dsSection.rows objectAtIndex:indexPath.row];
 }
 
-
 - (void)updateCellWithData:(id)data atIndexPath:(NSIndexPath *)indexPath
 {
     KIVDSBaseTVCell *cell = [self cellForRowAtIndexPath:indexPath];
+    KIVDSBaseRow *row = [self getRowAtIndexPath:indexPath];
+    row.cellData = data;
+    [cell updateDataWithData:row.cellData];
+}
+
+- (void)updataCell:(KIVDSBaseTVCell *)cell withData:(id)data
+{
+    NSIndexPath *indexPath = [self indexPathForCell:cell];
     KIVDSBaseRow *row = [self getRowAtIndexPath:indexPath];
     row.cellData = data;
     [cell updateDataWithData:row.cellData];

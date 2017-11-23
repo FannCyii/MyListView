@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Demo_modules/Demo_TableView/Demo_TableView/bodyDataSource/UITableView+KIVDS.m"
-            timestampString = "533145484.27666"
+            timestampString = "533148845.548918"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
@@ -26,13 +26,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Demolibrarys/Lib_TableView/DemoTVC+DataHandle.m"
-            timestampString = "533145484.27674"
+            timestampString = "533148845.549366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "-kivDemo01Cell:didSelectedButton:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

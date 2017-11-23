@@ -46,8 +46,7 @@
 
 - (void)kivDemo01Cell:(KIVDemo01Cell *)cell didSelectedButton:(UIButton *)button
 {
-    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
-    [self.tableView updateCellWithData:@"哈哈哈哈哈哈哈" atIndexPath:indexPath];
+    [self.tableView updataCell:cell withData:@"哈哈哈哈哈"];
 }
 
 @end

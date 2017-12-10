@@ -57,6 +57,7 @@
 //            NSLog(@"vo:%@",vo);
 //        }
         NSLog(@"====返回数据%@",aData);
+        [[NSUserDefaults standardUserDefaults] setObject:aData forKey:@"log.info.deme.list"];
     }
 }
 

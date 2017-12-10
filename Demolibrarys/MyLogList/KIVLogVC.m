@@ -9,13 +9,14 @@
 #import "KIVLogVC.h"
 #import "KIVDSDataSource.h"
 #import "PureLayout.h"
-
+#import "Demo_Network.h"
 #import "KIVWebVC.h"
 
-@interface KIVLogVC ()
+@interface KIVLogVC () <DemoWebServerDelegate>
 
 @property (nonatomic, strong) UITableView *mainListTV;
 @property (nonatomic, strong) KIVDSDataSource *dataSouce;
+@property (nonatomic, strong) Demo_Network *network;
 
 @end
 
@@ -55,22 +56,24 @@
 
 - (void)dataConfig
 {
-    KIVDSBaseSection *section = [KIVDSBaseSection new];
-    //这里可以优化成indexPath
-    section.didSelectedBlock = ^(UITableView *tableView, KIVDSBaseSection *section, NSUInteger index) {
-        KIVWebVC *webVc = [[KIVWebVC alloc] init];
-        [self.navigationController pushViewController:webVc animated:YES];
-    };
+//    KIVDSBaseSection *section = [KIVDSBaseSection new];
+//    //这里可以优化成indexPath
+//    section.didSelectedBlock = ^(UITableView *tableView, KIVDSBaseSection *section, NSUInteger index) {
+//        KIVWebVC *webVc = [[KIVWebVC alloc] init];
+//        [self.navigationController pushViewController:webVc animated:YES];
+//    };
+//    
+//    for (int i = 10; i > 0; --i) {
+//        KIVDSBaseRow *row = [KIVDSBaseRow new];
+//        row.cellClassName = @"KIVLogMainCell";
+//        row.rowHeight = 100;
+//        [section insertRow:row];
+//    }
+//    
+//    [self.mainListTV addSection:section];
+//    [self.mainListTV refreshData];
     
-    for (int i = 10; i > 0; --i) {
-        KIVDSBaseRow *row = [KIVDSBaseRow new];
-        row.cellClassName = @"KIVLogMainCell";
-        row.rowHeight = 100;
-        [section insertRow:row];
-    }
-    
-    [self.mainListTV addSection:section];
-    [self.mainListTV refreshData];
+    [self.network startServer];
 }
 
 #pragma mark - Accessor
@@ -82,6 +85,14 @@
         [_mainListTV registerKivDataSource:_dataSouce];
     }
     return _mainListTV;
+}
+-(Demo_Network *)network
+{
+    if(!_network){
+        self.network = [Demo_Network new];
+        self.network.delegate = self;
+    }
+    return _network;
 }
 
 #pragma mark - Action

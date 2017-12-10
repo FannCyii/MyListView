@@ -43,7 +43,10 @@
         KIVDSBaseSection *section = [KIVDSBaseSection new];
         //这里可以优化成indexPath
         section.didSelectedBlock = ^(UITableView *tableView, KIVDSBaseSection *section, NSUInteger index) {
+            KIVDSBaseRow *row = [section.rows objectAtIndex:index];
+            DemoLogVO *vo = (DemoLogVO *)row.cellData;
             KIVWebVC *webVc = [[KIVWebVC alloc] init];
+            webVc.url = vo.logurl;
             [self.navigationController pushViewController:webVc animated:YES];
         };
         

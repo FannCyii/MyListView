@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "UITableView+KIVDS.h"
 //base
 #import "KIVDSBaseTVCell.h"
@@ -16,7 +17,6 @@
 UIKIT_EXTERN NSString * const BASE_CELL_IDENTIFIER;
 
 @class KIVDSBaseSection;
-
 
 
 @interface KIVDSDataSource : NSObject <UITableViewDelegate,UITableViewDataSource>

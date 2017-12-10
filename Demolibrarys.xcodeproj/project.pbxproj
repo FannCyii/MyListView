@@ -16,6 +16,11 @@
 		8F12F6011FC72EEC00D65E9A /* KIVLogMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F5FF1FC72EEC00D65E9A /* KIVLogMainCell.xib */; };
 		8F12F6061FC7324900D65E9A /* KIVWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F6041FC7324900D65E9A /* KIVWebVC.m */; };
 		8F12F6071FC7324900D65E9A /* KIVWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F6051FC7324900D65E9A /* KIVWebVC.xib */; };
+		8F12F60A1FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F6091FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m */; };
+		8F810F921FDD7735004D1BA8 /* DemoWebServerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F810F901FDD7735004D1BA8 /* DemoWebServerVC.m */; };
+		8F810F931FDD7735004D1BA8 /* DemoWebServerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F810F911FDD7735004D1BA8 /* DemoWebServerVC.xib */; };
+		8F810F941FDD77A7004D1BA8 /* libDemo_Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F810F951FDD77A7004D1BA8 /* libDemo_Network.a */; };
+		8F810F9B1FDD8B77004D1BA8 /* DemoLogVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F810F9A1FDD8B77004D1BA8 /* DemoLogVO.m */; };
 		8F839A811FBDC4A30014B1C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839A801FBDC4A30014B1C6 /* AppDelegate.m */; };
 		8F839A841FBDC4A30014B1C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839A831FBDC4A30014B1C6 /* ViewController.m */; };
 		8F839A871FBDC4A30014B1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F839A851FBDC4A30014B1C6 /* Main.storyboard */; };
@@ -29,6 +34,8 @@
 		8F839B4D1FBDE0A50014B1C6 /* libDemo_libHeaders.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F839B501FBDE0A50014B1C6 /* libDemo_libHeaders.a */; };
 		8F839B4E1FBDE0A50014B1C6 /* libDemo_Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F839B511FBDE0A50014B1C6 /* libDemo_Tools.a */; };
 		8F839B5A1FBDE4360014B1C6 /* DemoTVC+DataHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B591FBDE4360014B1C6 /* DemoTVC+DataHandle.m */; };
+		8FF0E4261FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0E4251FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m */; };
+		8FF0E4291FC85C6B00A89C3D /* UIView+screenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0E4281FC85C6A00A89C3D /* UIView+screenShot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +52,14 @@
 		8F12F6031FC7324900D65E9A /* KIVWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVWebVC.h; sourceTree = "<group>"; };
 		8F12F6041FC7324900D65E9A /* KIVWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVWebVC.m; sourceTree = "<group>"; };
 		8F12F6051FC7324900D65E9A /* KIVWebVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVWebVC.xib; sourceTree = "<group>"; };
+		8F12F6081FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIVDSDataSource+EditeHandel.h"; sourceTree = "<group>"; };
+		8F12F6091FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KIVDSDataSource+EditeHandel.m"; sourceTree = "<group>"; };
+		8F810F8F1FDD7735004D1BA8 /* DemoWebServerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoWebServerVC.h; sourceTree = "<group>"; };
+		8F810F901FDD7735004D1BA8 /* DemoWebServerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoWebServerVC.m; sourceTree = "<group>"; };
+		8F810F911FDD7735004D1BA8 /* DemoWebServerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoWebServerVC.xib; sourceTree = "<group>"; };
+		8F810F951FDD77A7004D1BA8 /* libDemo_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDemo_Network.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F810F991FDD8B77004D1BA8 /* DemoLogVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoLogVO.h; sourceTree = "<group>"; };
+		8F810F9A1FDD8B77004D1BA8 /* DemoLogVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoLogVO.m; sourceTree = "<group>"; };
 		8F839A7C1FBDC4A30014B1C6 /* Demolibrarys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demolibrarys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F839A7F1FBDC4A30014B1C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F839A801FBDC4A30014B1C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,6 +79,10 @@
 		8F839B511FBDE0A50014B1C6 /* libDemo_Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDemo_Tools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F839B581FBDE4360014B1C6 /* DemoTVC+DataHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoTVC+DataHandle.h"; sourceTree = "<group>"; };
 		8F839B591FBDE4360014B1C6 /* DemoTVC+DataHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DemoTVC+DataHandle.m"; sourceTree = "<group>"; };
+		8FF0E4241FC84AD600A89C3D /* KIVTogetherTouchRecogizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVTogetherTouchRecogizer.h; sourceTree = "<group>"; };
+		8FF0E4251FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVTogetherTouchRecogizer.m; sourceTree = "<group>"; };
+		8FF0E4271FC85C6A00A89C3D /* UIView+screenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+screenShot.h"; path = "Demolibrarys/UIView+screenShot.h"; sourceTree = SOURCE_ROOT; };
+		8FF0E4281FC85C6A00A89C3D /* UIView+screenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+screenShot.m"; path = "Demolibrarys/UIView+screenShot.m"; sourceTree = SOURCE_ROOT; };
 		94E298A6932E8E91D18B4B8B /* Pods-Demolibrarys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demolibrarys.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demolibrarys/Pods-Demolibrarys.release.xcconfig"; sourceTree = "<group>"; };
 		D80796F6D9FCE1E2C84A1C1A /* libPods-Demolibrarys.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demolibrarys.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F810F941FDD77A7004D1BA8 /* libDemo_Network.a in Frameworks */,
 				8F839B4C1FBDE0A50014B1C6 /* libDemo_Crash.a in Frameworks */,
 				8F839B4D1FBDE0A50014B1C6 /* libDemo_libHeaders.a in Frameworks */,
 				8F839B4E1FBDE0A50014B1C6 /* libDemo_Tools.a in Frameworks */,
@@ -87,6 +107,7 @@
 		12A93E5F477BC752DC6A6B7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F810F951FDD77A7004D1BA8 /* libDemo_Network.a */,
 				8F839B4F1FBDE0A50014B1C6 /* libDemo_Crash.a */,
 				8F839B501FBDE0A50014B1C6 /* libDemo_libHeaders.a */,
 				8F839B511FBDE0A50014B1C6 /* libDemo_Tools.a */,
@@ -116,11 +137,16 @@
 		8F12F5F31FC72BCE00D65E9A /* MyLogList */ = {
 			isa = PBXGroup;
 			children = (
+				8FF0E4271FC85C6A00A89C3D /* UIView+screenShot.h */,
+				8FF0E4281FC85C6A00A89C3D /* UIView+screenShot.m */,
+				8FF0E4231FC84A9B00A89C3D /* Touch */,
 				8F12F6021FC7322F00D65E9A /* Web */,
 				8F12F5F91FC72E8400D65E9A /* Cell */,
 				8F12F5F41FC72BF800D65E9A /* KIVLogVC.h */,
 				8F12F5F51FC72BF800D65E9A /* KIVLogVC.m */,
 				8F12F5F61FC72BF800D65E9A /* KIVLogVC.xib */,
+				8F12F6081FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.h */,
+				8F12F6091FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m */,
 			);
 			path = MyLogList;
 			sourceTree = "<group>";
@@ -145,6 +171,25 @@
 			path = Web;
 			sourceTree = "<group>";
 		};
+		8F810F8E1FDD7700004D1BA8 /* WebServer */ = {
+			isa = PBXGroup;
+			children = (
+				8F810F8F1FDD7735004D1BA8 /* DemoWebServerVC.h */,
+				8F810F901FDD7735004D1BA8 /* DemoWebServerVC.m */,
+				8F810F911FDD7735004D1BA8 /* DemoWebServerVC.xib */,
+			);
+			path = WebServer;
+			sourceTree = "<group>";
+		};
+		8F810F981FDD8A9D004D1BA8 /* LogVO */ = {
+			isa = PBXGroup;
+			children = (
+				8F810F991FDD8B77004D1BA8 /* DemoLogVO.h */,
+				8F810F9A1FDD8B77004D1BA8 /* DemoLogVO.m */,
+			);
+			path = LogVO;
+			sourceTree = "<group>";
+		};
 		8F839A731FBDC4A30014B1C6 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +211,8 @@
 		8F839A7E1FBDC4A30014B1C6 /* Demolibrarys */ = {
 			isa = PBXGroup;
 			children = (
+				8F810F981FDD8A9D004D1BA8 /* LogVO */,
+				8F810F8E1FDD7700004D1BA8 /* WebServer */,
 				8F12F5F31FC72BCE00D65E9A /* MyLogList */,
 				8F839B461FBDDF250014B1C6 /* Lib_TableView */,
 				8F839A7F1FBDC4A30014B1C6 /* AppDelegate.h */,
@@ -193,6 +240,15 @@
 				8F839B491FBDDF4E0014B1C6 /* DemoTVC.xib */,
 			);
 			path = Lib_TableView;
+			sourceTree = "<group>";
+		};
+		8FF0E4231FC84A9B00A89C3D /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				8FF0E4241FC84AD600A89C3D /* KIVTogetherTouchRecogizer.h */,
+				8FF0E4251FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m */,
+			);
+			path = Touch;
 			sourceTree = "<group>";
 		};
 		B09CA8B88AB22396BE000AA9 /* Pods */ = {
@@ -268,6 +324,7 @@
 				8F839A8C1FBDC4A30014B1C6 /* LaunchScreen.storyboard in Resources */,
 				8F839A891FBDC4A30014B1C6 /* Assets.xcassets in Resources */,
 				8F12F5F11FC719E400D65E9A /* KIVDemo01Cell.xib in Resources */,
+				8F810F931FDD7735004D1BA8 /* DemoWebServerVC.xib in Resources */,
 				8F839B4B1FBDDF4E0014B1C6 /* DemoTVC.xib in Resources */,
 				8F12F6011FC72EEC00D65E9A /* KIVLogMainCell.xib in Resources */,
 				8F12F5F81FC72BF800D65E9A /* KIVLogVC.xib in Resources */,
@@ -336,6 +393,11 @@
 			files = (
 				8F12F5F71FC72BF800D65E9A /* KIVLogVC.m in Sources */,
 				8F839A841FBDC4A30014B1C6 /* ViewController.m in Sources */,
+				8FF0E4261FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m in Sources */,
+				8F810F921FDD7735004D1BA8 /* DemoWebServerVC.m in Sources */,
+				8F810F9B1FDD8B77004D1BA8 /* DemoLogVO.m in Sources */,
+				8F12F60A1FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m in Sources */,
+				8FF0E4291FC85C6B00A89C3D /* UIView+screenShot.m in Sources */,
 				8F839B5A1FBDE4360014B1C6 /* DemoTVC+DataHandle.m in Sources */,
 				8F12F5F01FC719E400D65E9A /* KIVDemo01Cell.m in Sources */,
 				8F12F6001FC72EEC00D65E9A /* KIVLogMainCell.m in Sources */,
@@ -484,8 +546,10 @@
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
 					"$(SRCROOT)/Demo_modules/Demo_TableView/Demo_TableView/**",
+					"$(SRCROOT)/Demo_modules/Demo_Network/Demo_Network",
 				);
 				INFOPLIST_FILE = Demolibrarys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.oc.fann.Demolibrarys;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,8 +569,10 @@
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
 					"$(SRCROOT)/Demo_modules/Demo_TableView/Demo_TableView/**",
+					"$(SRCROOT)/Demo_modules/Demo_Network/Demo_Network",
 				);
 				INFOPLIST_FILE = Demolibrarys/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.oc.fann.Demolibrarys;
 				PRODUCT_NAME = "$(TARGET_NAME)";

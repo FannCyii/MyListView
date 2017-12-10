@@ -24,8 +24,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self navigationConfig];
     [self viewConfig];
     [self dataConfig];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,6 +36,16 @@
 }
 
 #pragma mark - Configeration
+- (void)navigationConfig
+{
+    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 20)];
+    rightButton.backgroundColor = [UIColor brownColor];
+    [rightButton setTitle:@"编辑" forState:UIControlStateNormal];
+    [rightButton addTarget:self action:@selector(rightNaviBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+}
+
 - (void)viewConfig
 {
     [self.view addSubview:self.mainListTV];
@@ -50,15 +62,14 @@
         [self.navigationController pushViewController:webVc animated:YES];
     };
     
-    for (int i  =10; i > 0; --i) {
+    for (int i = 10; i > 0; --i) {
         KIVDSBaseRow *row = [KIVDSBaseRow new];
         row.cellClassName = @"KIVLogMainCell";
-        row.rowHeight = 90;
+        row.rowHeight = 100;
         [section insertRow:row];
     }
     
     [self.mainListTV addSection:section];
-    
     [self.mainListTV refreshData];
 }
 
@@ -73,6 +84,17 @@
     return _mainListTV;
 }
 
-
+#pragma mark - Action
+- (void)rightNaviBarButtonAction:(UIButton *)button
+{
+    if(!button.selected){
+        [self.mainListTV setEditing:YES animated:YES];
+        [button setTitle:@"完成" forState:UIControlStateNormal];
+    }else{
+        [self.mainListTV setEditing:NO animated:YES];
+        [button setTitle:@"编辑" forState:UIControlStateNormal];
+    }
+    button.selected = !button.selected;
+}
 
 @end

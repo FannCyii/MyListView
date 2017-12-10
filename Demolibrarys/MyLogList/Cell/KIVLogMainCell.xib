@@ -24,8 +24,8 @@
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是便签简介，简介就是简介哈哈，是简介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1w-tZ-mII">
-                        <rect key="frame" x="16" y="37" width="271.5" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是便签简介，简介就是简介哈哈，是简介" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1w-tZ-mII">
+                        <rect key="frame" x="16" y="37" width="289" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -43,7 +43,7 @@
                     <constraint firstItem="o1S-cT-hXC" firstAttribute="leading" secondItem="U1w-tZ-mII" secondAttribute="leading" id="Cu7-Lp-Nax"/>
                     <constraint firstAttribute="trailing" secondItem="o1S-cT-hXC" secondAttribute="trailing" constant="94" id="bbn-Q7-wAq"/>
                     <constraint firstItem="5bJ-HJ-3YV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ese-ja-tC2"/>
-                    <constraint firstAttribute="trailing" secondItem="U1w-tZ-mII" secondAttribute="trailing" constant="32.5" id="io1-hF-K8X"/>
+                    <constraint firstAttribute="trailing" secondItem="U1w-tZ-mII" secondAttribute="trailing" constant="15" id="io1-hF-K8X"/>
                     <constraint firstItem="U1w-tZ-mII" firstAttribute="top" secondItem="5bJ-HJ-3YV" secondAttribute="bottom" constant="8" id="is5-Th-hB8"/>
                     <constraint firstItem="o1S-cT-hXC" firstAttribute="top" secondItem="U1w-tZ-mII" secondAttribute="bottom" constant="8" id="sEE-1U-TL3"/>
                 </constraints>

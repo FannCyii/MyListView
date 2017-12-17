@@ -2,7 +2,7 @@
 //  ViewController.h
 //  Demolibrarys
 //
-//  Created by kivan on 16/11/2017.
+//  Created by kivan on 17/12/2017.
 //  Copyright © 2017 kivan. All rights reserved.
 //
 
@@ -10,6 +10,4 @@
 
 @interface ViewController : UIViewController
 
-
 @end
-

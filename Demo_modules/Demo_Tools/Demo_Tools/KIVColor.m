@@ -1,14 +1,14 @@
 //
-//  OTSColor.m
+//  KIVColor.m
 //  OneStoreFramework
 //
 //  Created by Aimy on 8/25/14.
 //  Copyright (c) 2014 OneStore. All rights reserved.
 //
 
-#import "OTSColor.h"
+#import "KIVColor.h"
 
-@implementation OTSColor
+@implementation KIVColor
 
 + (UIColor *)colorWithRGB:(NSUInteger)aRGB
 {

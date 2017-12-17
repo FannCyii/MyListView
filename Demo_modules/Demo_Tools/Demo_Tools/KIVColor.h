@@ -1,5 +1,5 @@
 //
-//  OTSColor.h
+//  KIVColor.h
 //  OneStoreFramework
 //
 //  Created by Aimy on 8/25/14.
@@ -8,23 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-#define OTSTEXTCOLOR [UIColor colorWithRed:102.0/255 green:102.0/255 blue:102.0/255 alpha:1]
+#define KIVTEXTCOLOR [UIColor colorWithRed:102.0/255 green:102.0/255 blue:102.0/255 alpha:1]
 
-#define OTSSUBTEXTCOLOR [UIColor colorWithRed:238.0/255 green:238.0/255 blue:238.0/255 alpha:1]
+#define KIVSUBTEXTCOLOR [UIColor colorWithRed:238.0/255 green:238.0/255 blue:238.0/255 alpha:1]
 
-#define OTSORANGECOLOR [UIColor colorWithRed:223.0/255 green:119.0/255 blue:28.0/255 alpha:1]
+#define KIVORANGECOLOR [UIColor colorWithRed:223.0/255 green:119.0/255 blue:28.0/255 alpha:1]
 
-#define OTSBLUECOLOR [UIColor colorWithRed:104.0/255 green:144.0/255 blue:223.0/255 alpha:1]
+#define KIVBLUECOLOR [UIColor colorWithRed:104.0/255 green:144.0/255 blue:223.0/255 alpha:1]
 
-#define OTSREDCOLOR [UIColor colorWithRed:220.0/255 green:0/255 blue:0/255 alpha:1]
+#define KIVREDCOLOR [UIColor colorWithRed:220.0/255 green:0/255 blue:0/255 alpha:1]
 
-#define OTSDISABLEGRAYCOLOR [UIColor colorWithRed:189.0/255 green:189/255 blue:189/255 alpha:1]
+#define KIVDISABLEGRAYCOLOR [UIColor colorWithRed:189.0/255 green:189/255 blue:189/255 alpha:1]
 
 #define SHOPPING_ORANGE_COLOR [UIColor colorWithRed:246.0/255 green:60/255 blue:45/255 alpha:1]
 
 #define RANDOM_COLOR [UIColor colorWithRed:arc4random()%255/255.f green:arc4random()%255/255.f blue:arc4random()%255/255.f alpha:arc4random()%255/255.f]
 
-@interface OTSColor : UIColor
+@interface KIVColor : UIColor
 
 /**
  *  Create a color from a HEX string.

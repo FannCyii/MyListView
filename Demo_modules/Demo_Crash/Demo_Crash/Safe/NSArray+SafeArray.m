@@ -12,6 +12,7 @@
 @implementation NSArray (SafeArray)
 
 +(void)load{
+    NSLog(@"[NSArray SAFE]");
     [self swizzleMultiMethod:@selector(objectAtIndexedSubscript:) withCurrentMethod:@selector(safeArrayObjectAtIndexedSubscript:)];
     [self swizzleMultiMethod:@selector(subarrayWithRange:) withCurrentMethod:@selector(safeSubarrayWithRange:)];
     

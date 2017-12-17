@@ -19,8 +19,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是便签标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bJ-HJ-3YV">
-                        <rect key="frame" x="16" y="11" width="92" height="18"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是便签标题" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bJ-HJ-3YV">
+                        <rect key="frame" x="16" y="11" width="284" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -31,7 +31,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="连接：www.google.com/aaa/bb/xx/aa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1S-cT-hXC">
-                        <rect key="frame" x="16" y="62" width="210" height="14.5"/>
+                        <rect key="frame" x="16" y="62" width="284" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.40313450977858417" green="0.69545321593811604" blue="0.84692258883248728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -41,10 +41,11 @@
                     <constraint firstItem="5bJ-HJ-3YV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="11Q-Op-rw8"/>
                     <constraint firstItem="U1w-tZ-mII" firstAttribute="leading" secondItem="5bJ-HJ-3YV" secondAttribute="leading" id="4ms-rB-GfC"/>
                     <constraint firstItem="o1S-cT-hXC" firstAttribute="leading" secondItem="U1w-tZ-mII" secondAttribute="leading" id="Cu7-Lp-Nax"/>
-                    <constraint firstAttribute="trailing" secondItem="o1S-cT-hXC" secondAttribute="trailing" constant="94" id="bbn-Q7-wAq"/>
+                    <constraint firstAttribute="trailing" secondItem="o1S-cT-hXC" secondAttribute="trailing" constant="20" id="bbn-Q7-wAq"/>
                     <constraint firstItem="5bJ-HJ-3YV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ese-ja-tC2"/>
                     <constraint firstAttribute="trailing" secondItem="U1w-tZ-mII" secondAttribute="trailing" constant="15" id="io1-hF-K8X"/>
                     <constraint firstItem="U1w-tZ-mII" firstAttribute="top" secondItem="5bJ-HJ-3YV" secondAttribute="bottom" constant="8" id="is5-Th-hB8"/>
+                    <constraint firstAttribute="trailing" secondItem="5bJ-HJ-3YV" secondAttribute="trailing" constant="20" id="oyj-e5-d3r"/>
                     <constraint firstItem="o1S-cT-hXC" firstAttribute="top" secondItem="U1w-tZ-mII" secondAttribute="bottom" constant="8" id="sEE-1U-TL3"/>
                 </constraints>
             </tableViewCellContentView>

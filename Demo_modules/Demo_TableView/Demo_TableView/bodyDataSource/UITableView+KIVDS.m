@@ -44,7 +44,13 @@
 - (void)refreshData
 {
     [self.kivDataSource connectDataWithSections:self.kivSections];
-    [self reloadData];
+    if([NSThread isMainThread]){
+        [self reloadData];
+    }else{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self reloadData];
+        });
+    }
 }
 
 - (void)clearData
@@ -103,6 +109,23 @@
     }
 }
 
+//在indexPath 处添加一行row
+- (void)addRow:(KIVDSBaseRow *)row atIndexPath:(NSIndexPath *)indexPath
+{
+    KIVDSBaseSection *section = [self.kivSections objectAtIndex:indexPath.section];
+    if(!section){
+        section = [KIVDSBaseSection new];
+        [self addSection:section];
+    }
+    [section insertRow:row atIndex:indexPath.row];
+    [self registerCellWithRow:row];
+}
+//在indexSection 最后添加一行row
+- (void)addRow:(KIVDSBaseRow *)row atSectionInIndex:(NSInteger)index
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:index];
+    [self addRow:row atIndexPath:indexPath];
+}
 
 #pragma mark - 行数据处理
 - (KIVDSBaseRow *)getRowAtIndexPath:(NSIndexPath *)indexPath

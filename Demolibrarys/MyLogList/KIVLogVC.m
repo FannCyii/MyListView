@@ -11,12 +11,14 @@
 #import "PureLayout.h"
 #import "Demo_Network.h"
 #import "KIVWebVC.h"
+#import "CommonHeader.h"
+#import "FolderListItem.h"
 
 @interface KIVLogVC () <DemoWebServerDelegate>
 
 @property (nonatomic, strong) UITableView *mainListTV;
 @property (nonatomic, strong) KIVDSDataSource *dataSouce;
-@property (nonatomic, strong) Demo_Network *network;
+//@property (nonatomic, strong) Demo_Network *network;
 
 @end
 
@@ -27,8 +29,8 @@
     
     [self navigationConfig];
     [self viewConfig];
-    [self dataConfig];
     
+    [self dataConfig];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,26 +58,54 @@
 
 - (void)dataConfig
 {
-//    KIVDSBaseSection *section = [KIVDSBaseSection new];
-//    //这里可以优化成indexPath
-//    section.didSelectedBlock = ^(UITableView *tableView, KIVDSBaseSection *section, NSUInteger index) {
-//        KIVWebVC *webVc = [[KIVWebVC alloc] init];
-//        [self.navigationController pushViewController:webVc animated:YES];
-//    };
-//
-//    for (int i = 10; i > 0; --i) {
-//        KIVDSBaseRow *row = [KIVDSBaseRow new];
-//        row.cellClassName = @"KIVLogMainCell";
-//        row.rowHeight = 100;
-//        [section insertRow:row];
-//    }
-//
-//    [self.mainListTV addSection:section];
-//    [self.mainListTV refreshData];
-    
-    [self.network startServer];
+    [self listDemo];
 }
 
+- (void)listDemo
+{
+    FolderListItem *rootFolder = nil;
+    if(!self.folder){
+        NSData *folderData = [[NSUserDefaults standardUserDefaults] objectForKey:FOLDER_ARTICLE_ARCHIVER_IDENTIFIOR];
+        rootFolder = (FolderListItem *)[NSKeyedUnarchiver unarchiveObjectWithData:folderData];
+    }else{
+        rootFolder = self.folder;
+    }
+    
+    KIVDSBaseSection *section = [KIVDSBaseSection new];
+    //这里可以优化成indexPath
+    section.didSelectedBlock = ^(UITableView *tableView, KIVDSBaseSection *section, NSUInteger index) {
+        KIVDSBaseRow *row = [section.rows objectAtIndex:index];
+        ElementInfo *element = (ElementInfo *)row.cellData;
+        if(element.elementType == ElementInfoTypeOfFolder){
+            KIVLogVC *logvc = [[KIVLogVC alloc] init];
+            FolderListItem *item = (FolderListItem *)element;
+            logvc.folder = item;
+            [self.navigationController pushViewController:logvc animated:YES];
+        }else{
+            KIVWebVC *webVc = [[KIVWebVC alloc] init];
+            webVc.url = element.aUrl;
+            [self.navigationController pushViewController:webVc animated:YES];
+        }
+        
+    };
+    
+    for (int i = 0; i < rootFolder.subElements.count; ++i) {
+        KIVDSBaseRow *row = [KIVDSBaseRow new];
+        row.cellClassName = @"KIVLogMainCell";
+        ElementInfo *info = rootFolder.subElements[i];
+        if(info.elementType == ElementInfoTypeOfFolder){
+            row.rowHeight = 60;
+        }else{
+            row.rowHeight = 100;
+        }
+        row.cellData = info;
+        
+        [section insertRow:row];
+    }
+    
+    [self.mainListTV addSection:section];
+    [self.mainListTV refreshData];
+}
 #pragma mark - Accessor
 - (UITableView *)mainListTV
 {
@@ -85,14 +115,6 @@
         [_mainListTV registerKivDataSource:_dataSouce];
     }
     return _mainListTV;
-}
--(Demo_Network *)network
-{
-    if(!_network){
-        self.network = [Demo_Network new];
-        self.network.delegate = self;
-    }
-    return _network;
 }
 
 #pragma mark - Action

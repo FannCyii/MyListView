@@ -12,6 +12,8 @@ target 'Demolibrarys' do
   pod 'PureLayout'
   pod 'JSONModel'
   pod "GCDWebServer", "~> 3.0"
+  pod "ObjectiveGumbo", "0.1"
+  pod 'Toast'
 end
 
 target 'Demo_Network' do

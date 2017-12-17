@@ -2,66 +2,74 @@
 //  ViewController.m
 //  Demolibrarys
 //
-//  Created by kivan on 16/11/2017.
+//  Created by kivan on 17/12/2017.
 //  Copyright © 2017 kivan. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "DemoTVC.h"
-#import "KIVLogVC.h"
-#import "KIVTogetherTouchRecogizer.h"
-#import "DemoWebServerVC.h"
-
+#import "SettingVC.h"
+#import <PureLayout/PureLayout.h>
+#import "ViewController+CollectionViewDataSourceDelegate.h"
+#import "KIVCVDataSource.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIView *tempView;
-@property (nonatomic, strong) KIVTogetherTouchRecogizer *touchr;
+@property (nonatomic, strong) UICollectionView * collectionView;
+@property (nonatomic, strong) KIVCVDataSource * dataSource;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.touchr = [KIVTogetherTouchRecogizer new];
-//
-//    [self.touchr registerTouchView:self.tempView];
+    self.navigationItem.title = @"我的书签管理";
     
+    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [settingBtn setTitle:@"设置" forState:UIControlStateNormal];
+    settingBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [settingBtn addTarget:self action:@selector(selectedSetting:) forControlEvents:UIControlEventTouchUpInside];
+    [settingBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:settingBtn];
     
-//    const char * chr = "abcdef";
-//    NSString *str =@(chr);
-//    NSLog(@"%@",str);
-    
-    NSScanner *scanner = [NSScanner scannerWithString:@"abc123efdkkkkk"];
-
-//    while (![scanner isAtEnd]) {
-////        BOOL bo = [scanner scanString:@"k" intoString:&value];
-//        BOOL bo = [scanner scanUpToString:@"k" intoString:&value];
-//        NSLog(@"%d-%@",bo,value);
-//    }
-    
-    int a;
-    BOOL bo = [scanner scanInt:&a];
-    NSLog(@"%d-%d",bo,a);
-    
+    [self subViewConfig];
+    [self handleMainData];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)goToTVCAction:(UIButton *)sender {
-    DemoTVC *tvc = [DemoTVC new];
-    [self.navigationController pushViewController:tvc animated:YES];
+- (void)selectedSetting:(UIButton *)button
+{
+    SettingVC *vc = [SettingVC new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (IBAction)goToListLogAction:(UIButton *)sender {
-    KIVLogVC *tvc = [KIVLogVC new];
-    [self.navigationController pushViewController:tvc animated:YES];
+- (UICollectionView *)collectionView
+{
+    if(!_collectionView){
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        layout.minimumLineSpacing = 10;
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
+        _collectionView.backgroundColor = [UIColor whiteColor];
+    }
+    return _collectionView;
 }
-- (IBAction)openWebServer:(UIButton *)sender {
-    [self.navigationController pushViewController:[[DemoWebServerVC alloc] init] animated:YES];
+
+- (KIVCVDataSource *)dataSource
+{
+    if(!_dataSource){
+        _dataSource = [KIVCVDataSource new];
+    }
+    return _dataSource;
+}
+
+- (void)subViewConfig
+{
+    [self.view addSubview:self.collectionView];
+    [self.collectionView autoPinEdgesToSuperviewEdges];
+
+    self.collectionView.delegate = self.dataSource;
+    self.collectionView.dataSource = self.dataSource;
 }
 
 @end

@@ -36,7 +36,7 @@
     middelItem.cellClassName = @"KIVHomeCVMiddelCell";
     middelItem.height = 400;
     middelItem.with = [UIScreen mainScreen].bounds.size.width - 10;
-    middelItem.rowColor = [UIColor yellowColor];
+    middelItem.rowColor = [UIColor whiteColor];
     [array addObject:middelItem];
     
     [self.collectionView registerItmes:array];

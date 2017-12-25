@@ -8,6 +8,12 @@
 
 #import "KIVBaseCVCell.h"
 
+@class KIVHomeCVMiddelCell;
+@protocol KIVHomeCVMiddelCellDelegate <NSObject>
+- (void)kivHomeCVMiddelCell:(KIVHomeCVMiddelCell *)cell selectedIndexPath:(NSIndexPath *)indexPath;
+@end
+
+
 @interface KIVHomeCVMiddelCell : KIVBaseCVCell
 
 @end

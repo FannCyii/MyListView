@@ -40,17 +40,14 @@
                                           <html> \
                                           <body> \
                                           <form action='/1' method=\"post\" id=\"usrform\"> \
-                                          博客名称:<br> \
+                                          标签集名称:<br> \
                                           <input type=\"text\" name=\"logtitle\"> \
-                                          <br>\
-                                          博客网址:<br>\
-                                          <input type=\"text\" name=\"logurl\">\
                                           <br>\
                                           <input type=\"submit\" name=\"提交\">\
                                           </form>\
-                                          <textarea rows=\"50\" cols=\"200\" name=\"comment\" form=\"usrform\">\
+                                          <textarea rows=\"50\" cols=\"150\" name=\"comment\" form=\"usrform\">\
                                           请在此处输入文本...</textarea>\
-                                          <p>同时请注意文本字段的默认宽度是 20 个字符。</p>\
+                                          <p>注意上传成功后，网页会出现未找到的情况，是否上传成功已App显示为主。</p>\
                                           </body> \
                                           </html>"];
                               }];
@@ -70,7 +67,7 @@
     }];
 
     // Start server on port 8080
-    [_webServer startWithPort:8080 bonjourName:nil];
+    [_webServer startWithPort:9888 bonjourName:@"test111"];
     NSLog(@"Visit %@ in your web browser", _webServer.serverURL);
     if([self.delegate respondsToSelector:@selector(webServer:startUrl:)]){
         [self.delegate webServer:self startUrl:[self serverURL]];

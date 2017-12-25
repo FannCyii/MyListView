@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *urlLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *logIconImageView;
 @property (nonatomic, strong) KIVTogetherTouchRecogizer *touchr;
 @end
 
@@ -41,7 +42,7 @@
 {
     ElementInfo *element = (ElementInfo *)aData;
     if (element.elementType == ElementInfoTypeOfFolder) {
-        FolderListItem *folder = (FolderListItem *)aData;
+//        FolderListItem *folder = (FolderListItem *)aData;
         self.descriptionLabel.text = @"文件夹";
         self.urlLabel.text = @"";
         self.backgroundColor = [UIColor yellowColor];
@@ -50,6 +51,9 @@
         self.urlLabel.text = folder.aUrl;
         self.descriptionLabel.text = @"文章";
         self.backgroundColor = [UIColor whiteColor];
+        
+        NSData *iconURLData = [NSData dataWithContentsOfURL:[NSURL URLWithString:element.iconURI]];
+        self.logIconImageView.image = [UIImage imageWithData:iconURLData];
     }
     self.titleLabel.text = element.title;
 }

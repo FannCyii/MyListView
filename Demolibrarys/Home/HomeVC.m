@@ -50,7 +50,6 @@
 - (void)navigationConfig
 {
     UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 20)];
-//    rightButton.backgroundColor = [UIColor brownColor];
     [rightButton setTitle:@"方格" forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(rightNaviBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [rightButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];

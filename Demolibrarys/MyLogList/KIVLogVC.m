@@ -20,6 +20,7 @@
 @property (nonatomic, strong) KIVDSDataSource *dataSouce;
 //@property (nonatomic, strong) Demo_Network *network;
 
+@property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
 @end
 
 @implementation KIVLogVC
@@ -54,6 +55,8 @@
     [self.view addSubview:self.mainListTV];
     self.mainListTV.backgroundColor = [UIColor grayColor];
     [self.mainListTV autoPinEdgesToSuperviewEdges];
+    
+//    self.mainListTV.gestureRecognizers = self.tapGesture;
 }
 
 - (void)dataConfig
@@ -129,5 +132,6 @@
     }
     button.selected = !button.selected;
 }
+
 
 @end

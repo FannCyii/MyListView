@@ -33,6 +33,9 @@
                 <constraint firstItem="p58-s9-N8P" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="tL9-nd-0QS"/>
             </constraints>
             <size key="customSize" width="374" height="86"/>
+            <connections>
+                <outlet property="searchTextField" destination="p58-s9-N8P" id="uAZ-CP-vTr"/>
+            </connections>
             <point key="canvasLocation" x="-143" y="125"/>
         </collectionViewCell>
     </objects>

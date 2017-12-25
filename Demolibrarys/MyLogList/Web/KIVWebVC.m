@@ -37,6 +37,13 @@
     [self.progressView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:64];
     [self.progressView autoSetDimension:ALDimensionHeight toSize:2];
     
+    if(self.url.length == 0){
+        return;
+    }
+    if(![self.url hasPrefix:@"http://"]){
+        self.url = [NSString stringWithFormat:@"http://%@",self.url];
+    }
+    
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.url]];
     [self.webView loadRequest:request];
     

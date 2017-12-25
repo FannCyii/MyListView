@@ -10,4 +10,14 @@
 
 @implementation KIVBaseCVCell
 
+- (void)updataCVCellWithData:(id)aData indexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+- (void)updataCVCellWithData:(id)aData
+{
+//    [self updataCVCellWithData:aData indexPath:nil];
+}
+
 @end

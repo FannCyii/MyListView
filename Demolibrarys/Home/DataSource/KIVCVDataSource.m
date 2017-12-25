@@ -34,8 +34,12 @@
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     KIVCVBaseItem *item = [self.itemArray objectAtIndex:indexPath.item];
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:item.cellIdentifier forIndexPath:indexPath];
+    KIVBaseCVCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:item.cellIdentifier forIndexPath:indexPath];
     cell.backgroundColor = item.rowColor;
+    if([self.delegate respondsToSelector:@selector(getTargetVCWihtDataSource:)]){
+        id target = [self.delegate getTargetVCWihtDataSource:self];
+        cell.delegate = target;
+    }
     return cell;
 }
 

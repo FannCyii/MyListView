@@ -7,12 +7,31 @@
 //
 
 #import "KIVHomeCVHeaderCell.h"
+#import "XXRouter.h"
+#import "KIVWebVC.h"
+
+@interface KIVHomeCVHeaderCell () <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *searchTextField;
+
+@end
 
 @implementation KIVHomeCVHeaderCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    self.searchTextField.keyboardType = UIKeyboardTypeWebSearch;
+    self.searchTextField.delegate = self;
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if([self.delegate respondsToSelector:@selector(kivHomeCVHeaderCell:didReturnWihtTextField:)]){
+        [self.delegate kivHomeCVHeaderCell:self didReturnWihtTextField:textField];
+    }
+    return YES;
+}
+
+
 
 @end

@@ -12,9 +12,11 @@
 #import "ViewController+CollectionViewDataSourceDelegate.h"
 #import "KIVCVDataSource.h"
 
-@interface ViewController ()
+@interface ViewController ()<KIVCVDataSourceDelegate>
 @property (nonatomic, strong) UICollectionView * collectionView;
 @property (nonatomic, strong) KIVCVDataSource * dataSource;
+
+@property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
 @end
 
 @implementation ViewController
@@ -32,6 +34,8 @@
     
     [self subViewConfig];
     [self handleMainData];
+    
+//    [self.view addGestureRecognizer:self.tapGesture];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,8 +63,17 @@
 {
     if(!_dataSource){
         _dataSource = [KIVCVDataSource new];
+        _dataSource.delegate = self;
     }
     return _dataSource;
+}
+
+- (UITapGestureRecognizer *)tapGesture
+{
+    if(!_tapGesture){
+        _tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hiddenKeyBoard:)];
+    }
+    return _tapGesture;
 }
 
 - (void)subViewConfig
@@ -71,5 +84,20 @@
     self.collectionView.delegate = self.dataSource;
     self.collectionView.dataSource = self.dataSource;
 }
+
+
+
+#pragma mark - Action
+- (void)hiddenKeyBoard:(UITapGestureRecognizer *)gesture
+{
+    [self.view endEditing:YES];
+}
+
+#pragma mark - KIVCVDataSourceDelegate
+- (id)getTargetVCWihtDataSource:(KIVCVDataSource *)dataSource
+{
+    return self;
+}
+
 
 @end

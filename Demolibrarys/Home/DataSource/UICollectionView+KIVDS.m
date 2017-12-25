@@ -8,7 +8,7 @@
 
 #import "UICollectionView+KIVDS.h"
 
-NSString * const BASE_CVCELL_IDENTIFIER = @"KIVVCBaseVCCell_Base";
+NSString * const BASE_CVCELL_IDENTIFIER = @"UICollectionViewCell";
 
 
 @implementation UICollectionView (KIVDS)
@@ -26,7 +26,8 @@ NSString * const BASE_CVCELL_IDENTIFIER = @"KIVVCBaseVCCell_Base";
             }
         }
     }else{
-        [self registerClass:NSClassFromString(@"UICollectionViewCell") forCellWithReuseIdentifier:BASE_CVCELL_IDENTIFIER];
+        item.cellClassName = @"KIVBaseCVCell";
+        [self registerClass:NSClassFromString(item.cellClassName) forCellWithReuseIdentifier:item.cellClassName];
     }
 }
 

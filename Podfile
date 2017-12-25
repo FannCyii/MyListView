@@ -14,6 +14,8 @@ target 'Demolibrarys' do
   pod "GCDWebServer", "~> 3.0"
   pod "ObjectiveGumbo", "0.1"
   pod 'Toast'
+  pod 'MBProgressHUD', '~> 1.0.0'
+  pod 'XXRouter', '~> 0.0.2'
 end
 
 target 'Demo_Network' do

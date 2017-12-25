@@ -8,6 +8,11 @@
 
 #import "KIVBaseCVCell.h"
 
-@interface KIVHomeCVHeaderCell : KIVBaseCVCell
+@class KIVHomeCVHeaderCell;
+@protocol KIVHomeCVHeaderCellDelegate <NSObject>
+- (void)kivHomeCVHeaderCell:(KIVHomeCVHeaderCell *)cell didReturnWihtTextField:(UITextField *)textField;
+@end
 
+@interface KIVHomeCVHeaderCell : KIVBaseCVCell
+//@property (nonatomic, weak) id <KIVHomeCVHeaderCellDelegate> delegate;
 @end

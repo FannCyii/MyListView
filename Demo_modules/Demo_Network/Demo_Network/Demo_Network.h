@@ -14,6 +14,8 @@ typedef void(^ResponseDateComplete)(id ResponseDate,NSError *error);
 @class Demo_Network;
 
 @protocol DemoWebServerDelegate <NSObject>
+@optional
+
 - (void)webServer:(Demo_Network *)webServer startUrl:(NSURL *)url;
 
 - (void)webServer:(Demo_Network *)webServer responsePath:(NSString *)path responseData:(id)aData error:(NSError *)error;
@@ -26,5 +28,6 @@ typedef void(^ResponseDateComplete)(id ResponseDate,NSError *error);
 @property (nonatomic, weak) id<DemoWebServerDelegate> delegate;
 
 - (void)startServer;
+- (void)stopWebServer;
 
 @end

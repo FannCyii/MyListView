@@ -20,11 +20,6 @@
 
 @implementation KIVLogVC (ResponeData)
 
-- (void)webServer:(Demo_Network *)webServer startUrl:(NSURL *)url
-{
-    
-}
-
 - (void)webServer:(Demo_Network *)webServer responsePath:(NSString *)path responseData:(id)aData error:(NSError *)error
 {
     if([path isEqualToString:@"/1"]){
@@ -40,27 +35,32 @@
         vo.logtitle = aData[@"logtitle"];
         vo.logurl = aData[@"logurl"];
         
-        KIVDSBaseSection *section = [KIVDSBaseSection new];
-        //这里可以优化成indexPath
-        section.didSelectedBlock = ^(UITableView *tableView, KIVDSBaseSection *section, NSUInteger index) {
-            KIVDSBaseRow *row = [section.rows objectAtIndex:index];
-            DemoLogVO *vo = (DemoLogVO *)row.cellData;
-            KIVWebVC *webVc = [[KIVWebVC alloc] init];
-            webVc.url = vo.logurl;
-            [self.navigationController pushViewController:webVc animated:YES];
-        };
+//        KIVDSBaseSection *section = [KIVDSBaseSection new];
+//        //这里可以优化成indexPath
+//        section.didSelectedBlock = ^(UITableView *tableView, KIVDSBaseSection *section, NSUInteger index) {
+//            KIVDSBaseRow *row = [section.rows objectAtIndex:index];
+//            DemoLogVO *vo = (DemoLogVO *)row.cellData;
+//            KIVWebVC *webVc = [[KIVWebVC alloc] init];
+//            webVc.url = vo.logurl;
+//            [self.navigationController pushViewController:webVc animated:YES];
+//        };
         
         KIVDSBaseRow *row = [KIVDSBaseRow new];
         row.cellClassName = @"KIVLogMainCell";
         row.rowHeight = 100;
         row.cellData = vo;
-        [section insertRow:row];
+        __weak typeof(self)weakSelf = self;
+        row.selectedBlock = ^(UITableView *tableView, NSIndexPath *indexPath) {
+            __strong typeof(weakSelf) strongSelf = weakSelf;
+            KIVDSBaseRow *row = [tableView getRowAtIndexPath:indexPath];
+            DemoLogVO *vo = (DemoLogVO *)row.cellData;
+            KIVWebVC *webVc = [[KIVWebVC alloc] init];
+            webVc.url = vo.logurl;
+            [strongSelf.navigationController pushViewController:webVc animated:YES];
+        };
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.mainListTV addSection:section];
-            [self.mainListTV refreshData];
-        });
-    
+        [self.mainListTV addRow:row atSectionInIndex:0];
+        [self.mainListTV refreshData];
     }
 }
 

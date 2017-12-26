@@ -9,11 +9,16 @@
 #import "KIVLogMainCell.h"
 #import "KIVTogetherTouchRecogizer.h"
 #import "DemoLogVO.h"
+#import "KIVDSBaseSection.h"
+#import "FolderListItem.h"
+#import "ArticleListItem.h"
+#import "ElementInfo.h"
 
 @interface KIVLogMainCell ()<KIVTogetherTouchRecogizerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *urlLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *logIconImageView;
 @property (nonatomic, strong) KIVTogetherTouchRecogizer *touchr;
 @end
 
@@ -35,12 +40,22 @@
 
 - (void)updateDataWithData:(id)aData
 {
-    NSLog(@"%@",aData);
-    if([aData isKindOfClass:[DemoLogVO class]]){
-        DemoLogVO *vo = (DemoLogVO *)aData;
-        self.titleLabel.text = vo.logtitle;
-        self.urlLabel.text = vo.logurl;
+    ElementInfo *element = (ElementInfo *)aData;
+    if (element.elementType == ElementInfoTypeOfFolder) {
+//        FolderListItem *folder = (FolderListItem *)aData;
+        self.descriptionLabel.text = @"文件夹";
+        self.urlLabel.text = @"";
+        self.backgroundColor = [UIColor yellowColor];
+    }else if(element.elementType == ElementInfoTypeOfArticle){
+        ArticleListItem *folder = (ArticleListItem *)aData;
+        self.urlLabel.text = folder.aUrl;
+        self.descriptionLabel.text = @"文章";
+        self.backgroundColor = [UIColor whiteColor];
+        
+        NSData *iconURLData = [NSData dataWithContentsOfURL:[NSURL URLWithString:element.iconURI]];
+        self.logIconImageView.image = [UIImage imageWithData:iconURLData];
     }
+    self.titleLabel.text = element.title;
 }
 
 - (CGFloat)endGoBackWithTogetherTouch:(KIVTogetherTouchRecogizer *)toucher

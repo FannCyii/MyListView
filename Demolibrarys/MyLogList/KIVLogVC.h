@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class FolderListItem;
 @interface KIVLogVC : UIViewController
+
+@property (nonatomic, strong) FolderListItem *folder;
 
 @end

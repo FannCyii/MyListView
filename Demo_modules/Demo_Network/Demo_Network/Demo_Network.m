@@ -9,6 +9,8 @@
 #import "Demo_Network.h"
 #import "GCDWebServer.h"
 #import "GCDWebServerDataResponse.h"
+#import "GCDWebServerMultiPartFormRequest.h"
+#import "GCDWebServerURLEncodedFormRequest.h"
 
 @implementation Demo_Network{
     GCDWebServer* _webServer;
@@ -37,41 +39,45 @@
                                   return [GCDWebServerDataResponse responseWithHTML:@"<!DOCTYPE html> \
                                           <html> \
                                           <body> \
-                                          <form action='/1'> \
-                                          博客名称:<br> \
+                                          <form action='/1' method=\"post\" id=\"usrform\"> \
+                                          标签集名称:<br> \
                                           <input type=\"text\" name=\"logtitle\"> \
-                                          <br>\
-                                          博客网址:<br>\
-                                          <input type=\"text\" name=\"logurl\">\
                                           <br>\
                                           <input type=\"submit\" name=\"提交\">\
                                           </form>\
-                                          <p>同时请注意文本字段的默认宽度是 20 个字符。</p>\
+                                          <textarea rows=\"50\" cols=\"150\" name=\"comment\" form=\"usrform\">\
+                                          请在此处输入文本...</textarea>\
+                                          <p>注意上传成功后，网页会出现未找到的情况，是否上传成功已App显示为主。</p>\
                                           </body> \
                                           </html>"];
                               }];
     
     __weak typeof(self) weakSelf = self;
-    [_webServer addHandlerForMethod:@"GET"
+    [_webServer addHandlerForMethod:@"POST"
                                path:@"/1"
-                       requestClass:[GCDWebServerRequest class]
+                       requestClass:[GCDWebServerURLEncodedFormRequest class]
                   asyncProcessBlock:^(__kindof GCDWebServerRequest * _Nonnull request, GCDWebServerCompletionBlock  _Nonnull completionBlock) {
                       __strong typeof(self) strongSelf = weakSelf;
-                      NSLog(@"%@",request.query);
-                      
+                      GCDWebServerURLEncodedFormRequest *postRequest = (GCDWebServerURLEncodedFormRequest *)request;
+//                      NSLog(@"%@",postRequest.arguments);
                       if([strongSelf.delegate respondsToSelector:@selector(webServer:responsePath:responseData:error:)]){
-                          [strongSelf.delegate webServer:strongSelf responsePath:@"/1" responseData:request.query error:nil];
+                          [strongSelf.delegate webServer:strongSelf responsePath:@"/1" responseData:postRequest.arguments error:nil];
                       }
                       
     }];
 
     // Start server on port 8080
-    [_webServer startWithPort:8080 bonjourName:nil];
+    [_webServer startWithPort:9888 bonjourName:@"test111"];
     NSLog(@"Visit %@ in your web browser", _webServer.serverURL);
     if([self.delegate respondsToSelector:@selector(webServer:startUrl:)]){
         [self.delegate webServer:self startUrl:[self serverURL]];
     }
 
+}
+
+- (void)stopWebServer
+{
+    [_webServer stop];
 }
 
 @end

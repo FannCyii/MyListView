@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		8F839B351FBDDC730014B1C6 /* Demo_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B341FBDDC730014B1C6 /* Demo_Tools.m */; };
 		8F839B361FBDDC730014B1C6 /* Demo_Tools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F839B331FBDDC730014B1C6 /* Demo_Tools.h */; };
-		8F839B3E1FBDDCB00014B1C6 /* OTSColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B3D1FBDDCB00014B1C6 /* OTSColor.m */; };
-		8F839B451FBDDE9A0014B1C6 /* OTSColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839B3C1FBDDCB00014B1C6 /* OTSColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F839B3E1FBDDCB00014B1C6 /* KIVColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B3D1FBDDCB00014B1C6 /* KIVColor.m */; };
+		8F839B451FBDDE9A0014B1C6 /* KIVColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839B3C1FBDDCB00014B1C6 /* KIVColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,8 +30,8 @@
 		8F839B301FBDDC730014B1C6 /* libDemo_Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDemo_Tools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F839B331FBDDC730014B1C6 /* Demo_Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_Tools.h; sourceTree = "<group>"; };
 		8F839B341FBDDC730014B1C6 /* Demo_Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_Tools.m; sourceTree = "<group>"; };
-		8F839B3C1FBDDCB00014B1C6 /* OTSColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSColor.h; sourceTree = "<group>"; };
-		8F839B3D1FBDDCB00014B1C6 /* OTSColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSColor.m; sourceTree = "<group>"; };
+		8F839B3C1FBDDCB00014B1C6 /* KIVColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVColor.h; sourceTree = "<group>"; };
+		8F839B3D1FBDDCB00014B1C6 /* KIVColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVColor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 		8F839B321FBDDC730014B1C6 /* Demo_Tools */ = {
 			isa = PBXGroup;
 			children = (
-				8F839B3C1FBDDCB00014B1C6 /* OTSColor.h */,
-				8F839B3D1FBDDCB00014B1C6 /* OTSColor.m */,
+				8F839B3C1FBDDCB00014B1C6 /* KIVColor.h */,
+				8F839B3D1FBDDCB00014B1C6 /* KIVColor.m */,
 				8F839B331FBDDC730014B1C6 /* Demo_Tools.h */,
 				8F839B341FBDDC730014B1C6 /* Demo_Tools.m */,
 			);
@@ -79,7 +79,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F839B451FBDDE9A0014B1C6 /* OTSColor.h in Headers */,
+				8F839B451FBDDE9A0014B1C6 /* KIVColor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F839B3E1FBDDCB00014B1C6 /* OTSColor.m in Sources */,
+				8F839B3E1FBDDCB00014B1C6 /* KIVColor.m in Sources */,
 				8F839B351FBDDC730014B1C6 /* Demo_Tools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

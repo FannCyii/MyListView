@@ -17,7 +17,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self addSettingView];
     return YES;
+}
+
+- (void)addSettingView
+{
+    CGRect rect = [UIScreen mainScreen].bounds;
+    
+    UIView *settingView = [[UIView alloc] initWithFrame:CGRectMake(10, rect.size.height - 100, 40, 40)];
+    settingView.backgroundColor = [UIColor blueColor];
+    settingView.layer.cornerRadius = 20;
+    settingView.layer.masksToBounds = YES;
+    UIWindow *window = [[[UIApplication sharedApplication] windows] firstObject];
+    [window.rootViewController.view addSubview:settingView];
+    [window.rootViewController.view bringSubviewToFront:settingView];
 }
 
 

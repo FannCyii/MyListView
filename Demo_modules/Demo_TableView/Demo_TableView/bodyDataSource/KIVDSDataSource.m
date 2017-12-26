@@ -160,7 +160,10 @@ NSString * const BASE_CELL_IDENTIFIER = @"KIVDSBaseTVCell_Base";
     KIVDSBaseSection *section = [self.sections objectAtIndex:indexPath.section];
     KIVDSBaseRow *row = [section.rows objectAtIndex:indexPath.row];
     if(!row.canNotSelected){
-        if(section.didSelectedBlock){
+        //优先条用row的点击事件
+        if(row.selectedBlock){
+            row.selectedBlock(tableView, indexPath);
+        }else if(section.didSelectedBlock){
             section.didSelectedBlock(tableView, section, indexPath.row);
         }
         KIVDSBaseTVCell *cell = [tableView cellForRowAtIndexPath:indexPath];

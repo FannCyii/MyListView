@@ -9,26 +9,26 @@
 #import "DemoWebServerVC.h"
 #import "Demo_Network.h"
 #import "DemoLogVO.h"
+#import "DataParser.h"
+#import "CommonHeader.h"
 
 @interface DemoWebServerVC () <DemoWebServerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *serverURLLabel;
 @property (nonatomic, strong) Demo_Network *network;
+@property (weak, nonatomic) IBOutlet UILabel *webStatusLabel;
 @end
 
 @implementation DemoWebServerVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     self.network = [Demo_Network new];
     self.network.delegate = self;
-    
     [self.network startServer];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*
@@ -40,24 +40,39 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (void)dealloc
+{
+    [self.network stopWebServer];
+}
 
 #pragma mark -DemoWebServerDelegate
 
 - (void)webServer:(Demo_Network *)webServer startUrl:(NSURL *)url
 {
     self.serverURLLabel.text = [NSString stringWithFormat:@"%@",url];
+    if(url.absoluteString.length == 0){
+        self.webStatusLabel.text = @"服务器启动失败";
+    }else{
+        self.webStatusLabel.text = @"服务器启动成功";
+    }
 }
 
 - (void)webServer:(Demo_Network *)webServer responsePath:(NSString *)path responseData:(id)aData error:(NSError *)error
 {
-    if([path isEqualToString:@"/1"]){
-        NSError *error = nil;
-//        if([aData isKindOfClass:[NSDictionary class]]){
-//            DemoLogVO *vo = [[DemoLogVO alloc] initWithDictionary:(NSDictionary *)aData error:&error];
-//            NSLog(@"vo:%@",vo);
-//        }
-        NSLog(@"====返回数据%@",aData);
-        [[NSUserDefaults standardUserDefaults] setObject:aData forKey:@"log.info.deme.list"];
+    if(!error && [path isEqualToString:@"/1"]){
+        NSString *logs = [aData valueForKey:@"comment"];
+        NSData *aData = [logs dataUsingEncoding:NSUTF8StringEncoding];
+        DataParser *parser = [[DataParser alloc] initWithData:aData];
+        FolderListItem *rootFolder = parser.rootFolder;
+        NSData *data = [NSKeyedArchiver archivedDataWithRootObject:rootFolder];
+        [[NSUserDefaults standardUserDefaults] setObject:data forKey:FOLDER_ARTICLE_ARCHIVER_IDENTIFIOR];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.webStatusLabel.text = @"导入成功";
+        });
+    }else{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.webStatusLabel.text = @"导入失败";
+        });
     }
 }
 

@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F12F5EA1FC709E100D65E9A /* UITableView+KIVDS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F12F5E81FC709E100D65E9A /* UITableView+KIVDS.h */; };
+		8F12F5EA1FC709E100D65E9A /* UITableView+KIVDS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F12F5E81FC709E100D65E9A /* UITableView+KIVDS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F12F5EB1FC709E100D65E9A /* UITableView+KIVDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F5E91FC709E100D65E9A /* UITableView+KIVDS.m */; };
 		8F839AA31FBDD4100014B1C6 /* Demo_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AA21FBDD4100014B1C6 /* Demo_TableView.m */; };
 		8F839AA41FBDD4100014B1C6 /* Demo_TableView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F839AA11FBDD4100014B1C6 /* Demo_TableView.h */; };
 		8F839ADC1FBDDB130014B1C6 /* KIVDSBaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AD51FBDDB130014B1C6 /* KIVDSBaseRow.m */; };
 		8F839ADD1FBDDB130014B1C6 /* KIVDSBaseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AD61FBDDB130014B1C6 /* KIVDSBaseSection.m */; };
 		8F839ADE1FBDDB130014B1C6 /* KIVDSDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AD71FBDDB130014B1C6 /* KIVDSDataSource.m */; };
-		8F839ADF1FBDDB130014B1C6 /* KIVDSBaseTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839ADA1FBDDB130014B1C6 /* KIVDSBaseTVCell.m */; };
 		8F839B531FBDE1DD0014B1C6 /* KIVDSDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AD31FBDDB130014B1C6 /* KIVDSDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F839B541FBDE1DD0014B1C6 /* KIVDSBaseRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AD81FBDDB130014B1C6 /* KIVDSBaseRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F839B551FBDE1DD0014B1C6 /* KIVDSBaseSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AD41FBDDB130014B1C6 /* KIVDSBaseSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F839B561FBDE1DD0014B1C6 /* KIVDSBaseTVCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839ADB1FBDDB130014B1C6 /* KIVDSBaseTVCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8F839B571FBDE1DD0014B1C6 /* Demo_TableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AA11FBDD4100014B1C6 /* Demo_TableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FC24FAC1FF2A3B200250E4F /* KIVDSBaseTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839ADA1FBDDB130014B1C6 /* KIVDSBaseTVCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -112,9 +112,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F12F5EA1FC709E100D65E9A /* UITableView+KIVDS.h in Headers */,
 				8F839B531FBDE1DD0014B1C6 /* KIVDSDataSource.h in Headers */,
 				8F839B541FBDE1DD0014B1C6 /* KIVDSBaseRow.h in Headers */,
+				8F12F5EA1FC709E100D65E9A /* UITableView+KIVDS.h in Headers */,
 				8F839B551FBDE1DD0014B1C6 /* KIVDSBaseSection.h in Headers */,
 				8F839B561FBDE1DD0014B1C6 /* KIVDSBaseTVCell.h in Headers */,
 				8F839B571FBDE1DD0014B1C6 /* Demo_TableView.h in Headers */,
@@ -179,9 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC24FAC1FF2A3B200250E4F /* KIVDSBaseTVCell.m in Sources */,
 				8F839ADD1FBDDB130014B1C6 /* KIVDSBaseSection.m in Sources */,
 				8F839ADC1FBDDB130014B1C6 /* KIVDSBaseRow.m in Sources */,
-				8F839ADF1FBDDB130014B1C6 /* KIVDSBaseTVCell.m in Sources */,
 				8F12F5EB1FC709E100D65E9A /* UITableView+KIVDS.m in Sources */,
 				8F839ADE1FBDDB130014B1C6 /* KIVDSDataSource.m in Sources */,
 				8F839AA31FBDD4100014B1C6 /* Demo_TableView.m in Sources */,

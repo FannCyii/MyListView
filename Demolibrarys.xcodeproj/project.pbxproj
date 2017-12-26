@@ -17,13 +17,18 @@
 		8F12F6061FC7324900D65E9A /* KIVWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F6041FC7324900D65E9A /* KIVWebVC.m */; };
 		8F12F6071FC7324900D65E9A /* KIVWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F6051FC7324900D65E9A /* KIVWebVC.xib */; };
 		8F12F60A1FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F6091FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m */; };
+		8F39ED091FE6BF93003E2330 /* KIVHomeCVHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F39ED071FE6BF93003E2330 /* KIVHomeCVHeaderCell.m */; };
+		8F39ED0A1FE6BF93003E2330 /* KIVHomeCVHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F39ED081FE6BF93003E2330 /* KIVHomeCVHeaderCell.xib */; };
+		8F39ED0E1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F39ED0C1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.m */; };
+		8F39ED0F1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F39ED0D1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.xib */; };
+		8F39ED141FE6CBA2003E2330 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F39ED131FE6CBA2003E2330 /* ExternalAccessory.framework */; };
+		8F39ED161FE6CBA8003E2330 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F39ED151FE6CBA8003E2330 /* NetworkExtension.framework */; };
 		8F810F921FDD7735004D1BA8 /* DemoWebServerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F810F901FDD7735004D1BA8 /* DemoWebServerVC.m */; };
 		8F810F931FDD7735004D1BA8 /* DemoWebServerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F810F911FDD7735004D1BA8 /* DemoWebServerVC.xib */; };
 		8F810F941FDD77A7004D1BA8 /* libDemo_Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F810F951FDD77A7004D1BA8 /* libDemo_Network.a */; };
 		8F810F9B1FDD8B77004D1BA8 /* DemoLogVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F810F9A1FDD8B77004D1BA8 /* DemoLogVO.m */; };
 		8F810F9E1FDD96A6004D1BA8 /* KIVLogVC+ResponeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F810F9D1FDD96A6004D1BA8 /* KIVLogVC+ResponeData.m */; };
 		8F839A811FBDC4A30014B1C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839A801FBDC4A30014B1C6 /* AppDelegate.m */; };
-		8F839A841FBDC4A30014B1C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839A831FBDC4A30014B1C6 /* ViewController.m */; };
 		8F839A871FBDC4A30014B1C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F839A851FBDC4A30014B1C6 /* Main.storyboard */; };
 		8F839A891FBDC4A30014B1C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F839A881FBDC4A30014B1C6 /* Assets.xcassets */; };
 		8F839A8C1FBDC4A30014B1C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F839A8A1FBDC4A30014B1C6 /* LaunchScreen.storyboard */; };
@@ -32,9 +37,33 @@
 		8F839B4A1FBDDF4E0014B1C6 /* DemoTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B481FBDDF4E0014B1C6 /* DemoTVC.m */; };
 		8F839B4B1FBDDF4E0014B1C6 /* DemoTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F839B491FBDDF4E0014B1C6 /* DemoTVC.xib */; };
 		8F839B4C1FBDE0A50014B1C6 /* libDemo_Crash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F839B4F1FBDE0A50014B1C6 /* libDemo_Crash.a */; };
-		8F839B4D1FBDE0A50014B1C6 /* libDemo_libHeaders.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F839B501FBDE0A50014B1C6 /* libDemo_libHeaders.a */; };
 		8F839B4E1FBDE0A50014B1C6 /* libDemo_Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F839B511FBDE0A50014B1C6 /* libDemo_Tools.a */; };
 		8F839B5A1FBDE4360014B1C6 /* DemoTVC+DataHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B591FBDE4360014B1C6 /* DemoTVC+DataHandle.m */; };
+		8F8E6DF81FE570C100E656DF /* ElementInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6DF71FE570C100E656DF /* ElementInfo.m */; };
+		8F8E6DFD1FE5825800E656DF /* KIVLogVC+DataHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6DFC1FE5825800E656DF /* KIVLogVC+DataHandle.m */; };
+		8F8E6E011FE6AAD900E656DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6DFF1FE6AAD900E656DF /* ViewController.m */; };
+		8F8E6E021FE6AAD900E656DF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F8E6E001FE6AAD900E656DF /* ViewController.xib */; };
+		8F8E6E071FE6AAF000E656DF /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E051FE6AAF000E656DF /* SettingVC.m */; };
+		8F8E6E0B1FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E0A1FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.m */; };
+		8FA8B0D91FE02FC2009C52C9 /* ArticleListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0D81FE02FC2009C52C9 /* ArticleListItem.m */; };
+		8FA8B0DC1FE02FDF009C52C9 /* FolderListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0DB1FE02FDF009C52C9 /* FolderListItem.m */; };
+		8FA8B0E11FE032F5009C52C9 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0DF1FE032F5009C52C9 /* HomeVC.m */; };
+		8FA8B0E21FE032F5009C52C9 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FA8B0E01FE032F5009C52C9 /* HomeVC.xib */; };
+		8FA8B0E51FE034E0009C52C9 /* KIVCVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0E41FE034E0009C52C9 /* KIVCVDataSource.m */; };
+		8FA8B0E91FE0350D009C52C9 /* KIVCVBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0E81FE0350D009C52C9 /* KIVCVBaseItem.m */; };
+		8FA8B0EC1FE03602009C52C9 /* KIVCVBaseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0EB1FE03602009C52C9 /* KIVCVBaseSection.m */; };
+		8FA8B0EF1FE03900009C52C9 /* UICollectionView+KIVDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0EE1FE03900009C52C9 /* UICollectionView+KIVDS.m */; };
+		8FA8B1421FE14582009C52C9 /* KIVBaseCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B1411FE14582009C52C9 /* KIVBaseCVCell.m */; };
+		8FA8B1461FE145FC009C52C9 /* HomeListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B1441FE145FC009C52C9 /* HomeListCell.m */; };
+		8FA8B1471FE145FC009C52C9 /* HomeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FA8B1451FE145FC009C52C9 /* HomeListCell.xib */; };
+		8FA8B14E1FE14798009C52C9 /* HomeItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B14C1FE14798009C52C9 /* HomeItemCell.m */; };
+		8FA8B14F1FE14798009C52C9 /* HomeItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FA8B14D1FE14798009C52C9 /* HomeItemCell.xib */; };
+		8FA8B1521FE14AFA009C52C9 /* HomeVC+DataHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B1511FE14AFA009C52C9 /* HomeVC+DataHandle.m */; };
+		8FA8B1C01FE40C14009C52C9 /* DataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B1BF1FE40C14009C52C9 /* DataParser.m */; };
+		8FA8B24C1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B24B1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.m */; };
+		8FC24F261FF12AFB00250E4F /* ViewController+CellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC24F251FF12AFB00250E4F /* ViewController+CellDelegate.m */; };
+		8FC24F2A1FF145AA00250E4F /* kivMiddleItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC24F281FF145AA00250E4F /* kivMiddleItemCell.m */; };
+		8FC24F2B1FF145AA00250E4F /* kivMiddleItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FC24F291FF145AA00250E4F /* kivMiddleItemCell.xib */; };
 		8FF0E4261FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0E4251FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m */; };
 		8FF0E4291FC85C6B00A89C3D /* UIView+screenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0E4281FC85C6A00A89C3D /* UIView+screenShot.m */; };
 /* End PBXBuildFile section */
@@ -55,6 +84,15 @@
 		8F12F6051FC7324900D65E9A /* KIVWebVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVWebVC.xib; sourceTree = "<group>"; };
 		8F12F6081FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIVDSDataSource+EditeHandel.h"; sourceTree = "<group>"; };
 		8F12F6091FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KIVDSDataSource+EditeHandel.m"; sourceTree = "<group>"; };
+		8F39ED061FE6BF93003E2330 /* KIVHomeCVHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVHomeCVHeaderCell.h; sourceTree = "<group>"; };
+		8F39ED071FE6BF93003E2330 /* KIVHomeCVHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVHomeCVHeaderCell.m; sourceTree = "<group>"; };
+		8F39ED081FE6BF93003E2330 /* KIVHomeCVHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVHomeCVHeaderCell.xib; sourceTree = "<group>"; };
+		8F39ED0B1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVHomeCVMiddelCell.h; sourceTree = "<group>"; };
+		8F39ED0C1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVHomeCVMiddelCell.m; sourceTree = "<group>"; };
+		8F39ED0D1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVHomeCVMiddelCell.xib; sourceTree = "<group>"; };
+		8F39ED101FE6C9E1003E2330 /* Demolibrarys.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demolibrarys.entitlements; sourceTree = "<group>"; };
+		8F39ED131FE6CBA2003E2330 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		8F39ED151FE6CBA8003E2330 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		8F810F8F1FDD7735004D1BA8 /* DemoWebServerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoWebServerVC.h; sourceTree = "<group>"; };
 		8F810F901FDD7735004D1BA8 /* DemoWebServerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoWebServerVC.m; sourceTree = "<group>"; };
 		8F810F911FDD7735004D1BA8 /* DemoWebServerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoWebServerVC.xib; sourceTree = "<group>"; };
@@ -66,8 +104,6 @@
 		8F839A7C1FBDC4A30014B1C6 /* Demolibrarys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demolibrarys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F839A7F1FBDC4A30014B1C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8F839A801FBDC4A30014B1C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8F839A821FBDC4A30014B1C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8F839A831FBDC4A30014B1C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8F839A861FBDC4A30014B1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F839A881FBDC4A30014B1C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F839A8B1FBDC4A30014B1C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +118,53 @@
 		8F839B511FBDE0A50014B1C6 /* libDemo_Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDemo_Tools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F839B581FBDE4360014B1C6 /* DemoTVC+DataHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoTVC+DataHandle.h"; sourceTree = "<group>"; };
 		8F839B591FBDE4360014B1C6 /* DemoTVC+DataHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DemoTVC+DataHandle.m"; sourceTree = "<group>"; };
+		8F8E6DF61FE570C100E656DF /* ElementInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElementInfo.h; sourceTree = "<group>"; };
+		8F8E6DF71FE570C100E656DF /* ElementInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElementInfo.m; sourceTree = "<group>"; };
+		8F8E6DFA1FE580D400E656DF /* CommonHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
+		8F8E6DFB1FE5825800E656DF /* KIVLogVC+DataHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIVLogVC+DataHandle.h"; sourceTree = "<group>"; };
+		8F8E6DFC1FE5825800E656DF /* KIVLogVC+DataHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KIVLogVC+DataHandle.m"; sourceTree = "<group>"; };
+		8F8E6DFE1FE6AAD900E656DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F8E6DFF1FE6AAD900E656DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F8E6E001FE6AAD900E656DF /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		8F8E6E041FE6AAF000E656DF /* SettingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		8F8E6E051FE6AAF000E656DF /* SettingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		8F8E6E091FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+CollectionViewDataSourceDelegate.h"; sourceTree = "<group>"; };
+		8F8E6E0A1FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+CollectionViewDataSourceDelegate.m"; sourceTree = "<group>"; };
+		8FA8B0D71FE02FC2009C52C9 /* ArticleListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArticleListItem.h; sourceTree = "<group>"; };
+		8FA8B0D81FE02FC2009C52C9 /* ArticleListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleListItem.m; sourceTree = "<group>"; };
+		8FA8B0DA1FE02FDF009C52C9 /* FolderListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FolderListItem.h; sourceTree = "<group>"; };
+		8FA8B0DB1FE02FDF009C52C9 /* FolderListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FolderListItem.m; sourceTree = "<group>"; };
+		8FA8B0DE1FE032F5009C52C9 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		8FA8B0DF1FE032F5009C52C9 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		8FA8B0E01FE032F5009C52C9 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		8FA8B0E31FE034E0009C52C9 /* KIVCVDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVCVDataSource.h; sourceTree = "<group>"; };
+		8FA8B0E41FE034E0009C52C9 /* KIVCVDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVCVDataSource.m; sourceTree = "<group>"; };
+		8FA8B0E71FE0350D009C52C9 /* KIVCVBaseItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVCVBaseItem.h; sourceTree = "<group>"; };
+		8FA8B0E81FE0350D009C52C9 /* KIVCVBaseItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVCVBaseItem.m; sourceTree = "<group>"; };
+		8FA8B0EA1FE03602009C52C9 /* KIVCVBaseSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVCVBaseSection.h; sourceTree = "<group>"; };
+		8FA8B0EB1FE03602009C52C9 /* KIVCVBaseSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVCVBaseSection.m; sourceTree = "<group>"; };
+		8FA8B0ED1FE03900009C52C9 /* UICollectionView+KIVDS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+KIVDS.h"; sourceTree = "<group>"; };
+		8FA8B0EE1FE03900009C52C9 /* UICollectionView+KIVDS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+KIVDS.m"; sourceTree = "<group>"; };
+		8FA8B1401FE14582009C52C9 /* KIVBaseCVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVBaseCVCell.h; sourceTree = "<group>"; };
+		8FA8B1411FE14582009C52C9 /* KIVBaseCVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVBaseCVCell.m; sourceTree = "<group>"; };
+		8FA8B1431FE145FC009C52C9 /* HomeListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeListCell.h; sourceTree = "<group>"; };
+		8FA8B1441FE145FC009C52C9 /* HomeListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeListCell.m; sourceTree = "<group>"; };
+		8FA8B1451FE145FC009C52C9 /* HomeListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeListCell.xib; sourceTree = "<group>"; };
+		8FA8B14B1FE14798009C52C9 /* HomeItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeItemCell.h; sourceTree = "<group>"; };
+		8FA8B14C1FE14798009C52C9 /* HomeItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeItemCell.m; sourceTree = "<group>"; };
+		8FA8B14D1FE14798009C52C9 /* HomeItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeItemCell.xib; sourceTree = "<group>"; };
+		8FA8B1501FE14AFA009C52C9 /* HomeVC+DataHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeVC+DataHandle.h"; sourceTree = "<group>"; };
+		8FA8B1511FE14AFA009C52C9 /* HomeVC+DataHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HomeVC+DataHandle.m"; sourceTree = "<group>"; };
+		8FA8B1781FE163A7009C52C9 /* libDemo_XMLParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDemo_XMLParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA8B1BE1FE40C14009C52C9 /* DataParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataParser.h; sourceTree = "<group>"; };
+		8FA8B1BF1FE40C14009C52C9 /* DataParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataParser.m; sourceTree = "<group>"; };
+		8FA8B24A1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataParser+ObjectiveGumbo.h"; sourceTree = "<group>"; };
+		8FA8B24B1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataParser+ObjectiveGumbo.m"; sourceTree = "<group>"; };
+		8FC24F241FF12AFB00250E4F /* ViewController+CellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+CellDelegate.h"; sourceTree = "<group>"; };
+		8FC24F251FF12AFB00250E4F /* ViewController+CellDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+CellDelegate.m"; sourceTree = "<group>"; };
+		8FC24F271FF145AA00250E4F /* kivMiddleItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kivMiddleItemCell.h; sourceTree = "<group>"; };
+		8FC24F281FF145AA00250E4F /* kivMiddleItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kivMiddleItemCell.m; sourceTree = "<group>"; };
+		8FC24F291FF145AA00250E4F /* kivMiddleItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = kivMiddleItemCell.xib; sourceTree = "<group>"; };
 		8FF0E4241FC84AD600A89C3D /* KIVTogetherTouchRecogizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVTogetherTouchRecogizer.h; sourceTree = "<group>"; };
 		8FF0E4251FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVTogetherTouchRecogizer.m; sourceTree = "<group>"; };
 		8FF0E4271FC85C6A00A89C3D /* UIView+screenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+screenShot.h"; path = "Demolibrarys/UIView+screenShot.h"; sourceTree = SOURCE_ROOT; };
@@ -97,9 +180,10 @@
 			files = (
 				8F810F941FDD77A7004D1BA8 /* libDemo_Network.a in Frameworks */,
 				8F839B4C1FBDE0A50014B1C6 /* libDemo_Crash.a in Frameworks */,
-				8F839B4D1FBDE0A50014B1C6 /* libDemo_libHeaders.a in Frameworks */,
+				8F39ED161FE6CBA8003E2330 /* NetworkExtension.framework in Frameworks */,
 				8F839B4E1FBDE0A50014B1C6 /* libDemo_Tools.a in Frameworks */,
 				8F839AB71FBDD6250014B1C6 /* libDemo_TableView.a in Frameworks */,
+				8F39ED141FE6CBA2003E2330 /* ExternalAccessory.framework in Frameworks */,
 				8D853529454A0F672ED2E4D1 /* libPods-Demolibrarys.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +194,9 @@
 		12A93E5F477BC752DC6A6B7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F39ED151FE6CBA8003E2330 /* NetworkExtension.framework */,
+				8F39ED131FE6CBA2003E2330 /* ExternalAccessory.framework */,
+				8FA8B1781FE163A7009C52C9 /* libDemo_XMLParser.a */,
 				8F810F951FDD77A7004D1BA8 /* libDemo_Network.a */,
 				8F839B4F1FBDE0A50014B1C6 /* libDemo_Crash.a */,
 				8F839B501FBDE0A50014B1C6 /* libDemo_libHeaders.a */,
@@ -147,6 +234,8 @@
 				8F12F5F91FC72E8400D65E9A /* Cell */,
 				8F12F5F41FC72BF800D65E9A /* KIVLogVC.h */,
 				8F12F5F51FC72BF800D65E9A /* KIVLogVC.m */,
+				8F8E6DFB1FE5825800E656DF /* KIVLogVC+DataHandle.h */,
+				8F8E6DFC1FE5825800E656DF /* KIVLogVC+DataHandle.m */,
 				8F810F9C1FDD96A6004D1BA8 /* KIVLogVC+ResponeData.h */,
 				8F810F9D1FDD96A6004D1BA8 /* KIVLogVC+ResponeData.m */,
 				8F12F5F61FC72BF800D65E9A /* KIVLogVC.xib */,
@@ -176,6 +265,22 @@
 			path = Web;
 			sourceTree = "<group>";
 		};
+		8F39ED051FE6BEAC003E2330 /* MainCell */ = {
+			isa = PBXGroup;
+			children = (
+				8F39ED061FE6BF93003E2330 /* KIVHomeCVHeaderCell.h */,
+				8F39ED071FE6BF93003E2330 /* KIVHomeCVHeaderCell.m */,
+				8F39ED081FE6BF93003E2330 /* KIVHomeCVHeaderCell.xib */,
+				8F39ED0B1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.h */,
+				8F39ED0C1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.m */,
+				8F39ED0D1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.xib */,
+				8FC24F271FF145AA00250E4F /* kivMiddleItemCell.h */,
+				8FC24F281FF145AA00250E4F /* kivMiddleItemCell.m */,
+				8FC24F291FF145AA00250E4F /* kivMiddleItemCell.xib */,
+			);
+			path = MainCell;
+			sourceTree = "<group>";
+		};
 		8F810F8E1FDD7700004D1BA8 /* WebServer */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +296,12 @@
 			children = (
 				8F810F991FDD8B77004D1BA8 /* DemoLogVO.h */,
 				8F810F9A1FDD8B77004D1BA8 /* DemoLogVO.m */,
+				8FA8B0D71FE02FC2009C52C9 /* ArticleListItem.h */,
+				8FA8B0D81FE02FC2009C52C9 /* ArticleListItem.m */,
+				8FA8B0DA1FE02FDF009C52C9 /* FolderListItem.h */,
+				8FA8B0DB1FE02FDF009C52C9 /* FolderListItem.m */,
+				8F8E6DF61FE570C100E656DF /* ElementInfo.h */,
+				8F8E6DF71FE570C100E656DF /* ElementInfo.m */,
 			);
 			path = LogVO;
 			sourceTree = "<group>";
@@ -216,19 +327,30 @@
 		8F839A7E1FBDC4A30014B1C6 /* Demolibrarys */ = {
 			isa = PBXGroup;
 			children = (
+				8F39ED101FE6C9E1003E2330 /* Demolibrarys.entitlements */,
+				8F39ED051FE6BEAC003E2330 /* MainCell */,
+				8F8E6E031FE6AADF00E656DF /* Setting */,
+				8F8E6DF91FE580B800E656DF /* Common */,
+				8FA8B1BD1FE40BF2009C52C9 /* Model */,
+				8FA8B0DD1FE032D7009C52C9 /* Home */,
 				8F810F981FDD8A9D004D1BA8 /* LogVO */,
 				8F810F8E1FDD7700004D1BA8 /* WebServer */,
 				8F12F5F31FC72BCE00D65E9A /* MyLogList */,
 				8F839B461FBDDF250014B1C6 /* Lib_TableView */,
 				8F839A7F1FBDC4A30014B1C6 /* AppDelegate.h */,
 				8F839A801FBDC4A30014B1C6 /* AppDelegate.m */,
-				8F839A821FBDC4A30014B1C6 /* ViewController.h */,
-				8F839A831FBDC4A30014B1C6 /* ViewController.m */,
 				8F839A851FBDC4A30014B1C6 /* Main.storyboard */,
 				8F839A881FBDC4A30014B1C6 /* Assets.xcassets */,
 				8F839A8A1FBDC4A30014B1C6 /* LaunchScreen.storyboard */,
 				8F839A8D1FBDC4A30014B1C6 /* Info.plist */,
 				8F839A8E1FBDC4A30014B1C6 /* main.m */,
+				8F8E6DFE1FE6AAD900E656DF /* ViewController.h */,
+				8F8E6DFF1FE6AAD900E656DF /* ViewController.m */,
+				8FC24F241FF12AFB00250E4F /* ViewController+CellDelegate.h */,
+				8FC24F251FF12AFB00250E4F /* ViewController+CellDelegate.m */,
+				8F8E6E091FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.h */,
+				8F8E6E0A1FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.m */,
+				8F8E6E001FE6AAD900E656DF /* ViewController.xib */,
 			);
 			path = Demolibrarys;
 			sourceTree = "<group>";
@@ -245,6 +367,78 @@
 				8F839B491FBDDF4E0014B1C6 /* DemoTVC.xib */,
 			);
 			path = Lib_TableView;
+			sourceTree = "<group>";
+		};
+		8F8E6DF91FE580B800E656DF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8F8E6DFA1FE580D400E656DF /* CommonHeader.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8F8E6E031FE6AADF00E656DF /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8F8E6E041FE6AAF000E656DF /* SettingVC.h */,
+				8F8E6E051FE6AAF000E656DF /* SettingVC.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8FA8B0DD1FE032D7009C52C9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8FA8B13F1FE1455E009C52C9 /* Cell */,
+				8FA8B0E61FE034E4009C52C9 /* DataSource */,
+				8FA8B0DE1FE032F5009C52C9 /* HomeVC.h */,
+				8FA8B0DF1FE032F5009C52C9 /* HomeVC.m */,
+				8FA8B0E01FE032F5009C52C9 /* HomeVC.xib */,
+				8FA8B1501FE14AFA009C52C9 /* HomeVC+DataHandle.h */,
+				8FA8B1511FE14AFA009C52C9 /* HomeVC+DataHandle.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8FA8B0E61FE034E4009C52C9 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8FA8B0E31FE034E0009C52C9 /* KIVCVDataSource.h */,
+				8FA8B0E41FE034E0009C52C9 /* KIVCVDataSource.m */,
+				8FA8B0E71FE0350D009C52C9 /* KIVCVBaseItem.h */,
+				8FA8B0E81FE0350D009C52C9 /* KIVCVBaseItem.m */,
+				8FA8B0EA1FE03602009C52C9 /* KIVCVBaseSection.h */,
+				8FA8B0EB1FE03602009C52C9 /* KIVCVBaseSection.m */,
+				8FA8B0ED1FE03900009C52C9 /* UICollectionView+KIVDS.h */,
+				8FA8B0EE1FE03900009C52C9 /* UICollectionView+KIVDS.m */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		8FA8B13F1FE1455E009C52C9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8FA8B1401FE14582009C52C9 /* KIVBaseCVCell.h */,
+				8FA8B1411FE14582009C52C9 /* KIVBaseCVCell.m */,
+				8FA8B1431FE145FC009C52C9 /* HomeListCell.h */,
+				8FA8B1441FE145FC009C52C9 /* HomeListCell.m */,
+				8FA8B1451FE145FC009C52C9 /* HomeListCell.xib */,
+				8FA8B14B1FE14798009C52C9 /* HomeItemCell.h */,
+				8FA8B14C1FE14798009C52C9 /* HomeItemCell.m */,
+				8FA8B14D1FE14798009C52C9 /* HomeItemCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8FA8B1BD1FE40BF2009C52C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FA8B1BE1FE40C14009C52C9 /* DataParser.h */,
+				8FA8B1BF1FE40C14009C52C9 /* DataParser.m */,
+				8FA8B24A1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.h */,
+				8FA8B24B1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		8FF0E4231FC84A9B00A89C3D /* Touch */ = {
@@ -300,6 +494,17 @@
 					8F839A7B1FBDC4A30014B1C6 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -327,14 +532,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F839A8C1FBDC4A30014B1C6 /* LaunchScreen.storyboard in Resources */,
+				8FA8B1471FE145FC009C52C9 /* HomeListCell.xib in Resources */,
 				8F839A891FBDC4A30014B1C6 /* Assets.xcassets in Resources */,
 				8F12F5F11FC719E400D65E9A /* KIVDemo01Cell.xib in Resources */,
 				8F810F931FDD7735004D1BA8 /* DemoWebServerVC.xib in Resources */,
+				8F8E6E021FE6AAD900E656DF /* ViewController.xib in Resources */,
 				8F839B4B1FBDDF4E0014B1C6 /* DemoTVC.xib in Resources */,
 				8F12F6011FC72EEC00D65E9A /* KIVLogMainCell.xib in Resources */,
 				8F12F5F81FC72BF800D65E9A /* KIVLogVC.xib in Resources */,
+				8F39ED0A1FE6BF93003E2330 /* KIVHomeCVHeaderCell.xib in Resources */,
+				8FA8B0E21FE032F5009C52C9 /* HomeVC.xib in Resources */,
+				8FA8B14F1FE14798009C52C9 /* HomeItemCell.xib in Resources */,
 				8F12F6071FC7324900D65E9A /* KIVWebVC.xib in Resources */,
 				8F839A871FBDC4A30014B1C6 /* Main.storyboard in Resources */,
+				8FC24F2B1FF145AA00250E4F /* kivMiddleItemCell.xib in Resources */,
+				8F39ED0F1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,19 +609,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F12F5F71FC72BF800D65E9A /* KIVLogVC.m in Sources */,
-				8F839A841FBDC4A30014B1C6 /* ViewController.m in Sources */,
+				8FA8B0DC1FE02FDF009C52C9 /* FolderListItem.m in Sources */,
+				8F8E6E071FE6AAF000E656DF /* SettingVC.m in Sources */,
+				8F8E6E0B1FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.m in Sources */,
+				8F8E6DFD1FE5825800E656DF /* KIVLogVC+DataHandle.m in Sources */,
+				8FA8B1521FE14AFA009C52C9 /* HomeVC+DataHandle.m in Sources */,
+				8FA8B1C01FE40C14009C52C9 /* DataParser.m in Sources */,
+				8FA8B0E11FE032F5009C52C9 /* HomeVC.m in Sources */,
 				8FF0E4261FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m in Sources */,
 				8F810F921FDD7735004D1BA8 /* DemoWebServerVC.m in Sources */,
 				8F810F9B1FDD8B77004D1BA8 /* DemoLogVO.m in Sources */,
 				8F12F60A1FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m in Sources */,
+				8F39ED091FE6BF93003E2330 /* KIVHomeCVHeaderCell.m in Sources */,
+				8FA8B24C1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.m in Sources */,
 				8FF0E4291FC85C6B00A89C3D /* UIView+screenShot.m in Sources */,
 				8F839B5A1FBDE4360014B1C6 /* DemoTVC+DataHandle.m in Sources */,
 				8F12F5F01FC719E400D65E9A /* KIVDemo01Cell.m in Sources */,
+				8FA8B0E91FE0350D009C52C9 /* KIVCVBaseItem.m in Sources */,
+				8FA8B0EF1FE03900009C52C9 /* UICollectionView+KIVDS.m in Sources */,
+				8FA8B0EC1FE03602009C52C9 /* KIVCVBaseSection.m in Sources */,
+				8FA8B1461FE145FC009C52C9 /* HomeListCell.m in Sources */,
 				8F12F6001FC72EEC00D65E9A /* KIVLogMainCell.m in Sources */,
 				8F839A8F1FBDC4A30014B1C6 /* main.m in Sources */,
+				8FA8B0D91FE02FC2009C52C9 /* ArticleListItem.m in Sources */,
 				8F12F6061FC7324900D65E9A /* KIVWebVC.m in Sources */,
+				8F39ED0E1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.m in Sources */,
+				8FA8B1421FE14582009C52C9 /* KIVBaseCVCell.m in Sources */,
 				8F839B4A1FBDDF4E0014B1C6 /* DemoTVC.m in Sources */,
+				8F8E6E011FE6AAD900E656DF /* ViewController.m in Sources */,
+				8FA8B14E1FE14798009C52C9 /* HomeItemCell.m in Sources */,
+				8F8E6DF81FE570C100E656DF /* ElementInfo.m in Sources */,
 				8F839A811FBDC4A30014B1C6 /* AppDelegate.m in Sources */,
+				8FA8B0E51FE034E0009C52C9 /* KIVCVDataSource.m in Sources */,
+				8FC24F261FF12AFB00250E4F /* ViewController+CellDelegate.m in Sources */,
+				8FC24F2A1FF145AA00250E4F /* kivMiddleItemCell.m in Sources */,
 				8F810F9E1FDD96A6004D1BA8 /* KIVLogVC+ResponeData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -545,6 +778,8 @@
 			baseConfigurationReference = 4039A49D9B94F269B3A702EA /* Pods-Demolibrarys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Demolibrarys/Demolibrarys.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WTFJP34N3T;
 				HEADER_SEARCH_PATHS = (
@@ -553,12 +788,27 @@
 					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
 					"$(SRCROOT)/Demo_modules/Demo_TableView/Demo_TableView/**",
 					"$(SRCROOT)/Demo_modules/Demo_Network/Demo_Network",
+					"$(SRCROOT)/Demo_modules/Demo_Tools/Demo_Tools",
+					"$(SRCROOT)/Demo_modules/Demo_XMLParser/Demo_XMLParser",
 				);
 				INFOPLIST_FILE = Demolibrarys/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.oc.fann.Demolibrarys;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GCDWebServer-iOS9.3\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONModel\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ObjectiveGumbo\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PureLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Toast\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/XXRouter\"",
+					"$(SRCROOT)/Demo_modules/Demo_TableView",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kivan.myLogList.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -568,6 +818,8 @@
 			baseConfigurationReference = 94E298A6932E8E91D18B4B8B /* Pods-Demolibrarys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Demolibrarys/Demolibrarys.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WTFJP34N3T;
 				HEADER_SEARCH_PATHS = (
@@ -576,12 +828,27 @@
 					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
 					"$(SRCROOT)/Demo_modules/Demo_TableView/Demo_TableView/**",
 					"$(SRCROOT)/Demo_modules/Demo_Network/Demo_Network",
+					"$(SRCROOT)/Demo_modules/Demo_Tools/Demo_Tools",
+					"$(SRCROOT)/Demo_modules/Demo_XMLParser/Demo_XMLParser",
 				);
 				INFOPLIST_FILE = Demolibrarys/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.demo.oc.fann.Demolibrarys;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/GCDWebServer-iOS9.3\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/JSONModel\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/ObjectiveGumbo\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/PureLayout\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Toast\"",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/XXRouter\"",
+					"$(SRCROOT)/Demo_modules/Demo_TableView",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kivan.myLogList.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

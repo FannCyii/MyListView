@@ -10,7 +10,7 @@
 #import "NSArray+SafeArray.h"
 #import "KIVDSBaseSection.h"
 #import "PureLayout/PureLayout.h"
-#import "OTSColor.h"
+#import "KIVColor.h"
 
 @interface KIVDSBaseTVCell ()
 @property (nonatomic, strong) UIView *bottomLine;
@@ -56,7 +56,7 @@
 {
     if(!_bottomLine){
         _bottomLine = [[UIView alloc] initWithFrame:CGRectZero];
-        _bottomLine.backgroundColor = [OTSColor hex:@"#ECECEC"];
+        _bottomLine.backgroundColor = [KIVColor hex:@"#ECECEC"];
     }
     return _bottomLine;
 }

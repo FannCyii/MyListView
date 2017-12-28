@@ -9,7 +9,7 @@
 #import "KIVDSBaseTVCell.h"
 #import "NSArray+SafeArray.h"
 #import "KIVDSBaseSection.h"
-#import "PureLayout/PureLayout.h"
+#import <PureLayout/PureLayout.h>
 #import "KIVColor.h"
 
 @interface KIVDSBaseTVCell ()

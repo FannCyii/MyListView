@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectZero];
-
+    self.progressView.backgroundColor = [UIColor whiteColor];
     self.webView = [[WKWebView alloc] initWithFrame:CGRectZero];
     [self.view addSubview:self.webView];
     [self.view addSubview:self.progressView];

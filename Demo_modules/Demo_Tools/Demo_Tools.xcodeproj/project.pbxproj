@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77A72C5E5A546333CB138EBB /* libPods-Demo_Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 937C2C16537BB7CAD58A43CB /* libPods-Demo_Tools.a */; };
 		8F839B351FBDDC730014B1C6 /* Demo_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B341FBDDC730014B1C6 /* Demo_Tools.m */; };
 		8F839B361FBDDC730014B1C6 /* Demo_Tools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F839B331FBDDC730014B1C6 /* Demo_Tools.h */; };
 		8F839B3E1FBDDCB00014B1C6 /* KIVColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B3D1FBDDCB00014B1C6 /* KIVColor.m */; };
-		8F839B451FBDDE9A0014B1C6 /* KIVColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839B3C1FBDDCB00014B1C6 /* KIVColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F839B451FBDDE9A0014B1C6 /* KIVColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839B3C1FBDDCB00014B1C6 /* KIVColor.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +28,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		79C26C27B657861E97AE0C09 /* Pods-Demo_Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_Tools.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Demo_Tools/Pods-Demo_Tools.debug.xcconfig"; sourceTree = "<group>"; };
+		82F8CB114FEDBA91EBD92AEB /* Pods-Demo_Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_Tools.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Demo_Tools/Pods-Demo_Tools.release.xcconfig"; sourceTree = "<group>"; };
 		8F839B301FBDDC730014B1C6 /* libDemo_Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDemo_Tools.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F839B331FBDDC730014B1C6 /* Demo_Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_Tools.h; sourceTree = "<group>"; };
 		8F839B341FBDDC730014B1C6 /* Demo_Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_Tools.m; sourceTree = "<group>"; };
 		8F839B3C1FBDDCB00014B1C6 /* KIVColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVColor.h; sourceTree = "<group>"; };
 		8F839B3D1FBDDCB00014B1C6 /* KIVColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVColor.m; sourceTree = "<group>"; };
+		937C2C16537BB7CAD58A43CB /* libPods-Demo_Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo_Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A72C5E5A546333CB138EBB /* libPods-Demo_Tools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B0E0A18E2D5AFC9547AD119 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79C26C27B657861E97AE0C09 /* Pods-Demo_Tools.debug.xcconfig */,
+				82F8CB114FEDBA91EBD92AEB /* Pods-Demo_Tools.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A1FF71858BCB5FC1B6DC246 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				937C2C16537BB7CAD58A43CB /* libPods-Demo_Tools.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8F839B271FBDDC730014B1C6 = {
 			isa = PBXGroup;
 			children = (
 				8F839B321FBDDC730014B1C6 /* Demo_Tools */,
 				8F839B311FBDDC730014B1C6 /* Products */,
+				1B0E0A18E2D5AFC9547AD119 /* Pods */,
+				5A1FF71858BCB5FC1B6DC246 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,10 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F839B391FBDDC730014B1C6 /* Build configuration list for PBXNativeTarget "Demo_Tools" */;
 			buildPhases = (
+				173B382D036DCFE63BB088F4 /* [CP] Check Pods Manifest.lock */,
 				8F839B2C1FBDDC730014B1C6 /* Sources */,
 				8F839B2D1FBDDC730014B1C6 /* Frameworks */,
 				8F839B2E1FBDDC730014B1C6 /* CopyFiles */,
 				8F839B441FBDDE940014B1C6 /* Headers */,
+				5E9D153A6E3D24044B0D9E0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,42 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		173B382D036DCFE63BB088F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo_Tools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E9D153A6E3D24044B0D9E0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Demo_Tools/Pods-Demo_Tools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F839B2C1FBDDC730014B1C6 /* Sources */ = {
@@ -197,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -246,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -255,10 +317,14 @@
 		};
 		8F839B3A1FBDDC730014B1C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C26C27B657861E97AE0C09 /* Pods-Demo_Tools.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WTFJP34N3T;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -267,10 +333,14 @@
 		};
 		8F839B3B1FBDDC730014B1C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82F8CB114FEDBA91EBD92AEB /* Pods-Demo_Tools.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WTFJP34N3T;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -22,10 +22,10 @@
 		8F839B241FBDDC390014B1C6 /* KIVLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B121FBDDC380014B1C6 /* KIVLog.m */; };
 		8F839B251FBDDC390014B1C6 /* NSArray+SafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B171FBDDC390014B1C6 /* NSArray+SafeArray.m */; };
 		8F839B261FBDDC390014B1C6 /* KIVSafeDataClassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B181FBDDC390014B1C6 /* KIVSafeDataClassVC.m */; };
-		8F839B401FBDDD670014B1C6 /* NSObject+KIV_Objc.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AF71FBDDC380014B1C6 /* NSObject+KIV_Objc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F839B411FBDDD670014B1C6 /* NSArray+SafeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839B161FBDDC390014B1C6 /* NSArray+SafeArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F839B421FBDDD670014B1C6 /* KIVTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839B0B1FBDDC380014B1C6 /* KIVTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F839B431FBDDD670014B1C6 /* Demo_Crash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AEC1FBDDBF10014B1C6 /* Demo_Crash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F839B401FBDDD670014B1C6 /* NSObject+KIV_Objc.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AF71FBDDC380014B1C6 /* NSObject+KIV_Objc.h */; };
+		8F839B411FBDDD670014B1C6 /* NSArray+SafeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839B161FBDDC390014B1C6 /* NSArray+SafeArray.h */; };
+		8F839B421FBDDD670014B1C6 /* KIVTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839B0B1FBDDC380014B1C6 /* KIVTimer.h */; };
+		8F839B431FBDDD670014B1C6 /* Demo_Crash.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AEC1FBDDBF10014B1C6 /* Demo_Crash.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -333,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -382,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

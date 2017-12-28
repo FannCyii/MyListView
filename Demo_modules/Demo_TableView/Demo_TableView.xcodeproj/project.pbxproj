@@ -15,11 +15,11 @@
 		8F839ADD1FBDDB130014B1C6 /* KIVDSBaseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AD61FBDDB130014B1C6 /* KIVDSBaseSection.m */; };
 		8F839ADE1FBDDB130014B1C6 /* KIVDSDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AD71FBDDB130014B1C6 /* KIVDSDataSource.m */; };
 		8F839ADF1FBDDB130014B1C6 /* KIVDSBaseTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839ADA1FBDDB130014B1C6 /* KIVDSBaseTVCell.m */; };
-		8F839B531FBDE1DD0014B1C6 /* KIVDSDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AD31FBDDB130014B1C6 /* KIVDSDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F839B541FBDE1DD0014B1C6 /* KIVDSBaseRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AD81FBDDB130014B1C6 /* KIVDSBaseRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F839B551FBDE1DD0014B1C6 /* KIVDSBaseSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AD41FBDDB130014B1C6 /* KIVDSBaseSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F839B561FBDE1DD0014B1C6 /* KIVDSBaseTVCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839ADB1FBDDB130014B1C6 /* KIVDSBaseTVCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8F839B571FBDE1DD0014B1C6 /* Demo_TableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AA11FBDD4100014B1C6 /* Demo_TableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F839B531FBDE1DD0014B1C6 /* KIVDSDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AD31FBDDB130014B1C6 /* KIVDSDataSource.h */; };
+		8F839B541FBDE1DD0014B1C6 /* KIVDSBaseRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AD81FBDDB130014B1C6 /* KIVDSBaseRow.h */; };
+		8F839B551FBDE1DD0014B1C6 /* KIVDSBaseSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AD41FBDDB130014B1C6 /* KIVDSBaseSection.h */; };
+		8F839B561FBDE1DD0014B1C6 /* KIVDSBaseTVCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839ADB1FBDDB130014B1C6 /* KIVDSBaseTVCell.h */; };
+		8F839B571FBDE1DD0014B1C6 /* Demo_TableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AA11FBDD4100014B1C6 /* Demo_TableView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -239,7 +239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -288,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

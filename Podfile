@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.3'
 
 workspace 'Demolibrarys.xcworkspace'
 
@@ -21,5 +21,10 @@ end
 target 'Demo_Network' do
     project './Demo_modules/Demo_Network/Demo_Network.xcodeproj'
     pod "GCDWebServer", "~> 3.0"
+end
+
+target 'Demo_Tools' do
+    project './Demo_modules/Demo_Tools/Demo_Tools.xcodeproj'
+    pod 'PureLayout'
 end
 

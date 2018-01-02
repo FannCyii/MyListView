@@ -13,13 +13,12 @@
 #import "KIVWebVC.h"
 #import "CommonHeader.h"
 #import "FolderListItem.h"
+#import "KIVArchiverManager.h"
 
 @interface KIVLogVC () <DemoWebServerDelegate>
 
 @property (nonatomic, strong) UITableView *mainListTV;
 @property (nonatomic, strong) KIVDSDataSource *dataSouce;
-//@property (nonatomic, strong) Demo_Network *network;
-
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
 @end
 
@@ -28,70 +27,61 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    if (self.logsData) {
+        self.logsTitle = self.logsData[LOGSTITLE];
+        self.folder = self.logsData[LOGSCONTENT];
+    }
+
     [self navigationConfig];
     [self viewConfig];
-    
     [self dataConfig];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Configeration
 - (void)navigationConfig
 {
+    self.navigationItem.title = self.logsTitle;
     UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 20)];
-    rightButton.backgroundColor = [UIColor brownColor];
+    rightButton.titleLabel.font = [UIFont systemFontOfSize:13];
+    [rightButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [rightButton setTitle:@"编辑" forState:UIControlStateNormal];
     [rightButton addTarget:self action:@selector(rightNaviBarButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
 }
 
 - (void)viewConfig
 {
     [self.view addSubview:self.mainListTV];
-    self.mainListTV.backgroundColor = [UIColor grayColor];
     [self.mainListTV autoPinEdgesToSuperviewEdges];
-    
-//    self.mainListTV.gestureRecognizers = self.tapGesture;
 }
 
 - (void)dataConfig
 {
-    [self listDemo];
-}
-
-- (void)listDemo
-{
-    FolderListItem *rootFolder = nil;
-    if(!self.folder){
-        NSData *folderData = [[NSUserDefaults standardUserDefaults] objectForKey:FOLDER_ARTICLE_ARCHIVER_IDENTIFIOR];
-        rootFolder = (FolderListItem *)[NSKeyedUnarchiver unarchiveObjectWithData:folderData];
-    }else{
-        rootFolder = self.folder;
-    }
-    
+    FolderListItem *rootFolder = self.folder;
     KIVDSBaseSection *section = [KIVDSBaseSection new];
     //这里可以优化成indexPath
+    WEAKSElF
     section.didSelectedBlock = ^(UITableView *tableView, KIVDSBaseSection *section, NSUInteger index) {
+        STRONGSELF
         KIVDSBaseRow *row = [section.rows objectAtIndex:index];
         ElementInfo *element = (ElementInfo *)row.cellData;
         if(element.elementType == ElementInfoTypeOfFolder){
             KIVLogVC *logvc = [[KIVLogVC alloc] init];
             FolderListItem *item = (FolderListItem *)element;
             logvc.folder = item;
+            logvc.logsTitle = rootFolder.title;
             [self.navigationController pushViewController:logvc animated:YES];
         }else{
             KIVWebVC *webVc = [[KIVWebVC alloc] init];
             webVc.url = element.aUrl;
             [self.navigationController pushViewController:webVc animated:YES];
         }
-        
     };
-    
+  
     for (int i = 0; i < rootFolder.subElements.count; ++i) {
         KIVDSBaseRow *row = [KIVDSBaseRow new];
         row.cellClassName = @"KIVLogMainCell";
@@ -102,10 +92,9 @@
             row.rowHeight = 100;
         }
         row.cellData = info;
-        
         [section insertRow:row];
     }
-    
+
     [self.mainListTV addSection:section];
     [self.mainListTV refreshData];
 }

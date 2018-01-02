@@ -10,7 +10,10 @@
 
 @class KIVHomeCVMiddelCell;
 @protocol KIVHomeCVMiddelCellDelegate <NSObject>
+
+@optional
 - (void)kivHomeCVMiddelCell:(KIVHomeCVMiddelCell *)cell selectedIndexPath:(NSIndexPath *)indexPath;
+- (void)kivHomeCVMiddelCell:(KIVHomeCVMiddelCell *)cell selectedIndexPath:(NSIndexPath *)indexPath cellData:(id)aData;
 @end
 
 

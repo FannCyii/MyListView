@@ -40,6 +40,7 @@
         id target = [self.delegate getTargetVCWihtDataSource:self];
         cell.delegate = target;
     }
+    [cell updataCVCellWithData:item.cellData];
     return cell;
 }
 

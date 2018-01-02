@@ -60,7 +60,7 @@
         if(text.isWhitespace){
             return nil;
         }
-        NSLog(@"========:%@",text.text);
+        NSLog(@"[解析]========:%@",text.text);
         OGElement *parent = (OGElement *)text.parent;
         if(parent.tag == GUMBO_TAG_H3){
             FolderListItem *folder = [FolderListItem new];

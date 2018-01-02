@@ -12,5 +12,9 @@
 @interface KIVLogVC : UIViewController
 
 @property (nonatomic, strong) FolderListItem *folder;
+@property (nonatomic, strong) NSString *logsTitle;
+
+@property (nonatomic, strong) NSDictionary  *logsData;
+
 
 @end

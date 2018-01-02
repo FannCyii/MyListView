@@ -16,7 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[KIVRouter sharedInstance] registeRootVC:[[[UIApplication sharedApplication].windows firstObject] rootViewController]];
     [self addSettingView];
     return YES;
 }

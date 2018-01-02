@@ -7,6 +7,7 @@
 //
 
 #import "UICollectionView+KIVDS.h"
+#import <objc/runtime.h>
 
 NSString * const BASE_CVCELL_IDENTIFIER = @"UICollectionViewCell";
 
@@ -37,5 +38,17 @@ NSString * const BASE_CVCELL_IDENTIFIER = @"UICollectionViewCell";
         [self registerItem:item];
     }
 }
+
+#pragma  mark - DataHolder
+
+- (void)setCollectionViewSections:(NSArray *)sections
+{
+    return objc_setAssociatedObject(self, @selector(kivSections), sections, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+- (NSArray *)collectionViewSections
+{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
 
 @end

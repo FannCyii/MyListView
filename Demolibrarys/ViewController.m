@@ -11,43 +11,97 @@
 #import <PureLayout/PureLayout.h>
 #import "ViewController+CollectionViewDataSourceDelegate.h"
 #import "KIVCVDataSource.h"
+#import "KIVArchiverManager.h"
+
+//view
+#import "KIVSearchHeaderView.h"
 
 @interface ViewController ()<KIVCVDataSourceDelegate>
 @property (nonatomic, strong) UICollectionView * collectionView;
 @property (nonatomic, strong) KIVCVDataSource * dataSource;
 
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
+
+@property (nonatomic, strong) KIVSearchHeaderView * searchHeader;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"我的书签管理";
+    self.navigationItem.title = @"MY BOOKMARKS";
     
-    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-    [settingBtn setTitle:@"设置" forState:UIControlStateNormal];
+    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+//    [settingBtn setTitle:@"设置" forState:UIControlStateNormal];
+    [settingBtn setImage:[UIImage imageNamed:@"nav_right_button"] forState:UIControlStateNormal];
     settingBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     [settingBtn addTarget:self action:@selector(selectedSetting:) forControlEvents:UIControlEventTouchUpInside];
     [settingBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:settingBtn];
     
+    UIButton *leftBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+//    [leftBtn setTitle:@"信息" forState:UIControlStateNormal];
+    [leftBtn setImage:[UIImage imageNamed:@"nav_left_button"] forState:UIControlStateNormal];
+    leftBtn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [leftBtn addTarget:self action:@selector(userInfoSetting:) forControlEvents:UIControlEventTouchUpInside];
+    [leftBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
+    
+    
     [self subViewConfig];
     [self handleMainData];
     
 //    [self.view addGestureRecognizer:self.tapGesture];
+
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+}
+
+- (void)subViewConfig
+{
+    [self.view addSubview:self.collectionView];
+    [self.view addSubview:self.searchHeader];
+    
+    [self.searchHeader autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:64];
+    [self.searchHeader autoPinEdgeToSuperviewEdge:ALEdgeRight];
+    [self.searchHeader autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+    [self.searchHeader autoSetDimension:ALDimensionHeight toSize:60];
+    [self.collectionView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.searchHeader];
+    [self.collectionView autoPinEdgeToSuperviewEdge:ALEdgeRight];
+    [self.collectionView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+    [self.collectionView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+    
+    self.collectionView.delegate = self.dataSource;
+    self.collectionView.dataSource = self.dataSource;
+}
+
+-(void)dealloc
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
-
+#pragma mark - Actions
 - (void)selectedSetting:(UIButton *)button
 {
     SettingVC *vc = [SettingVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)userInfoSetting:(UIButton *)button
+{
+    [[KIVRouter sharedInstance] routeToModulesOfKey:@"userinfovc"];
+}
+
+#pragma mark - Accessors
 - (UICollectionView *)collectionView
 {
     if(!_collectionView){
@@ -76,13 +130,12 @@
     return _tapGesture;
 }
 
-- (void)subViewConfig
+- (KIVSearchHeaderView *)searchHeader
 {
-    [self.view addSubview:self.collectionView];
-    [self.collectionView autoPinEdgesToSuperviewEdges];
-
-    self.collectionView.delegate = self.dataSource;
-    self.collectionView.dataSource = self.dataSource;
+    if (!_searchHeader) {
+        _searchHeader = [[KIVSearchHeaderView alloc] initWithFrame:CGRectZero];
+    }
+    return _searchHeader;
 }
 
 

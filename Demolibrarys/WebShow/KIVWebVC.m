@@ -10,6 +10,7 @@
 #import "PureLayout.h"
 #import <WebKit/WebKit.h>
 #import "UIView+Toast.h"
+#import <MGJRouter/MGJRouter.h>
 
 @interface KIVWebVC ()
 @property (nonatomic, strong) WKWebView *webView;
@@ -21,6 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [MGJRouter registerURLPattern:@"" toHandler:^(NSDictionary *routerParameters) {
+        
+    }];
+    
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectZero];
     self.progressView.backgroundColor = [UIColor whiteColor];
     self.webView = [[WKWebView alloc] initWithFrame:CGRectZero];

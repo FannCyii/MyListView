@@ -15,7 +15,8 @@ target 'Demolibrarys' do
   pod "ObjectiveGumbo", "0.1"
   pod 'Toast'
   pod 'MBProgressHUD', '~> 1.0.0'
-  pod 'XXRouter', '~> 0.0.2'
+  pod 'MGJRouter', '~>0.9.0'
+  pod 'XXRouter'
 end
 
 target 'Demo_Network' do

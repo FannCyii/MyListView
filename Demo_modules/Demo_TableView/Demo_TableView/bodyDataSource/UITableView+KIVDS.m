@@ -15,11 +15,6 @@
 
 @implementation UITableView (KIVDS)
 
-+ (void)load{
-    
-}
-
-
 //datas
 - (void)setKivSections:(NSMutableArray<KIVDSBaseSection *> *)sections
 {

@@ -20,6 +20,8 @@
 		8F839B551FBDE1DD0014B1C6 /* KIVDSBaseSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AD41FBDDB130014B1C6 /* KIVDSBaseSection.h */; };
 		8F839B561FBDE1DD0014B1C6 /* KIVDSBaseTVCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839ADB1FBDDB130014B1C6 /* KIVDSBaseTVCell.h */; };
 		8F839B571FBDE1DD0014B1C6 /* Demo_TableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F839AA11FBDD4100014B1C6 /* Demo_TableView.h */; };
+		B7FB6E871FF6873F003A72F2 /* KIVListManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FB6E851FF6873F003A72F2 /* KIVListManager.h */; };
+		B7FB6E881FF6873F003A72F2 /* KIVListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FB6E861FF6873F003A72F2 /* KIVListManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +51,8 @@
 		8F839AD81FBDDB130014B1C6 /* KIVDSBaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVDSBaseRow.h; sourceTree = "<group>"; };
 		8F839ADA1FBDDB130014B1C6 /* KIVDSBaseTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVDSBaseTVCell.m; sourceTree = "<group>"; };
 		8F839ADB1FBDDB130014B1C6 /* KIVDSBaseTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVDSBaseTVCell.h; sourceTree = "<group>"; };
+		B7FB6E851FF6873F003A72F2 /* KIVListManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVListManager.h; sourceTree = "<group>"; };
+		B7FB6E861FF6873F003A72F2 /* KIVListManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVListManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,9 @@
 		8F839AA01FBDD4100014B1C6 /* Demo_TableView */ = {
 			isa = PBXGroup;
 			children = (
+				B7FB6E841FF68723003A72F2 /* ListViewManager */,
+				B7FB6E831FF6871B003A72F2 /* TableView */,
+				B7FB6E811FF6814F003A72F2 /* CollectionView */,
 				8F839AD21FBDDB130014B1C6 /* bodyDataSource */,
 				8F839AA11FBDD4100014B1C6 /* Demo_TableView.h */,
 				8F839AA21FBDD4100014B1C6 /* Demo_TableView.m */,
@@ -105,6 +112,29 @@
 			path = bodyDataSource;
 			sourceTree = "<group>";
 		};
+		B7FB6E811FF6814F003A72F2 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		B7FB6E831FF6871B003A72F2 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		B7FB6E841FF68723003A72F2 /* ListViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				B7FB6E851FF6873F003A72F2 /* KIVListManager.h */,
+				B7FB6E861FF6873F003A72F2 /* KIVListManager.m */,
+			);
+			path = ListViewManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -116,6 +146,7 @@
 				8F839B531FBDE1DD0014B1C6 /* KIVDSDataSource.h in Headers */,
 				8F839B541FBDE1DD0014B1C6 /* KIVDSBaseRow.h in Headers */,
 				8F839B551FBDE1DD0014B1C6 /* KIVDSBaseSection.h in Headers */,
+				B7FB6E871FF6873F003A72F2 /* KIVListManager.h in Headers */,
 				8F839B561FBDE1DD0014B1C6 /* KIVDSBaseTVCell.h in Headers */,
 				8F839B571FBDE1DD0014B1C6 /* Demo_TableView.h in Headers */,
 			);
@@ -184,6 +215,7 @@
 				8F839ADF1FBDDB130014B1C6 /* KIVDSBaseTVCell.m in Sources */,
 				8F12F5EB1FC709E100D65E9A /* UITableView+KIVDS.m in Sources */,
 				8F839ADE1FBDDB130014B1C6 /* KIVDSDataSource.m in Sources */,
+				B7FB6E881FF6873F003A72F2 /* KIVListManager.m in Sources */,
 				8F839AA31FBDD4100014B1C6 /* Demo_TableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

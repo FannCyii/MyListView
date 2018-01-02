@@ -11,6 +11,7 @@
 #import "DemoLogVO.h"
 #import "DataParser.h"
 #import "CommonHeader.h"
+#import "KIVArchiverManager.h"
 
 @interface DemoWebServerVC () <DemoWebServerDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *serverURLLabel;
@@ -61,13 +62,28 @@
 {
     if(!error && [path isEqualToString:@"/1"]){
         NSString *logs = [aData valueForKey:@"comment"];
-        NSData *aData = [logs dataUsingEncoding:NSUTF8StringEncoding];
-        DataParser *parser = [[DataParser alloc] initWithData:aData];
+        NSString *logsName = [aData valueForKey:@"logtitle"];
+        if (logsName.length == 0) {
+            // 获取系统当前时间
+            NSDate * date = [NSDate date];
+            NSTimeInterval sec = [date timeIntervalSinceNow];
+            NSDate * currentDate = [[NSDate alloc] initWithTimeIntervalSinceNow:sec];
+            
+            //设置时间输出格式：
+            NSDateFormatter * df = [[NSDateFormatter alloc] init ];
+            [df setDateFormat:@"yyyy年MM月dd日 HH小时mm分ss秒"];
+            NSString * curentTIme = [df stringFromDate:currentDate];
+            logsName = curentTIme;
+        }
+        NSData *logData = [logs dataUsingEncoding:NSUTF8StringEncoding];
+        DataParser *parser = [[DataParser alloc] initWithData:logData];
         FolderListItem *rootFolder = parser.rootFolder;
-        NSData *data = [NSKeyedArchiver archivedDataWithRootObject:rootFolder];
-        [[NSUserDefaults standardUserDefaults] setObject:data forKey:FOLDER_ARTICLE_ARCHIVER_IDENTIFIOR];
+        
+        KIVArchiverManager *archiveManager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_ARCHIVER_IDENTIFIOR];
+        [archiveManager saveLogs:rootFolder keyWord:logsName];
+        
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.webStatusLabel.text = @"导入成功";
+            self.webStatusLabel.text = [NSString stringWithFormat:@"成功导入书签：%@",logsName];
         });
     }else{
         dispatch_async(dispatch_get_main_queue(), ^{

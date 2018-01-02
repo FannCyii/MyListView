@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 @class KIVBaseCVCell;
 @protocol KIVCVCellDelegate <NSObject>
+
+@optional
 - (void)kivaCVCell:(KIVBaseCVCell *)cell SelectedAtIndexOfPath:(NSIndexPath *)indexPath;
 @end
 

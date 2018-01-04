@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B770E7701FFE7492003D78F3 /* KIVRouterTransitionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B770E76E1FFE7492003D78F3 /* KIVRouterTransitionManager.h */; };
+		B770E7711FFE7492003D78F3 /* KIVRouterTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B770E76F1FFE7492003D78F3 /* KIVRouterTransitionManager.m */; };
 		B7FB6EB31FFB4F11003A72F2 /* KIVDispatchCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FB6EB11FFB4F11003A72F2 /* KIVDispatchCenter.h */; };
 		B7FB6EC61FFB4FE9003A72F2 /* SAMDarkClubDataPickPC.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FB6EBD1FFB4FE7003A72F2 /* SAMDarkClubDataPickPC.h */; };
 		B7FB6EC71FFB4FE9003A72F2 /* KIVVCTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FB6EBE1FFB4FE8003A72F2 /* KIVVCTransition.h */; };
@@ -39,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B770E76E1FFE7492003D78F3 /* KIVRouterTransitionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVRouterTransitionManager.h; sourceTree = "<group>"; };
+		B770E76F1FFE7492003D78F3 /* KIVRouterTransitionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVRouterTransitionManager.m; sourceTree = "<group>"; };
 		B7FB6EAE1FFB4F11003A72F2 /* KIVDispatchCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KIVDispatchCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FB6EB11FFB4F11003A72F2 /* KIVDispatchCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVDispatchCenter.h; sourceTree = "<group>"; };
 		B7FB6EB21FFB4F11003A72F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B770E76D1FFE7440003D78F3 /* TransferManger */ = {
+			isa = PBXGroup;
+			children = (
+				B770E76E1FFE7492003D78F3 /* KIVRouterTransitionManager.h */,
+				B770E76F1FFE7492003D78F3 /* KIVRouterTransitionManager.m */,
+			);
+			path = TransferManger;
+			sourceTree = "<group>";
+		};
 		B7FB6EA41FFB4F11003A72F2 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 		B7FB6EB01FFB4F11003A72F2 /* KIVDispatchCenter */ = {
 			isa = PBXGroup;
 			children = (
+				B770E76D1FFE7440003D78F3 /* TransferManger */,
 				B7FB6EF71FFB559C003A72F2 /* Router */,
 				B7FB6EBB1FFB4FB9003A72F2 /* VCPresentTransition */,
 				B7FB6EB11FFB4F11003A72F2 /* KIVDispatchCenter.h */,
@@ -221,6 +235,7 @@
 				B7FB6ED61FFB4FFA003A72F2 /* AnimatorSpring.h in Headers */,
 				B7FB6ED71FFB4FFA003A72F2 /* AnimatorUpAndDown.h in Headers */,
 				B7FB6ED51FFB4FFA003A72F2 /* AnimatorPopping.h in Headers */,
+				B770E7701FFE7492003D78F3 /* KIVRouterTransitionManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +347,7 @@
 				B7FB6EDA1FFB4FFA003A72F2 /* AnimatorPopping.m in Sources */,
 				B7FB6F111FFB66F5003A72F2 /* KIVRouterItem.m in Sources */,
 				B7FB6EFB1FFB55C0003A72F2 /* KIVRouter.m in Sources */,
+				B770E7711FFE7492003D78F3 /* KIVRouterTransitionManager.m in Sources */,
 				B7FB6EC91FFB4FE9003A72F2 /* KIVVCTransition.m in Sources */,
 				B7FB6ECC1FFB4FE9003A72F2 /* SAMDarkClubDataPickPC.m in Sources */,
 			);

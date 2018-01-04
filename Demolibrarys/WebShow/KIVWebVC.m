@@ -22,11 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [MGJRouter registerURLPattern:@"" toHandler:^(NSDictionary *routerParameters) {
-        
-    }];
-    
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectZero];
     self.progressView.backgroundColor = [UIColor whiteColor];
     self.webView = [[WKWebView alloc] initWithFrame:CGRectZero];
@@ -43,10 +38,15 @@
     [self.progressView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:64];
     [self.progressView autoSetDimension:ALDimensionHeight toSize:2];
     
+    if (self.routerParamsDir) {
+        self.url = [self.routerParamsDir objectForKey:@"url"];
+    }
+    
     if(self.url.length == 0){
         return;
     }
-    if(![self.url hasPrefix:@"http://"]){
+    
+    if(!([self.url hasPrefix:@"http://"] || [self.url hasPrefix:@"https://"])){
         self.url = [NSString stringWithFormat:@"http://%@",self.url];
     }
     

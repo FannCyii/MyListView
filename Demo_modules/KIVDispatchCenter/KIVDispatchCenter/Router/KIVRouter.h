@@ -32,6 +32,10 @@ typedef void (^KIVRouteHandleBlock)(UIViewController *vc, NSError *error);
 - (void)routeToModulesOfKey:(NSString *)key withParams:(NSDictionary *)aParams;
 - (void)routeToModulesOfKey:(NSString *)key;
 
+//Present
+- (void)routerVCkey:(NSString *)fromKey toVCKey:(NSString *)toKey;
+- (void)routerVCkey:(NSString *)fromKey toVCKey:(NSString *)toKey withParams:(NSDictionary *)dirParam trasitionAnimatorClassName:(NSString *)AnimatorClassName completeBlock:(KIVRouteCompleteBlock)routeCompleteBlock;
+
 /*
  跳转过过程
  

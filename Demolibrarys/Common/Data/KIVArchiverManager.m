@@ -7,7 +7,6 @@
 //
 
 #import "KIVArchiverManager.h"
-#import "DataParser.h"
 
 const NSString *LOGSTITLE = @"title";
 const NSString *LOGSCONTENT = @"content";

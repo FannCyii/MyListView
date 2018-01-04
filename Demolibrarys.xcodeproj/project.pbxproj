@@ -374,7 +374,7 @@
 				8F8E6E031FE6AADF00E656DF /* Setting */,
 				8F8E6DF91FE580B800E656DF /* Common */,
 				8FA8B1BD1FE40BF2009C52C9 /* Model */,
-				8FA8B0DD1FE032D7009C52C9 /* Home */,
+				8FA8B0DD1FE032D7009C52C9 /* Home_XXXX */,
 				8F810F981FDD8A9D004D1BA8 /* LogVO */,
 				8F12F5F31FC72BCE00D65E9A /* MyLogList */,
 				8F839B461FBDDF250014B1C6 /* Lib_TableView */,
@@ -414,10 +414,10 @@
 		8F8E6DF91FE580B800E656DF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B770E74F1FFD1CE7003D78F3 /* Tools */,
+				B7FB6F3D1FFC6A40003A72F2 /* Data */,
 				B7FB6F1B1FFBA65E003A72F2 /* View */,
 				8F8E6DFA1FE580D400E656DF /* CommonHeader.h */,
-				B7FB6E371FF546FA003A72F2 /* KIVArchiverManager.h */,
-				B7FB6E381FF546FA003A72F2 /* KIVArchiverManager.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -431,7 +431,7 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
-		8FA8B0DD1FE032D7009C52C9 /* Home */ = {
+		8FA8B0DD1FE032D7009C52C9 /* Home_XXXX */ = {
 			isa = PBXGroup;
 			children = (
 				8FA8B13F1FE1455E009C52C9 /* Cell */,
@@ -442,7 +442,7 @@
 				8FA8B1501FE14AFA009C52C9 /* HomeVC+DataHandle.h */,
 				8FA8B1511FE14AFA009C52C9 /* HomeVC+DataHandle.m */,
 			);
-			path = Home;
+			path = Home_XXXX;
 			sourceTree = "<group>";
 		};
 		8FA8B0E61FE034E4009C52C9 /* DataSource */ = {
@@ -504,6 +504,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B770E74F1FFD1CE7003D78F3 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		B7FB6E8F1FF7F591003A72F2 /* ImportWebServer */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +537,15 @@
 				B7FB6F1D1FFBA67B003A72F2 /* KIVSearchHeaderView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B7FB6F3D1FFC6A40003A72F2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B7FB6E371FF546FA003A72F2 /* KIVArchiverManager.h */,
+				B7FB6E381FF546FA003A72F2 /* KIVArchiverManager.m */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

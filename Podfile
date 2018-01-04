@@ -17,6 +17,7 @@ target 'Demolibrarys' do
   pod 'MBProgressHUD', '~> 1.0.0'
   pod 'MGJRouter', '~>0.9.0'
   pod 'XXRouter'
+  pod 'Masonry'
 end
 
 target 'Demo_Network' do

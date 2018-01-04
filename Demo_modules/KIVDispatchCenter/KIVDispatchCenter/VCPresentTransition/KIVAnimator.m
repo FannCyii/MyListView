@@ -7,10 +7,13 @@
 //
 
 #import "KIVAnimator.h"
+#import "KIVVCTransition.h"
+
 
 @interface KIVAnimator()
 @property (nonatomic, strong) id <KIVAnimateTransitioning> animateTransitioning;
 @property (nonatomic, assign) KIVAnimatorType animatoryType;
+
 @end
 
 @implementation KIVAnimator
@@ -43,5 +46,6 @@
         [self.animateTransitioning animateOutTransitioning:transitionContext];
     }
 }
+
 
 @end

@@ -35,13 +35,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Demolibrarys/Common/View/KIVSearchHeaderView.m"
-            timestampString = "536593512.299419"
+            filePath = "Demo_modules/KIVDispatchCenter/KIVDispatchCenter/Router/KIVRouter.m"
+            timestampString = "536774956.179843"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "-subViewConfig"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "-transition"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Demo_modules/KIVDispatchCenter/KIVDispatchCenter/Router/KIVRouter.m"
+            timestampString = "536774956.181594"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "-routerVC:toVC:withParams:trasitionAnimatorClassName:completeBlock:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

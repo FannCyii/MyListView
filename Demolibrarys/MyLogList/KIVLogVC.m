@@ -10,7 +10,6 @@
 #import "KIVDSDataSource.h"
 #import <PureLayout/PureLayout.h>
 #import "Demo_Network.h"
-#import "KIVWebVC.h"
 #import "CommonHeader.h"
 #import "FolderListItem.h"
 #import "KIVArchiverManager.h"
@@ -76,9 +75,12 @@
             logvc.logsTitle = rootFolder.title;
             [self.navigationController pushViewController:logvc animated:YES];
         }else{
-            KIVWebVC *webVc = [[KIVWebVC alloc] init];
-            webVc.url = element.aUrl;
-            [self.navigationController pushViewController:webVc animated:YES];
+//            KIVWebVC *webVc = [[KIVWebVC alloc] init];
+//            webVc.url = element.aUrl;
+//            [self.navigationController pushViewController:webVc animated:YES];
+            NSDictionary *params =@{@"url":element.aUrl};
+            [[KIVRouter sharedInstance] routeToModulesOfKey:@"webreadervc" withParams:params];
+            
         }
     };
   

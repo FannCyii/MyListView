@@ -12,13 +12,15 @@
 
 #endif /* CommonHeader_h */
 
-
 /**
  书签id
  */
 #define FOLDER_ARTICLE_ARCHIVER_IDENTIFIOR @"log.info.deme.list"
 #define NOTIFICATION_ARCHIVER_LOGS  @"notification.archiver.logs"
 
+#define FOLDER_ARTICLE_READ_HISTORIES @"log.info.deme.read.loghistories"
 
 #define WEAKSElF __weak typeof(self)weakSelf = self;
 #define STRONGSELF __weak typeof(weakSelf)self = weakSelf;
+
+

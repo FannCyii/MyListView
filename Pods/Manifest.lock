@@ -3,6 +3,7 @@ PODS:
     - GCDWebServer/Core (= 3.4)
   - GCDWebServer/Core (3.4)
   - JSONModel (1.7.0)
+  - Masonry (1.1.0)
   - MBProgressHUD (1.0.0)
   - MGJRouter (0.9.3)
   - ObjectiveGumbo (0.1)
@@ -13,6 +14,7 @@ PODS:
 DEPENDENCIES:
   - GCDWebServer (~> 3.0)
   - JSONModel
+  - Masonry
   - MBProgressHUD (~> 1.0.0)
   - MGJRouter (~> 0.9.0)
   - ObjectiveGumbo (= 0.1)
@@ -23,6 +25,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   GCDWebServer: 20d53c3181b3c78d865e93e326faf506306f5338
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MGJRouter: f65821e2aeffc8f9e84b254c8f1c0dd80f048aa9
   ObjectiveGumbo: 0704c4930688132abb3d5df2000334f30504856f
@@ -30,6 +33,6 @@ SPEC CHECKSUMS:
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   XXRouter: bcea5c237beaa6b3e11c98ab968320394b211932
 
-PODFILE CHECKSUM: 868a817af17049abe9572110b043dfa2fafbd86f
+PODFILE CHECKSUM: b138442cd3e9de08a4f879165492c5798f54107f
 
 COCOAPODS: 1.3.1

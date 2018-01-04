@@ -9,6 +9,8 @@
 #import "KIVRouter.h"
 #import <objc/runtime.h>
 
+#import "KIVVCTransition.h"
+
 @interface KIVRouter()
 
 @property (nonatomic, strong) NSDictionary *routerKeyMapList;
@@ -16,6 +18,8 @@
 
 @property (nonatomic, copy) KIVRouteHandleBlock beforeHandle;
 @property (nonatomic, copy) KIVRouteHandleBlock afterHandle;
+
+@property (nonatomic, strong) KIVVCTransition *transition;
 
 @end
 
@@ -55,12 +59,22 @@
              @"test2vc":@"VC2",
              @"testIvc":@"Invalid",
              
+            
              @"mainvc":@"ViewController",
              @"loglistvc":@"KIVLogVC",
              @"webreadervc":@"KIVWebVC",
              @"userinfovc":@"UserInfoVC",
              };
 }
+
+- (KIVVCTransition *)transition
+{
+    if (!_transition) {
+        _transition = [[KIVVCTransition alloc] initSamVCTransitionWithPresentationAnimatorName:@"AnimatorSpring"];
+    }
+    return _transition;
+}
+
 
 #pragma mark - Jump to module VC
 - (void)routeToModulesOfKey:(NSString *)key
@@ -86,6 +100,7 @@
         return;
     }
     targetVC.routerParamsDir = [aParams copy];
+    targetVC.transitioningDelegate = self.transition;
     if (self.beforeHandle) {
         self.beforeHandle(targetVC,nil);
     }
@@ -109,6 +124,71 @@
 //    }
 }
 
+#pragma mark - Precent
+//想办法解决两个key值跳转 的传值问题
+- (NSDictionary *)middleParamArea
+{
+    return nil;
+}
+
+- (void)routerVCkey:(NSString *)fromKey toVCKey:(NSString *)toKey
+{
+    [self routerVCkey:fromKey toVCKey:toKey withParams:nil];
+}
+
+- (void)routerVCkey:(NSString *)fromKey toVCKey:(NSString *)toKey withParams:(NSDictionary *)dirParam
+{
+    [self routerVCkey:fromKey toVCKey:toKey withParams:dirParam completeBlock:nil];
+}
+
+- (void)routerVCkey:(NSString *)fromKey toVCKey:(NSString *)toKey withParams:(NSDictionary *)dirParam completeBlock:(KIVRouteCompleteBlock)routeCompleteBlock
+{
+    [self routerVCkey:fromKey toVCKey:toKey withParams:dirParam trasitionAnimatorClassName:nil completeBlock: routeCompleteBlock];
+}
+
+- (void)routerVCkey:(NSString *)fromKey toVCKey:(NSString *)toKey withParams:(NSDictionary *)dirParam trasitionAnimatorClassName:(NSString *)AnimatorClassName completeBlock:(KIVRouteCompleteBlock)routeCompleteBlock
+{
+    Class fromClass = [self getModuleClassForKey:fromKey];
+    UIViewController *fromVC = nil;
+    
+    UINavigationController *rootNvc = (UINavigationController *)self.rootVC;
+    for (UIViewController *itemVC in rootNvc.viewControllers) {
+        if ([itemVC isKindOfClass:fromClass]) {
+            fromVC = itemVC;
+        }
+    }
+    if (!fromVC) {
+        return;
+    }
+    
+    Class toClass = [self getModuleClassForKey:toKey];
+    UIViewController *toVC = [[toClass alloc] init];
+    if (!toVC) {
+        return;
+    }
+    
+    //    [fromVC presentViewController:toVC animated:YES completion:^{
+    //        NSLog(@"this is present vc from %@ to %@",fromVC,toVC);
+    //    }];
+    [self routerVC:fromVC toVC:toVC withParams:dirParam trasitionAnimatorClassName:AnimatorClassName completeBlock:routeCompleteBlock];
+}
+
+
+- (void)routerVC:(UIViewController *)fromVc toVC:(UIViewController *)toVc
+{
+    [self routerVC:fromVc toVC:toVc withParams:nil trasitionAnimatorClassName:nil completeBlock:nil];
+}
+
+- (void)routerVC:(UIViewController *)fromVC toVC:(UIViewController *)toVC withParams:(NSDictionary *)dirParam trasitionAnimatorClassName:(NSString *)AnimatorClassName completeBlock:(KIVRouteCompleteBlock)routeCompleteBlock
+{
+    KIVVCTransition *trasition = [[KIVVCTransition alloc] initSamVCTransitionWithPresentationAnimatorName:AnimatorClassName];
+    toVC.transitioningDelegate = trasition;
+    [fromVC presentViewController:toVC animated:YES completion:^{
+        NSLog(@"this is present vc from %@ to %@",fromVC,toVC);
+    }];
+}
+
+#pragma mark - LifeCycle
 - (void)beforeRouterWithHandle:(KIVRouteHandleBlock)handleBlock
 {
     self.beforeHandle = handleBlock;

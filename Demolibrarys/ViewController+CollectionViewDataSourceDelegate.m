@@ -36,7 +36,9 @@
     item.cellClassName = @"KIVHomeCVHeaderADCell";
     item.height = 58;
     item.with = [UIScreen mainScreen].bounds.size.width;
-//    item.rowColor = [UIColor yellowColor];
+    item.selectedBlock = ^(id listView, NSIndexPath *indexPath) {
+        [self addLogsAlert];
+    };
     [array addObject:item];
     
     KIVCVBaseItem *middelItem = [KIVCVBaseItem new];
@@ -47,12 +49,12 @@
     [array addObject:middelItem];
     
     
-    KIVCVBaseItem *userInfoItem = [KIVCVBaseItem new];
-    userInfoItem.cellClassName = @"KIVHomeCVUserCell";
-    userInfoItem.height = 110;
-    userInfoItem.with = [UIScreen mainScreen].bounds.size.width;
-    userInfoItem.rowColor = [UIColor yellowColor];
-    [array addObject:userInfoItem];
+//    KIVCVBaseItem *userInfoItem = [KIVCVBaseItem new];
+//    userInfoItem.cellClassName = @"KIVHomeCVUserCell";
+//    userInfoItem.height = 110;
+//    userInfoItem.with = [UIScreen mainScreen].bounds.size.width;
+//    userInfoItem.rowColor = [UIColor yellowColor];
+//    [array addObject:userInfoItem];
     
     //    KIVHomeCVReadHistoryCell
     KIVCVBaseItem *historiesItem = [KIVCVBaseItem new];
@@ -67,6 +69,29 @@
     [self.collectionView registerItmes:array];
     self.dataSource.itemArray = array;
     [self.collectionView reloadData];
+}
+
+- (void)addLogsAlert
+{
+    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:nil message:@"请选择" preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *addLogsAtcion = [UIAlertAction actionWithTitle:@"导入日志" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [[KIVRouter sharedInstance] routeToModulesOfKey:@"importlogvc"];
+    }];
+    
+    UIAlertAction *addArticleAtcion = [UIAlertAction actionWithTitle:@"添加文章" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    UIAlertAction *enterAnction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    [alertVc addAction:addLogsAtcion];
+    [alertVc addAction:addArticleAtcion];
+    [alertVc addAction:enterAnction];
+    
+    [self presentViewController:alertVc animated:YES completion:nil];
 }
 
 @end

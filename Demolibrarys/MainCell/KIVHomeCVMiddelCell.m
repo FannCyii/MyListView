@@ -29,13 +29,13 @@
         self.collectionView.delegate = self.dataSource;
         self.collectionView.dataSource = self.dataSource;
         
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logsArchived:) name:NOTIFICATION_ARCHIVER_LOGS object:nil];
+//        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logsArchived:) name:NOTIFICATION_ARCHIVER_LOGS object:nil];
     }
     return self;
 }
 
 -(void)dealloc{
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
+//    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)awakeFromNib {
@@ -43,19 +43,19 @@
     [self dataHandel];
 }
 
-- (void)logsArchived:(NSNotification *)notification
-{
-    if ([notification.name isEqualToString:NOTIFICATION_ARCHIVER_LOGS]) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self dataHandel];
-        });
-    }
-}
+//- (void)logsArchived:(NSNotification *)notification
+//{
+//    if ([notification.name isEqualToString:NOTIFICATION_ARCHIVER_LOGS]) {
+//        dispatch_async(dispatch_get_main_queue(), ^{
+//            [self dataHandel];
+//        });
+//    }
+//}
 
 - (void)dataHandel
 {
     KIVArchiverManager *archiverManager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_ARCHIVER_IDENTIFIOR];
-    NSArray *logsCollections = [archiverManager fetchLogCollections];
+    NSArray *logsCollections = [archiverManager getAllLogs];
     NSMutableArray *array = [NSMutableArray array];
     
     //独立的一个item 用于google搜索

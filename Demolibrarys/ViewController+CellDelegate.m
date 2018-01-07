@@ -11,14 +11,21 @@
 #import "KIVLogVC.h"
 
 
+
 @implementation ViewController (CellDelegate)
-- (void)kivHomeCVHeaderCell:(KIVHomeCVHeaderCell *)cell didReturnWihtTextField:(UITextField *)textField
+
+- (void)kivSearchHeaderView:(KIVSearchHeaderView *)cell didReturnWihtTextField:(UITextField *)textField
 {
-    KIVWebVC *webVC = [[KIVWebVC alloc] init];
-    webVC.url = textField.text;
-    
-    [self.navigationController pushViewController:webVC animated:YES];
+    [[KIVRouter sharedInstance] routeToModulesOfKey:@"webreadervc" withParams:@{@"url":textField.text}];
 }
+
+//- (void)kivHomeCVHeaderCell:(KIVHomeCVHeaderCell *)cell didReturnWihtTextField:(UITextField *)textField
+//{
+//    KIVWebVC *webVC = [[KIVWebVC alloc] init];
+//    webVC.url = textField.text;
+//    
+//    [self.navigationController pushViewController:webVC animated:YES];
+//}
 
 - (void)kivHomeCVMiddelCell:(KIVHomeCVMiddelCell *)cell selectedIndexPath:(NSIndexPath *)indexPath cellData:(id)aData
 {

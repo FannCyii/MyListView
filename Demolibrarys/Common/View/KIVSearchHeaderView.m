@@ -8,7 +8,7 @@
 
 #import "KIVSearchHeaderView.h"
 
-@interface KIVSearchHeaderView()
+@interface KIVSearchHeaderView()<UITextFieldDelegate>
 
 @property (nonatomic, strong) UIImageView *backgroudImageView;
 @property (nonatomic, strong) UIImageView *searchIconImageView;
@@ -88,8 +88,20 @@
         _searchTextField = [[UITextField alloc] initWithFrame:CGRectZero];
         _searchTextField.textAlignment = NSTextAlignmentCenter;
         _searchTextField.placeholder = @"Search Article";
+        _searchTextField.keyboardType = UIKeyboardTypeWebSearch;
+        _searchTextField.delegate = self;
     }
     return _searchTextField;
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if([self.delegate respondsToSelector:@selector(kivSearchHeaderView:didReturnWihtTextField:)]){
+        [self.delegate kivSearchHeaderView:self didReturnWihtTextField:textField];
+    }
+    return YES;
+}
+
+
 
 @end

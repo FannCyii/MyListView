@@ -64,6 +64,7 @@
              @"loglistvc":@"KIVLogVC",
              @"webreadervc":@"KIVWebVC",
              @"userinfovc":@"UserInfoVC",
+             @"importlogvc":@"DemoWebServerVC",
              };
 }
 

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "SettingVC.h"
 #import <PureLayout/PureLayout.h>
+#import "ViewController+CellDelegate.h"
 #import "ViewController+CollectionViewDataSourceDelegate.h"
 #import "KIVCVDataSource.h"
 #import "KIVArchiverManager.h"
@@ -27,6 +28,11 @@
 @end
 
 @implementation ViewController
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -52,8 +58,8 @@
     [self subViewConfig];
     [self handleMainData];
     
-//    [self.view addGestureRecognizer:self.tapGesture];
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logsArchived:) name:NOTIFICATION_ARCHIVER_LOGS object:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -79,11 +85,6 @@
     
     self.collectionView.delegate = self.dataSource;
     self.collectionView.dataSource = self.dataSource;
-}
-
--(void)dealloc
-{
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -134,6 +135,7 @@
 {
     if (!_searchHeader) {
         _searchHeader = [[KIVSearchHeaderView alloc] initWithFrame:CGRectZero];
+        _searchHeader.delegate = self;
     }
     return _searchHeader;
 }
@@ -144,6 +146,15 @@
 - (void)hiddenKeyBoard:(UITapGestureRecognizer *)gesture
 {
     [self.view endEditing:YES];
+}
+
+- (void)logsArchived:(NSNotification *)notification
+{
+    if ([notification.name isEqualToString:NOTIFICATION_ARCHIVER_LOGS]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self handleMainData];
+        });
+    }
 }
 
 #pragma mark - KIVCVDataSourceDelegate

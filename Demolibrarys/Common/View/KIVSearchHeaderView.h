@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class KIVSearchHeaderView;
+@protocol KIVSearchHeaderViewDelegate <NSObject>
+- (void)kivSearchHeaderView:(KIVSearchHeaderView *)view didReturnWihtTextField:(UITextField *)textField;
+@end
+
 @interface KIVSearchHeaderView : UIView
+
+@property (nonatomic, weak) id<KIVSearchHeaderViewDelegate> delegate;
 
 @end

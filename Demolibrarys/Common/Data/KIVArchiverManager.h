@@ -11,12 +11,31 @@
 FOUNDATION_EXTERN  NSString *LOGSTITLE;
 FOUNDATION_EXTERN  NSString *LOGSCONTENT;
 
+typedef void (^KIVArchiverSaveCompleteBlock)(void);
+
+typedef NS_ENUM(NSInteger,KIVArchiverType) {
+    KIVArchiverTypeOfDefault = 0,
+    KIVArchiverTypeOfUnique = 0,
+    KIVArchiverTypeOfRepeatable,
+};
+
+
 @interface KIVArchiverManager : NSObject
+
+@property (nonatomic, assign) KIVArchiverType archiverType;
+@property (nonatomic, assign) NSUInteger capacity;
+@property (nonatomic, copy) KIVArchiverSaveCompleteBlock saveCompleteBlock;
 
 - (instancetype)initWithIdentifior:(NSString *)identifior;
 
 - (void)saveLogs:(id)aData keyWord:(NSString *)kegword;
-- (NSDictionary *)fetchLogsAtIndex:(NSInteger)index;
-- (NSArray *)fetchLogCollections;
+- (void)insertlogs:(NSArray *)logs;
+- (void)insertLog:(id)logItem;
+
+- (NSArray *)getAllLogs;
+- (id)getLogWithIndex:(NSUInteger)index;
+
+
+
 
 @end

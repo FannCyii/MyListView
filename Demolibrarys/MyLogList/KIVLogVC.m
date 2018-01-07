@@ -78,6 +78,11 @@
 //            KIVWebVC *webVc = [[KIVWebVC alloc] init];
 //            webVc.url = element.aUrl;
 //            [self.navigationController pushViewController:webVc animated:YES];
+            
+            KIVArchiverManager *manager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_READ_HISTORIES];
+            
+            [manager saveLogs:element keyWord:element.title];
+            
             NSDictionary *params =@{@"url":element.aUrl};
             [[KIVRouter sharedInstance] routeToModulesOfKey:@"webreadervc" withParams:params];
             

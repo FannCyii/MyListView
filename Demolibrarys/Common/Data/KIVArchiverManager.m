@@ -11,6 +11,7 @@
 const NSString *LOGSTITLE = @"title";
 const NSString *LOGSCONTENT = @"content";
 
+
 @interface KIVArchiverManager()
 @property (nonatomic, strong) NSString  *archiveIdentifior;
 @end
@@ -34,44 +35,100 @@ const NSString *LOGSCONTENT = @"content";
     [self insertLogLogCollectionWithData:archerParam];
 }
 
-- (NSDictionary *)fetchLogsAtIndex:(NSInteger)index
+//- (NSDictionary *)fetchLogsAtIndex:(NSInteger)index
+//{
+//    NSArray *array = [self getAllLogs];
+//    if (array.count < index) {
+//        return nil;
+//    }
+//    return [array objectAtIndex:index];
+//}
+
+
+#pragma mark insert and fetch
+- (void)insertLogLogCollectionWithData:(NSDictionary *)aData
 {
-    NSArray *array = [self fetchLogCollections];
+    NSMutableArray *array = [[self getAllLogs] mutableCopy];
+    NSMutableArray *newArray = [NSMutableArray arrayWithArray:array];
+//    if (array.count == 0) {
+//        array = [NSMutableArray array];
+//    }
+    if (!(self.archiverType == KIVArchiverTypeOfRepeatable)) {
+        for (NSDictionary *item in array) {
+            if ([item[LOGSTITLE] isEqualToString:aData[LOGSTITLE]]) {
+                [newArray removeObject:item];
+            }
+        }
+    }
+
+    [newArray addObject:aData];
+    [self savelogs:newArray];
+}
+
+#pragma mark - 最终的存储操作
+- (void)savelogs:(id)aData
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSData *data = nil;
+        if (![aData isKindOfClass:[NSData class] ]) {
+            data = [NSKeyedArchiver archivedDataWithRootObject:aData];
+        }else{
+            data = aData;
+        }
+        [[NSUserDefaults standardUserDefaults] setObject:data forKey:self.archiveIdentifior];
+        if (self.saveCompleteBlock) {
+            self.saveCompleteBlock();
+        }
+        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_ARCHIVER_LOGS object:nil];
+    });
+}
+
+- (NSArray *)getAllLogs
+{
+    NSData *aData = [[NSUserDefaults standardUserDefaults] objectForKey:self.archiveIdentifior];
+    NSArray *logs = (NSArray *)[NSKeyedUnarchiver unarchiveObjectWithData:aData];
+    return logs;
+}
+
+- (id)getLogWithIndex:(NSUInteger)index
+{
+    NSArray *array = [self getAllLogs];
     if (array.count < index) {
         return nil;
     }
     return [array objectAtIndex:index];
 }
 
-
-#pragma mark insert and fetch
-- (NSArray *)fetchLogCollections
+- (BOOL)capacityHandle:(id)logItem
 {
-    NSData *aData = [[NSUserDefaults standardUserDefaults] objectForKey:self.archiveIdentifior];
-    NSArray *logCollections = (NSArray *)[NSKeyedUnarchiver unarchiveObjectWithData:aData];
-    return logCollections;
-}
-
-- (void)insertLogLogCollectionWithData:(NSDictionary *)aData
-{
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSMutableArray *array = [[self fetchLogCollections] mutableCopy];
-        if (array.count == 0) {
-            array = [NSMutableArray array];
-        }
-        for (NSDictionary *item in array) {
-            if ([item[LOGSTITLE] isEqualToString:aData[LOGSTITLE]]) {
-                [array removeObject:item];
-            }
-        }
-        [array addObject:aData];
-        NSData *data = [NSKeyedArchiver archivedDataWithRootObject:array];
-        [[NSUserDefaults standardUserDefaults] setObject:data forKey:self.archiveIdentifior];
+    NSArray *array = [self getAllLogs];
+    if (array.count >= self.capacity) {
         
-        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_ARCHIVER_LOGS object:nil];
-    });
+    }
+    
+    if (self.archiverType == KIVArchiverTypeOfRepeatable) {
+        //可重复
+        
+    }else if(self.archiverType == KIVArchiverTypeOfUnique){
+        //不可重复
+        //移除旧值
+    }
+    
+    return NO;
 }
 
+- (void)insertLog:(id)logItem
+{
+    [self capacityHandle:logItem];
+    [self insertLog:logItem];
+}
+
+- (void)insertlogs:(NSArray *)logs
+{
+    for (id item in logs) {
+        [self insertLog:item];
+    }
+}
 
 
 @end

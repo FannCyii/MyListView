@@ -19,6 +19,7 @@
 #import "KIVCVDataSource.h"
 #import "UICollectionView+KIVDS.h"
 #import "KIVDispatchCenter.h"
+#import "KIVDSDataSource.h"
 
 
 //pods

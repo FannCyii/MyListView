@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import "KIVHomeCVHeaderCell.h"
 #import "KIVHomeCVMiddelCell.h"
+#import "KIVSearchHeaderView.h"
 
-@interface ViewController (CellDelegate)<KIVHomeCVHeaderCellDelegate,KIVHomeCVMiddelCellDelegate,KIVCVCellDelegate>
+@interface ViewController (CellDelegate)<KIVSearchHeaderViewDelegate,KIVHomeCVMiddelCellDelegate,KIVCVCellDelegate>
 
 @end

@@ -12,6 +12,8 @@
 #import "KIVCVBaseItem.h"
 #import "UICollectionView+KIVDS.h"
 
+#import "AddArticleVC.h"
+
 @interface ViewController ()
 
 @property (nonatomic, strong) UICollectionView * collectionView;
@@ -73,14 +75,15 @@
 
 - (void)addLogsAlert
 {
-    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:nil message:@"请选择" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertVc = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *addLogsAtcion = [UIAlertAction actionWithTitle:@"导入日志" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [[KIVRouter sharedInstance] routeToModulesOfKey:@"importlogvc"];
     }];
     
     UIAlertAction *addArticleAtcion = [UIAlertAction actionWithTitle:@"添加文章" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        
+        AddArticleVC *addVc = [AddArticleVC new];
+        [self.navigationController pushViewController:addVc animated:YES];
     }];
     
     UIAlertAction *enterAnction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {

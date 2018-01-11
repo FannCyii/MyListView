@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.3'
+#use_frameworks!
 
 workspace 'Demolibrarys.xcworkspace'
 
@@ -30,3 +31,7 @@ target 'Demo_Tools' do
     pod 'PureLayout'
 end
 
+target 'Demo_TableView' do
+    project './Demo_modules/Demo_TableView/Demo_TableView.xcodeproj'
+    pod 'PureLayout'
+end

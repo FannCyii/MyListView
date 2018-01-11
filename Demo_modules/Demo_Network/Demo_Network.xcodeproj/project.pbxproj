@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52F5EDEFA9AD2582F1F9C652 /* libPods-Demo_Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8F5FF4BEACEE418CDB6D03A /* libPods-Demo_Network.a */; };
+		2DC2C80FDD218391BE70CF84 /* libPods-Demo_Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA74525267BDCAD6EF4F8A6 /* libPods-Demo_Network.a */; };
 		8F810F871FDD7245004D1BA8 /* Demo_Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F810F861FDD7245004D1BA8 /* Demo_Network.m */; };
 		8F810F881FDD7245004D1BA8 /* Demo_Network.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F810F851FDD7245004D1BA8 /* Demo_Network.h */; };
 		8F810F971FDD77D1004D1BA8 /* Demo_Network.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F810F851FDD7245004D1BA8 /* Demo_Network.h */; };
@@ -31,7 +31,7 @@
 		8F810F821FDD7245004D1BA8 /* libDemo_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDemo_Network.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F810F851FDD7245004D1BA8 /* Demo_Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo_Network.h; sourceTree = "<group>"; };
 		8F810F861FDD7245004D1BA8 /* Demo_Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_Network.m; sourceTree = "<group>"; };
-		A8F5FF4BEACEE418CDB6D03A /* libPods-Demo_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo_Network.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA74525267BDCAD6EF4F8A6 /* libPods-Demo_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo_Network.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E705E69F8C26BDAAD884F5C6 /* Pods-Demo_Network.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_Network.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Demo_Network/Pods-Demo_Network.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F5EDEFA9AD2582F1F9C652 /* libPods-Demo_Network.a in Frameworks */,
+				2DC2C80FDD218391BE70CF84 /* libPods-Demo_Network.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 		B8D02E46558D54DD1BF14103 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A8F5FF4BEACEE418CDB6D03A /* libPods-Demo_Network.a */,
+				8FA74525267BDCAD6EF4F8A6 /* libPods-Demo_Network.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

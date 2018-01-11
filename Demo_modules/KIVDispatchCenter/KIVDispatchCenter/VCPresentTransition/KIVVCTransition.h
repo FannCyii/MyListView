@@ -24,7 +24,7 @@
  @param animatorClassName 自定义动画类名
  @return 返回delegate
  */
-- (instancetype)initSamVCTransitionWithPresentationAnimatorName:(NSString *)animatorClassName;
+- (instancetype)initSamVCTransitionWithPresentationAnimatorClassName:(NSString *)animatorClassName;
 
 
 /**

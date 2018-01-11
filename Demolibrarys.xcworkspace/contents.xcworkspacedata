@@ -11,6 +11,9 @@
       location = "container:"
       name = "Modules">
       <FileRef
+         location = "group:Demo_modules/KIVBrowserKit/KIVBrowserKit.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:Demo_modules/KIVDispatchCenter/KIVDispatchCenter.xcodeproj">
       </FileRef>
       <FileRef

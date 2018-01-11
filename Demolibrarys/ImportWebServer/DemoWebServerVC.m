@@ -79,7 +79,9 @@
         DataParser *parser = [[DataParser alloc] initWithData:logData];
         FolderListItem *rootFolder = parser.rootFolder;
         
-        KIVArchiverManager *archiveManager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_ARCHIVER_IDENTIFIOR];
+        KIVArchiverManager *archiveManager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_ARCHIVER_IDENTIFIOR completeHandle:^{
+            [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_ARCHIVER_LOGS object:nil];
+        }];
         [archiveManager saveLogs:rootFolder keyWord:logsName];
         
         dispatch_async(dispatch_get_main_queue(), ^{

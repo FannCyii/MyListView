@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612940FD5735104F9CD0FE5E /* libPods-Demo_TableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52218174AE8C723FAF94F9AE /* libPods-Demo_TableView.a */; };
 		8F12F5EA1FC709E100D65E9A /* UITableView+KIVDS.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F12F5E81FC709E100D65E9A /* UITableView+KIVDS.h */; };
 		8F12F5EB1FC709E100D65E9A /* UITableView+KIVDS.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F5E91FC709E100D65E9A /* UITableView+KIVDS.m */; };
 		8F839AA31FBDD4100014B1C6 /* Demo_TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839AA21FBDD4100014B1C6 /* Demo_TableView.m */; };
@@ -38,6 +39,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		52218174AE8C723FAF94F9AE /* libPods-Demo_TableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo_TableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66D6DBBCC98274EC65449AD2 /* Pods-Demo_TableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_TableView.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-Demo_TableView/Pods-Demo_TableView.debug.xcconfig"; sourceTree = "<group>"; };
 		8F12F5E81FC709E100D65E9A /* UITableView+KIVDS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+KIVDS.h"; sourceTree = "<group>"; };
 		8F12F5E91FC709E100D65E9A /* UITableView+KIVDS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+KIVDS.m"; sourceTree = "<group>"; };
 		8F839A9E1FBDD4100014B1C6 /* libDemo_TableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDemo_TableView.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +54,7 @@
 		8F839AD81FBDDB130014B1C6 /* KIVDSBaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVDSBaseRow.h; sourceTree = "<group>"; };
 		8F839ADA1FBDDB130014B1C6 /* KIVDSBaseTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVDSBaseTVCell.m; sourceTree = "<group>"; };
 		8F839ADB1FBDDB130014B1C6 /* KIVDSBaseTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVDSBaseTVCell.h; sourceTree = "<group>"; };
+		ADCAF128CCF17B620BED3749 /* Pods-Demo_TableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_TableView.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-Demo_TableView/Pods-Demo_TableView.release.xcconfig"; sourceTree = "<group>"; };
 		B7FB6E851FF6873F003A72F2 /* KIVListManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVListManager.h; sourceTree = "<group>"; };
 		B7FB6E861FF6873F003A72F2 /* KIVListManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVListManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,17 +64,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				612940FD5735104F9CD0FE5E /* libPods-Demo_TableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FF549D37ADFA0C1775F6047 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52218174AE8C723FAF94F9AE /* libPods-Demo_TableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8119E1B24B3CC2F4949A73F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66D6DBBCC98274EC65449AD2 /* Pods-Demo_TableView.debug.xcconfig */,
+				ADCAF128CCF17B620BED3749 /* Pods-Demo_TableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8F839A951FBDD4100014B1C6 = {
 			isa = PBXGroup;
 			children = (
 				8F839AA01FBDD4100014B1C6 /* Demo_TableView */,
 				8F839A9F1FBDD4100014B1C6 /* Products */,
+				8119E1B24B3CC2F4949A73F2 /* Pods */,
+				1FF549D37ADFA0C1775F6047 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,10 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F839AA71FBDD4100014B1C6 /* Build configuration list for PBXNativeTarget "Demo_TableView" */;
 			buildPhases = (
+				97E61AAC93CCFE1398461F1F /* [CP] Check Pods Manifest.lock */,
 				8F839A9A1FBDD4100014B1C6 /* Sources */,
 				8F839A9B1FBDD4100014B1C6 /* Frameworks */,
 				8F839A9C1FBDD4100014B1C6 /* CopyFiles */,
 				8F839B521FBDE1D10014B1C6 /* Headers */,
+				CD178878BE4838C63567C4B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +230,42 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97E61AAC93CCFE1398461F1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo_TableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD178878BE4838C63567C4B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-Demo_TableView/Pods-Demo_TableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8F839A9A1FBDD4100014B1C6 /* Sources */ = {
@@ -329,6 +391,7 @@
 		};
 		8F839AA81FBDD4100014B1C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D6DBBCC98274EC65449AD2 /* Pods-Demo_TableView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WTFJP34N3T;
@@ -339,7 +402,10 @@
 					"$(SRCROOT)/../Demo_Crash/Demo_Crash/**",
 					"$(SRCROOT)/../Demo_Tools/Demo_Tools/**",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -348,6 +414,7 @@
 		};
 		8F839AA91FBDD4100014B1C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADCAF128CCF17B620BED3749 /* Pods-Demo_TableView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WTFJP34N3T;
@@ -358,7 +425,10 @@
 					"$(SRCROOT)/../Demo_Crash/Demo_Crash/**",
 					"$(SRCROOT)/../Demo_Tools/Demo_Tools/**",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";

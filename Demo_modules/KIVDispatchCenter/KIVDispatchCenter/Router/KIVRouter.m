@@ -71,7 +71,7 @@
 - (KIVVCTransition *)transition
 {
     if (!_transition) {
-        _transition = [[KIVVCTransition alloc] initSamVCTransitionWithPresentationAnimatorName:@"AnimatorSpring"];
+        _transition = [[KIVVCTransition alloc] initSamVCTransitionWithPresentationAnimatorClassName:@"AnimatorSpring"];
     }
     return _transition;
 }
@@ -96,25 +96,30 @@
 - (void)routeToModulesOfKey:(NSString *)key withParams:(NSDictionary *)aParams routeCompleteBlock:(KIVRouteCompleteBlock)routeCompleteBlock
 {
     Class moduleClass = [self getModuleClassForKey:key];
-    UIViewController *targetVC = [[moduleClass alloc] init];
+    UIViewController *targetVC = nil;//[[UIViewController alloc] initWithNibName:NSStringFromClass(moduleClass) bundle:nil];
+//    UIViewController *vc = [[UIViewController alloc] initWithNibName:NSStringFromClass(moduleClass) bundle:[NSBundle mainBundle]];
+    if (!targetVC) {
+        targetVC = [[moduleClass alloc] init];
+    }
+
     if (!targetVC) {
         return;
     }
     targetVC.routerParamsDir = [aParams copy];
-    targetVC.transitioningDelegate = self.transition;
     if (self.beforeHandle) {
         self.beforeHandle(targetVC,nil);
     }
     if ([self.rootVC isKindOfClass:[UINavigationController class]]) {
         UINavigationController *rootNav = (UINavigationController *)self.rootVC;
         [rootNav pushViewController:targetVC animated:YES];
-    }else if ([self.rootVC isKindOfClass:[UIViewController class]])
-    {
+        return;
+    }else if ([self.rootVC isKindOfClass:[UIViewController class]]){
         [self.rootVC presentViewController:targetVC animated:YES completion:^{
             if (routeCompleteBlock) {
                 routeCompleteBlock(targetVC,nil);
             }
         }];
+        return;
     }else{
         NSString *assertString = [NSString stringWithFormat:@"The value in the Config Map of this key:%@ is not a \"UIViewController\" ClassName",key];
         assert(assertString);
@@ -182,8 +187,24 @@
 
 - (void)routerVC:(UIViewController *)fromVC toVC:(UIViewController *)toVC withParams:(NSDictionary *)dirParam trasitionAnimatorClassName:(NSString *)AnimatorClassName completeBlock:(KIVRouteCompleteBlock)routeCompleteBlock
 {
-    KIVVCTransition *trasition = [[KIVVCTransition alloc] initSamVCTransitionWithPresentationAnimatorName:AnimatorClassName];
+    NSString *animator = AnimatorClassName;
+    if (!NSClassFromString(animator)) {
+        animator = @"AnimatorPopping";
+    }
+    KIVVCTransition *trasition = [[KIVVCTransition alloc] initSamVCTransitionWithPresentationAnimatorClassName:animator presentationControllerClassName:@"SAMDarkClubDataPickPC"];
     toVC.transitioningDelegate = trasition;
+    [fromVC presentViewController:toVC animated:YES completion:^{
+        NSLog(@"this is present vc from %@ to %@",fromVC,toVC);
+    }];
+}
+
+- (void)routerVC:(UIViewController *)fromVC
+            toVC:(UIViewController *)toVC
+      withParams:(NSDictionary *)dirParam
+vcTransition:(KIVVCTransition *)vcTransition
+   completeBlock:(KIVRouteCompleteBlock)routeCompleteBlock
+{
+    toVC.transitioningDelegate = vcTransition;
     [fromVC presentViewController:toVC animated:YES completion:^{
         NSLog(@"this is present vc from %@ to %@",fromVC,toVC);
     }];

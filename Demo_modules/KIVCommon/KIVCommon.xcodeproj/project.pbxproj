@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B73F50002007B20A008891D8 /* KIVArchiveManger.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F4FFE2007B20A008891D8 /* KIVArchiveManger.h */; };
+		B73F50012007B20A008891D8 /* KIVArchiveManger.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F4FFF2007B20A008891D8 /* KIVArchiveManger.m */; };
+		B73F50042007BA3C008891D8 /* KIVArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F50022007BA3B008891D8 /* KIVArchiverManager.m */; };
+		B73F50052007BA3C008891D8 /* KIVArchiverManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F50032007BA3C008891D8 /* KIVArchiverManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7FB6E2B1FF54394003A72F2 /* KIVCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FB6E291FF54394003A72F2 /* KIVCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7FB6E351FF54449003A72F2 /* KIVArchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FB6E331FF54449003A72F2 /* KIVArchiver.h */; };
-		B7FB6E361FF54449003A72F2 /* KIVArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FB6E341FF54449003A72F2 /* KIVArchiver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B73F4FFE2007B20A008891D8 /* KIVArchiveManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVArchiveManger.h; sourceTree = "<group>"; };
+		B73F4FFF2007B20A008891D8 /* KIVArchiveManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVArchiveManger.m; sourceTree = "<group>"; };
+		B73F50022007BA3B008891D8 /* KIVArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVArchiverManager.m; sourceTree = "<group>"; };
+		B73F50032007BA3C008891D8 /* KIVArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVArchiverManager.h; sourceTree = "<group>"; };
 		B7FB6E261FF54394003A72F2 /* KIVCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KIVCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FB6E291FF54394003A72F2 /* KIVCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVCommon.h; sourceTree = "<group>"; };
 		B7FB6E2A1FF54394003A72F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7FB6E331FF54449003A72F2 /* KIVArchiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVArchiver.h; sourceTree = "<group>"; };
-		B7FB6E341FF54449003A72F2 /* KIVArchiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVArchiver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +54,11 @@
 		B7FB6E281FF54394003A72F2 /* KIVCommon */ = {
 			isa = PBXGroup;
 			children = (
+				B73F50032007BA3C008891D8 /* KIVArchiverManager.h */,
+				B73F50022007BA3B008891D8 /* KIVArchiverManager.m */,
 				B7FB6E291FF54394003A72F2 /* KIVCommon.h */,
-				B7FB6E331FF54449003A72F2 /* KIVArchiver.h */,
-				B7FB6E341FF54449003A72F2 /* KIVArchiver.m */,
+				B73F4FFE2007B20A008891D8 /* KIVArchiveManger.h */,
+				B73F4FFF2007B20A008891D8 /* KIVArchiveManger.m */,
 				B7FB6E2A1FF54394003A72F2 /* Info.plist */,
 			);
 			path = KIVCommon;
@@ -65,8 +71,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73F50002007B20A008891D8 /* KIVArchiveManger.h in Headers */,
+				B73F50052007BA3C008891D8 /* KIVArchiverManager.h in Headers */,
 				B7FB6E2B1FF54394003A72F2 /* KIVCommon.h in Headers */,
-				B7FB6E351FF54449003A72F2 /* KIVArchiver.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7FB6E361FF54449003A72F2 /* KIVArchiver.m in Sources */,
+				B73F50042007BA3C008891D8 /* KIVArchiverManager.m in Sources */,
+				B73F50012007B20A008891D8 /* KIVArchiveManger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,13 +267,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YAEL4C965W;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KIVCommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = kivan.common.com.KIVCommon;
@@ -281,11 +292,13 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = YAEL4C965W;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = KIVCommon/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = kivan.common.com.KIVCommon;

@@ -52,6 +52,7 @@
 {
     KIVDSDataSource *dataSource = [self kivDataSource];
     [dataSource connectDataWithSections:nil];
+    self.kivSections = nil;
     [self reloadData];
 }
 

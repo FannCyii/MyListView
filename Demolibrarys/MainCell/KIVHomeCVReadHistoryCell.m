@@ -31,14 +31,33 @@
     
     [self dataHandle];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logsArchived:) name:NOTIFICATION_ARCHIVER_HISTORIES object:nil];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)logsArchived:(NSNotification *)notification
+{
+    if ([notification.name isEqualToString:NOTIFICATION_ARCHIVER_HISTORIES]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self dataHandle];
+        });
+    }
 }
 
 - (void)dataHandle
 {
-    KIVDSBaseSection *section = [[KIVDSBaseSection alloc] init];
-    KIVArchiverManager *manager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_READ_HISTORIES];
+    [self.tableView clearData];
     
-    NSArray *histories = [manager getAllLogs];
+    KIVDSBaseSection *section = [[KIVDSBaseSection alloc] init];
+    KIVArchiverManager *manager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_READ_HISTORIES completeHandle:^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_ARCHIVER_HISTORIES object:nil];
+    }];
+    
+    NSArray *histories = [[[manager getAllLogs] reverseObjectEnumerator] allObjects];
     for (NSDictionary *dir in histories) {
         ElementInfo *info = dir[LOGSCONTENT];
         KIVDSBaseRow *row = [[KIVDSBaseRow alloc]init];

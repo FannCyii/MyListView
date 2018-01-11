@@ -27,7 +27,14 @@ typedef NS_ENUM(NSInteger,KIVArchiverType) {
 @property (nonatomic, copy) KIVArchiverSaveCompleteBlock saveCompleteBlock;
 
 - (instancetype)initWithIdentifior:(NSString *)identifior;
+- (instancetype)initWithIdentifior:(NSString *)identifior completeHandle:(KIVArchiverSaveCompleteBlock)completeHandle;
 
+/**
+ 以键值对的形式存储
+
+ @param aData 值
+ @param kegword 键
+ */
 - (void)saveLogs:(id)aData keyWord:(NSString *)kegword;
 - (void)insertlogs:(NSArray *)logs;
 - (void)insertLog:(id)logItem;

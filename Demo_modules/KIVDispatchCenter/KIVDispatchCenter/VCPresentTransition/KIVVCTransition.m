@@ -34,7 +34,7 @@
     return [self initSamVCTransitionWithPresentationAnimatorClassName:nil presentationControllerClassName:pcClassName];
 }
 
-- (instancetype)initSamVCTransitionWithPresentationAnimatorName:(NSString *)animatorClassName
+- (instancetype)initSamVCTransitionWithPresentationAnimatorClassName:(NSString *)animatorClassName
 {
     return [self initSamVCTransitionWithPresentationAnimatorClassName:animatorClassName presentationControllerClassName:nil];
 }
@@ -51,7 +51,6 @@
     }
     return self;
 }
-
 
 - (nullable UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(nullable UIViewController *)presenting sourceViewController:(UIViewController *)source
 {

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KIVVCTransition.h"
 
 typedef void (^KIVRouteCompleteBlock)(UIViewController *vc, NSError *error);
 typedef void (^KIVRouteHandleBlock)(UIViewController *vc, NSError *error);
@@ -35,6 +36,12 @@ typedef void (^KIVRouteHandleBlock)(UIViewController *vc, NSError *error);
 //Present
 - (void)routerVCkey:(NSString *)fromKey toVCKey:(NSString *)toKey;
 - (void)routerVCkey:(NSString *)fromKey toVCKey:(NSString *)toKey withParams:(NSDictionary *)dirParam trasitionAnimatorClassName:(NSString *)AnimatorClassName completeBlock:(KIVRouteCompleteBlock)routeCompleteBlock;
+
+- (void)routerVC:(UIViewController *)fromVC
+            toVC:(UIViewController *)toVC
+      withParams:(NSDictionary *)dirParam
+    vcTransition:(KIVVCTransition *)vcTransition
+   completeBlock:(KIVRouteCompleteBlock)routeCompleteBlock;
 
 /*
  跳转过过程

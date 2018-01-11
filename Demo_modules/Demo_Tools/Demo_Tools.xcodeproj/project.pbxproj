@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77A72C5E5A546333CB138EBB /* libPods-Demo_Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 937C2C16537BB7CAD58A43CB /* libPods-Demo_Tools.a */; };
+		60CA263D36BD5C0D92094B96 /* libPods-Demo_Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A867E5ACA4E5EF0A3D697FF6 /* libPods-Demo_Tools.a */; };
 		8F839B351FBDDC730014B1C6 /* Demo_Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B341FBDDC730014B1C6 /* Demo_Tools.m */; };
 		8F839B361FBDDC730014B1C6 /* Demo_Tools.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F839B331FBDDC730014B1C6 /* Demo_Tools.h */; };
 		8F839B3E1FBDDCB00014B1C6 /* KIVColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F839B3D1FBDDCB00014B1C6 /* KIVColor.m */; };
@@ -35,7 +35,7 @@
 		8F839B341FBDDC730014B1C6 /* Demo_Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Demo_Tools.m; sourceTree = "<group>"; };
 		8F839B3C1FBDDCB00014B1C6 /* KIVColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVColor.h; sourceTree = "<group>"; };
 		8F839B3D1FBDDCB00014B1C6 /* KIVColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVColor.m; sourceTree = "<group>"; };
-		937C2C16537BB7CAD58A43CB /* libPods-Demo_Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo_Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A867E5ACA4E5EF0A3D697FF6 /* libPods-Demo_Tools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo_Tools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77A72C5E5A546333CB138EBB /* libPods-Demo_Tools.a in Frameworks */,
+				60CA263D36BD5C0D92094B96 /* libPods-Demo_Tools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 		5A1FF71858BCB5FC1B6DC246 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				937C2C16537BB7CAD58A43CB /* libPods-Demo_Tools.a */,
+				A867E5ACA4E5EF0A3D697FF6 /* libPods-Demo_Tools.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

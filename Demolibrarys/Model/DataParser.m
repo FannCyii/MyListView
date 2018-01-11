@@ -9,7 +9,8 @@
 #import "DataParser.h"
 #import "XMLReader.h"
 //#import "DataParser+XMLParser.h"
-#import <ObjectiveGumbo.h>
+//#import "ObjectiveGumbo.h"
+#import <ObjectiveGumbo/ObjectiveGumbo.h>
 #import "FolderListItem.h"
 #import "ArticleListItem.h"
 

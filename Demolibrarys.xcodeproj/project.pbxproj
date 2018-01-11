@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B7167CBD23733D328DE9FD6 /* libPods-Demolibrarys.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FEF8AB6A7EB01253A8E3E370 /* libPods-Demolibrarys.a */; };
 		8F12F5F01FC719E400D65E9A /* KIVDemo01Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F5EE1FC719E400D65E9A /* KIVDemo01Cell.m */; };
 		8F12F5F11FC719E400D65E9A /* KIVDemo01Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F5EF1FC719E400D65E9A /* KIVDemo01Cell.xib */; };
 		8F12F5F71FC72BF800D65E9A /* KIVLogVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F5F51FC72BF800D65E9A /* KIVLogVC.m */; };
@@ -62,15 +63,19 @@
 		8FC24F2B1FF145AA00250E4F /* kivMiddleItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FC24F291FF145AA00250E4F /* kivMiddleItemCell.xib */; };
 		8FF0E4261FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0E4251FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m */; };
 		8FF0E4291FC85C6B00A89C3D /* UIView+screenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0E4281FC85C6A00A89C3D /* UIView+screenShot.m */; };
+		B702D23520066CF5006DF256 /* AddArticleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B702D23320066CF5006DF256 /* AddArticleVC.m */; };
+		B702D23620066CF5006DF256 /* AddArticleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B702D23420066CF5006DF256 /* AddArticleVC.xib */; };
+		B73F4FF32007A3AF008891D8 /* UserInfoPC.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F4FF22007A3AF008891D8 /* UserInfoPC.m */; };
+		B73F4FFC2007A80B008891D8 /* UserInfoTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F4FFA2007A80B008891D8 /* UserInfoTVCell.m */; };
+		B73F4FFD2007A80B008891D8 /* UserInfoTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73F4FFB2007A80B008891D8 /* UserInfoTVCell.xib */; };
+		B73F50062007BA72008891D8 /* KIVCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F50072007BA72008891D8 /* KIVCommon.framework */; };
 		B770E7C41FFFBD8A003D78F3 /* HistroyReadTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B770E7C21FFFBD8A003D78F3 /* HistroyReadTVCell.m */; };
 		B770E7C51FFFBD8A003D78F3 /* HistroyReadTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B770E7C31FFFBD8A003D78F3 /* HistroyReadTVCell.xib */; };
-		B7FB6E171FF52692003A72F2 /* libPods-Demolibrarys.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FB6E191FF52692003A72F2 /* libPods-Demolibrarys.a */; };
+		B7DBFB3E20023F3200E49D2D /* UserInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DBFB3D20023F3200E49D2D /* UserInfoVC.xib */; };
+		B7DBFB3F200249A300E49D2D /* KIVDispatchCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBFB40200249A300E49D2D /* KIVDispatchCenter.framework */; };
 		B7FB6E1A1FF5285A003A72F2 /* libDemo_Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FB6E1B1FF5285A003A72F2 /* libDemo_Network.a */; };
-		B7FB6E311FF543E1003A72F2 /* KIVCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FB6E321FF543E1003A72F2 /* KIVCommon.framework */; };
-		B7FB6E391FF546FA003A72F2 /* KIVArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FB6E381FF546FA003A72F2 /* KIVArchiverManager.m */; };
 		B7FB6E931FF7F591003A72F2 /* DemoWebServerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7FB6E901FF7F591003A72F2 /* DemoWebServerVC.xib */; };
 		B7FB6E941FF7F591003A72F2 /* DemoWebServerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FB6E921FF7F591003A72F2 /* DemoWebServerVC.m */; };
-		B7FB6EB91FFB4F57003A72F2 /* KIVDispatchCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FB6EBA1FFB4F57003A72F2 /* KIVDispatchCenter.framework */; };
 		B7FB6F1A1FFBA474003A72F2 /* UserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FB6F191FFBA473003A72F2 /* UserInfoVC.m */; };
 		B7FB6F1E1FFBA67B003A72F2 /* KIVSearchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FB6F1D1FFBA67B003A72F2 /* KIVSearchHeaderView.m */; };
 		B7FB6F251FFBACDE003A72F2 /* KIVHomeCVHeaderADCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FB6F231FFBACDE003A72F2 /* KIVHomeCVHeaderADCell.m */; };
@@ -179,17 +184,27 @@
 		8FF0E4271FC85C6A00A89C3D /* UIView+screenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+screenShot.h"; path = "Demolibrarys/UIView+screenShot.h"; sourceTree = SOURCE_ROOT; };
 		8FF0E4281FC85C6A00A89C3D /* UIView+screenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+screenShot.m"; path = "Demolibrarys/UIView+screenShot.m"; sourceTree = SOURCE_ROOT; };
 		94E298A6932E8E91D18B4B8B /* Pods-Demolibrarys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demolibrarys.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demolibrarys/Pods-Demolibrarys.release.xcconfig"; sourceTree = "<group>"; };
+		B702D23120066406006DF256 /* KIVBrowserKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVBrowserKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B702D23220066CF5006DF256 /* AddArticleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddArticleVC.h; sourceTree = "<group>"; };
+		B702D23320066CF5006DF256 /* AddArticleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddArticleVC.m; sourceTree = "<group>"; };
+		B702D23420066CF5006DF256 /* AddArticleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddArticleVC.xib; sourceTree = "<group>"; };
+		B702D23820066EA4006DF256 /* KIVBrowserKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVBrowserKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73F4FF12007A3AF008891D8 /* UserInfoPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoPC.h; sourceTree = "<group>"; };
+		B73F4FF22007A3AF008891D8 /* UserInfoPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoPC.m; sourceTree = "<group>"; };
+		B73F4FF92007A80B008891D8 /* UserInfoTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoTVCell.h; sourceTree = "<group>"; };
+		B73F4FFA2007A80B008891D8 /* UserInfoTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoTVCell.m; sourceTree = "<group>"; };
+		B73F4FFB2007A80B008891D8 /* UserInfoTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTVCell.xib; sourceTree = "<group>"; };
+		B73F50072007BA72008891D8 /* KIVCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B770E7C11FFFBD8A003D78F3 /* HistroyReadTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistroyReadTVCell.h; sourceTree = "<group>"; };
 		B770E7C21FFFBD8A003D78F3 /* HistroyReadTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistroyReadTVCell.m; sourceTree = "<group>"; };
 		B770E7C31FFFBD8A003D78F3 /* HistroyReadTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistroyReadTVCell.xib; sourceTree = "<group>"; };
+		B7DBFB3D20023F3200E49D2D /* UserInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoVC.xib; sourceTree = "<group>"; };
+		B7DBFB40200249A300E49D2D /* KIVDispatchCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVDispatchCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FB6E131FF5235C003A72F2 /* libPods-Demo_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-Demo_Network.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FB6E151FF5254C003A72F2 /* libDemo_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDemo_Network.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FB6E181FF52692003A72F2 /* libPods-Demo_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-Demo_Network.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7FB6E191FF52692003A72F2 /* libPods-Demolibrarys.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-Demolibrarys.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FB6E1B1FF5285A003A72F2 /* libDemo_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDemo_Network.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FB6E321FF543E1003A72F2 /* KIVCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7FB6E371FF546FA003A72F2 /* KIVArchiverManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVArchiverManager.h; sourceTree = "<group>"; };
-		B7FB6E381FF546FA003A72F2 /* KIVArchiverManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVArchiverManager.m; sourceTree = "<group>"; };
 		B7FB6E821FF6852A003A72F2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B7FB6E901FF7F591003A72F2 /* DemoWebServerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoWebServerVC.xib; sourceTree = "<group>"; };
 		B7FB6E911FF7F591003A72F2 /* DemoWebServerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoWebServerVC.h; sourceTree = "<group>"; };
@@ -208,7 +223,7 @@
 		B7FB6F2C1FFBB241003A72F2 /* KIVHomeCVUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVHomeCVUserCell.h; sourceTree = "<group>"; };
 		B7FB6F2D1FFBB241003A72F2 /* KIVHomeCVUserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVHomeCVUserCell.m; sourceTree = "<group>"; };
 		B7FB6F2E1FFBB241003A72F2 /* KIVHomeCVUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVHomeCVUserCell.xib; sourceTree = "<group>"; };
-		D80796F6D9FCE1E2C84A1C1A /* libPods-Demolibrarys.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demolibrarys.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF8AB6A7EB01253A8E3E370 /* libPods-Demolibrarys.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demolibrarys.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,15 +231,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7FB6EB91FFB4F57003A72F2 /* KIVDispatchCenter.framework in Frameworks */,
-				B7FB6E311FF543E1003A72F2 /* KIVCommon.framework in Frameworks */,
+				B73F50062007BA72008891D8 /* KIVCommon.framework in Frameworks */,
+				B7DBFB3F200249A300E49D2D /* KIVDispatchCenter.framework in Frameworks */,
 				B7FB6E1A1FF5285A003A72F2 /* libDemo_Network.a in Frameworks */,
-				B7FB6E171FF52692003A72F2 /* libPods-Demolibrarys.a in Frameworks */,
 				8F839B4C1FBDE0A50014B1C6 /* libDemo_Crash.a in Frameworks */,
 				8F839B4D1FBDE0A50014B1C6 /* libDemo_libHeaders.a in Frameworks */,
 				8F839B4E1FBDE0A50014B1C6 /* libDemo_Tools.a in Frameworks */,
 				8F839AB71FBDD6250014B1C6 /* libDemo_TableView.a in Frameworks */,
 				8F39ED141FE6CBA2003E2330 /* ExternalAccessory.framework in Frameworks */,
+				4B7167CBD23733D328DE9FD6 /* libPods-Demolibrarys.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,11 +249,14 @@
 		12A93E5F477BC752DC6A6B7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B73F50072007BA72008891D8 /* KIVCommon.framework */,
+				B702D23820066EA4006DF256 /* KIVBrowserKit.framework */,
+				B702D23120066406006DF256 /* KIVBrowserKit.framework */,
+				B7DBFB40200249A300E49D2D /* KIVDispatchCenter.framework */,
 				B7FB6EBA1FFB4F57003A72F2 /* KIVDispatchCenter.framework */,
 				B7FB6E321FF543E1003A72F2 /* KIVCommon.framework */,
 				B7FB6E1B1FF5285A003A72F2 /* libDemo_Network.a */,
 				B7FB6E181FF52692003A72F2 /* libPods-Demo_Network.a */,
-				B7FB6E191FF52692003A72F2 /* libPods-Demolibrarys.a */,
 				B7FB6E151FF5254C003A72F2 /* libDemo_Network.a */,
 				B7FB6E131FF5235C003A72F2 /* libPods-Demo_Network.a */,
 				8F39ED131FE6CBA2003E2330 /* ExternalAccessory.framework */,
@@ -248,7 +266,7 @@
 				8F839B501FBDE0A50014B1C6 /* libDemo_libHeaders.a */,
 				8F839B511FBDE0A50014B1C6 /* libDemo_Tools.a */,
 				8F839AB81FBDD6250014B1C6 /* libDemo_TableView.a */,
-				D80796F6D9FCE1E2C84A1C1A /* libPods-Demolibrarys.a */,
+				FEF8AB6A7EB01253A8E3E370 /* libPods-Demolibrarys.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -510,6 +528,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B73F4FF82007A7C6008891D8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B73F4FF92007A80B008891D8 /* UserInfoTVCell.h */,
+				B73F4FFA2007A80B008891D8 /* UserInfoTVCell.m */,
+				B73F4FFB2007A80B008891D8 /* UserInfoTVCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		B770E74F1FFD1CE7003D78F3 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +561,9 @@
 				B7FB6E901FF7F591003A72F2 /* DemoWebServerVC.xib */,
 				B7FB6E911FF7F591003A72F2 /* DemoWebServerVC.h */,
 				B7FB6E921FF7F591003A72F2 /* DemoWebServerVC.m */,
+				B702D23220066CF5006DF256 /* AddArticleVC.h */,
+				B702D23320066CF5006DF256 /* AddArticleVC.m */,
+				B702D23420066CF5006DF256 /* AddArticleVC.xib */,
 			);
 			path = ImportWebServer;
 			sourceTree = "<group>";
@@ -540,8 +571,12 @@
 		B7FB6F171FFBA449003A72F2 /* UserInfoVC */ = {
 			isa = PBXGroup;
 			children = (
+				B73F4FF82007A7C6008891D8 /* Cell */,
 				B7FB6F181FFBA473003A72F2 /* UserInfoVC.h */,
 				B7FB6F191FFBA473003A72F2 /* UserInfoVC.m */,
+				B7DBFB3D20023F3200E49D2D /* UserInfoVC.xib */,
+				B73F4FF12007A3AF008891D8 /* UserInfoPC.h */,
+				B73F4FF22007A3AF008891D8 /* UserInfoPC.m */,
 			);
 			path = UserInfoVC;
 			sourceTree = "<group>";
@@ -558,8 +593,6 @@
 		B7FB6F3D1FFC6A40003A72F2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				B7FB6E371FF546FA003A72F2 /* KIVArchiverManager.h */,
-				B7FB6E381FF546FA003A72F2 /* KIVArchiverManager.m */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -643,6 +676,7 @@
 				8F12F5F11FC719E400D65E9A /* KIVDemo01Cell.xib in Resources */,
 				8F8E6E021FE6AAD900E656DF /* ViewController.xib in Resources */,
 				8F839B4B1FBDDF4E0014B1C6 /* DemoTVC.xib in Resources */,
+				B702D23620066CF5006DF256 /* AddArticleVC.xib in Resources */,
 				B7FB6F261FFBACDE003A72F2 /* KIVHomeCVHeaderADCell.xib in Resources */,
 				8F12F6011FC72EEC00D65E9A /* KIVLogMainCell.xib in Resources */,
 				B7FB6E931FF7F591003A72F2 /* DemoWebServerVC.xib in Resources */,
@@ -655,6 +689,8 @@
 				B7FB6F301FFBB241003A72F2 /* KIVHomeCVUserCell.xib in Resources */,
 				8F839A871FBDC4A30014B1C6 /* Main.storyboard in Resources */,
 				8FC24F2B1FF145AA00250E4F /* kivMiddleItemCell.xib in Resources */,
+				B73F4FFD2007A80B008891D8 /* UserInfoTVCell.xib in Resources */,
+				B7DBFB3E20023F3200E49D2D /* UserInfoVC.xib in Resources */,
 				8F39ED0F1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,9 +719,28 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Demolibrarys/Pods-Demolibrarys-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MGJRouter/MGJRouter.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectiveGumbo/ObjectiveGumbo.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
+				"${BUILT_PRODUCTS_DIR}/XXRouter/XXRouter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MGJRouter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectiveGumbo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XXRouter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -725,6 +780,7 @@
 				8F8E6DFD1FE5825800E656DF /* KIVLogVC+DataHandle.m in Sources */,
 				8FA8B1521FE14AFA009C52C9 /* HomeVC+DataHandle.m in Sources */,
 				B770E7C41FFFBD8A003D78F3 /* HistroyReadTVCell.m in Sources */,
+				B73F4FF32007A3AF008891D8 /* UserInfoPC.m in Sources */,
 				8FA8B1C01FE40C14009C52C9 /* DataParser.m in Sources */,
 				8FA8B0E11FE032F5009C52C9 /* HomeVC.m in Sources */,
 				8FF0E4261FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m in Sources */,
@@ -732,8 +788,8 @@
 				8F12F60A1FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m in Sources */,
 				B7FB6F1A1FFBA474003A72F2 /* UserInfoVC.m in Sources */,
 				8F39ED091FE6BF93003E2330 /* KIVHomeCVHeaderCell.m in Sources */,
+				B702D23520066CF5006DF256 /* AddArticleVC.m in Sources */,
 				B7FB6F2A1FFBADAC003A72F2 /* KIVHomeCVReadHistoryCell.m in Sources */,
-				B7FB6E391FF546FA003A72F2 /* KIVArchiverManager.m in Sources */,
 				8FA8B24C1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.m in Sources */,
 				8FF0E4291FC85C6B00A89C3D /* UIView+screenShot.m in Sources */,
 				8F839B5A1FBDE4360014B1C6 /* DemoTVC+DataHandle.m in Sources */,
@@ -753,6 +809,7 @@
 				8F8E6E011FE6AAD900E656DF /* ViewController.m in Sources */,
 				B7FB6E941FF7F591003A72F2 /* DemoWebServerVC.m in Sources */,
 				8FA8B14E1FE14798009C52C9 /* HomeItemCell.m in Sources */,
+				B73F4FFC2007A80B008891D8 /* UserInfoTVCell.m in Sources */,
 				8F8E6DF81FE570C100E656DF /* ElementInfo.m in Sources */,
 				8F839A811FBDC4A30014B1C6 /* AppDelegate.m in Sources */,
 				8FA8B0E51FE034E0009C52C9 /* KIVCVDataSource.m in Sources */,
@@ -898,7 +955,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WTFJP34N3T;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Demo_modules/KIVDispatchCenter/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Demo_modules/KIVDispatchCenter/**",
+					"$(inherited)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demolibrarys/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -909,6 +969,8 @@
 					"$(SRCROOT)/Demo_modules/Demo_Tools/Demo_Tools",
 					"$(SRCROOT)/Demo_modules/Demo_XMLParser/Demo_XMLParser",
 					"$(SRCROOT)/Demo_modules/KIVDispatchCenter/KIVDispatchCenter/**",
+					"$(SRCROOT)/Demo_modules/KIVBrowserKit/KIVBrowserKit",
+					"$(SRCROOT)/Demo_modules/KIVCommon/KIVCommon",
 				);
 				INFOPLIST_FILE = Demolibrarys/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -925,6 +987,33 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/Toast\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/XXRouter\"",
 					"$(SRCROOT)/Demo_modules/KIVDispatchCenter",
+					"$(SRCROOT)/Demo_modules/KIVBrowserKit",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GCDWebServer\"",
+					"-l\"JSONModel\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MGJRouter\"",
+					"-l\"Masonry\"",
+					"-l\"ObjectiveGumbo\"",
+					"-l\"PureLayout\"",
+					"-l\"Toast\"",
+					"-l\"XXRouter\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
 				PRODUCT_BUNDLE_IDENTIFIER = kivan.myLogList.com;
@@ -945,7 +1034,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WTFJP34N3T;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Demo_modules/KIVDispatchCenter/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Demo_modules/KIVDispatchCenter/**",
+					"$(inherited)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demolibrarys/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -956,6 +1048,8 @@
 					"$(SRCROOT)/Demo_modules/Demo_Tools/Demo_Tools",
 					"$(SRCROOT)/Demo_modules/Demo_XMLParser/Demo_XMLParser",
 					"$(SRCROOT)/Demo_modules/KIVDispatchCenter/KIVDispatchCenter/**",
+					"$(SRCROOT)/Demo_modules/KIVBrowserKit/KIVBrowserKit",
+					"$(SRCROOT)/Demo_modules/KIVCommon/KIVCommon",
 				);
 				INFOPLIST_FILE = Demolibrarys/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -972,6 +1066,33 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/Toast\"",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/XXRouter\"",
 					"$(SRCROOT)/Demo_modules/KIVDispatchCenter",
+					"$(SRCROOT)/Demo_modules/KIVBrowserKit",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"GCDWebServer\"",
+					"-l\"JSONModel\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"MGJRouter\"",
+					"-l\"Masonry\"",
+					"-l\"ObjectiveGumbo\"",
+					"-l\"PureLayout\"",
+					"-l\"Toast\"",
+					"-l\"XXRouter\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
 				);
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include;
 				PRODUCT_BUNDLE_IDENTIFIER = kivan.myLogList.com;

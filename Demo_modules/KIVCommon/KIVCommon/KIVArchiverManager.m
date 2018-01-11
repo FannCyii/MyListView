@@ -20,9 +20,15 @@ const NSString *LOGSCONTENT = @"content";
 
 - (instancetype)initWithIdentifior:(NSString *)identifior
 {
+    return [self initWithIdentifior:identifior completeHandle:nil];
+}
+
+- (instancetype)initWithIdentifior:(NSString *)identifior completeHandle:(KIVArchiverSaveCompleteBlock)completeHandle;
+{
     self = [super init];
     if (self) {
         self.archiveIdentifior = identifior;
+        self.saveCompleteBlock = completeHandle;
     }
     return self;
 }
@@ -79,7 +85,7 @@ const NSString *LOGSCONTENT = @"content";
         if (self.saveCompleteBlock) {
             self.saveCompleteBlock();
         }
-        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_ARCHIVER_LOGS object:nil];
+//        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_ARCHIVER_LOGS object:nil];
     });
 }
 

@@ -13,6 +13,7 @@
 #import "ViewController+CollectionViewDataSourceDelegate.h"
 #import "KIVCVDataSource.h"
 #import "KIVArchiverManager.h"
+#import "UserInfoVC.h"
 
 //view
 #import "KIVSearchHeaderView.h"
@@ -24,7 +25,7 @@
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
 
 @property (nonatomic, strong) KIVSearchHeaderView * searchHeader;
-
+@property (nonatomic, strong) KIVVCTransition *trasition;
 @end
 
 @implementation ViewController
@@ -37,6 +38,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"MY BOOKMARKS";
+    
+    self.trasition = [[KIVVCTransition alloc] initSamVCTransitionWithPresentationAnimatorClassName:@"AnimatorLeft" presentationControllerClassName:@"UserInfoPC"];
+    
     
     UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
 //    [settingBtn setTitle:@"设置" forState:UIControlStateNormal];
@@ -99,8 +103,32 @@
 
 - (void)userInfoSetting:(UIButton *)button
 {
-    [[KIVRouter sharedInstance] routeToModulesOfKey:@"userinfovc"];
+//    [[KIVRouter sharedInstance] routeToModulesOfKey:@"userinfovc"];
+//    [[KIVRouter sharedInstance] routerVCkey:@"mainvc" toVCKey:@"userinfovc"];
+//    [[KIVRouter sharedInstance] routerVCkey:@"mainvc" toVCKey:@"userinfovc" withParams:nil trasitionAnimatorClassName:nil completeBlock:nil];
+    UserInfoVC *infoVc = [UserInfoVC new];
+    infoVc.modalPresentationStyle = UIModalPresentationCustom;
+    [[KIVRouter sharedInstance] routerVC:self toVC:infoVc withParams:nil vcTransition:self.trasition completeBlock:^(UIViewController *vc, NSError *error) {
+        
+    }];
+    
 }
+
+- (void)hiddenKeyBoard:(UITapGestureRecognizer *)gesture
+{
+    [self.view endEditing:YES];
+}
+
+- (void)logsArchived:(NSNotification *)notification
+{
+#warning "需要统一在这做更新，将cell中的更新去掉"
+    //    if ([notification.name isEqualToString:NOTIFICATION_ARCHIVER_LOGS]) {
+    //        dispatch_async(dispatch_get_main_queue(), ^{
+    //            [self handleMainData];
+    //        });
+    //    }
+}
+
 
 #pragma mark - Accessors
 - (UICollectionView *)collectionView
@@ -142,20 +170,6 @@
 
 
 
-#pragma mark - Action
-- (void)hiddenKeyBoard:(UITapGestureRecognizer *)gesture
-{
-    [self.view endEditing:YES];
-}
-
-- (void)logsArchived:(NSNotification *)notification
-{
-    if ([notification.name isEqualToString:NOTIFICATION_ARCHIVER_LOGS]) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self handleMainData];
-        });
-    }
-}
 
 #pragma mark - KIVCVDataSourceDelegate
 - (id)getTargetVCWihtDataSource:(KIVCVDataSource *)dataSource

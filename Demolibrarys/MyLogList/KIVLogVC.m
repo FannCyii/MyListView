@@ -79,7 +79,9 @@
 //            webVc.url = element.aUrl;
 //            [self.navigationController pushViewController:webVc animated:YES];
             
-            KIVArchiverManager *manager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_READ_HISTORIES];
+            KIVArchiverManager *manager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_READ_HISTORIES completeHandle:^{
+                [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_ARCHIVER_HISTORIES object:nil];
+            }];
             
             [manager saveLogs:element keyWord:element.title];
             

@@ -17,8 +17,8 @@
 @interface UITableView (KIVDS)
 
 //这个不对外提供，为了调试简单先保留
-- (NSMutableArray <KIVDSBaseSection *> *)kivSections;
-- (void)setKivSections:(NSMutableArray <KIVDSBaseSection *> *)sections;
+- (NSMutableArray <KIVDSBaseSection *> *)kivSections __attribute__((deprecated("不对外提供，为了调试简单先保留")));
+- (void)setKivSections:(NSMutableArray <KIVDSBaseSection *> *)sections __attribute__((deprecated));
 
 /*
  *数据添加

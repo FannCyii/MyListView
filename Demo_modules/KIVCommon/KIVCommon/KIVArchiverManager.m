@@ -50,7 +50,6 @@ const NSString *LOGSCONTENT = @"content";
 //    return [array objectAtIndex:index];
 //}
 
-
 #pragma mark insert and fetch
 - (void)insertLogLogCollectionWithData:(NSDictionary *)aData
 {
@@ -85,7 +84,6 @@ const NSString *LOGSCONTENT = @"content";
         if (self.saveCompleteBlock) {
             self.saveCompleteBlock();
         }
-//        [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_ARCHIVER_LOGS object:nil];
     });
 }
 

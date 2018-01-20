@@ -121,6 +121,7 @@
 			children = (
 				B770E76E1FFE7492003D78F3 /* KIVRouterTransitionManager.h */,
 				B770E76F1FFE7492003D78F3 /* KIVRouterTransitionManager.m */,
+				B7FB6EBB1FFB4FB9003A72F2 /* VCPresentTransition */,
 			);
 			path = TransferManger;
 			sourceTree = "<group>";
@@ -149,7 +150,6 @@
 			children = (
 				B770E76D1FFE7440003D78F3 /* TransferManger */,
 				B7FB6EF71FFB559C003A72F2 /* Router */,
-				B7FB6EBB1FFB4FB9003A72F2 /* VCPresentTransition */,
 				B7FB6EB11FFB4F11003A72F2 /* KIVDispatchCenter.h */,
 				B7FB6EB21FFB4F11003A72F2 /* Info.plist */,
 			);
@@ -169,7 +169,7 @@
 				B7FB6EC31FFB4FE8003A72F2 /* SAMDarkClubDataPickPC.m */,
 			);
 			name = VCPresentTransition;
-			path = ..;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		B7FB6ECE1FFB4FEB003A72F2 /* Animator */ = {

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+
 //! Project version number for KIVBrowserKit.
 FOUNDATION_EXPORT double KIVBrowserKitVersionNumber;
 
@@ -16,4 +19,5 @@ FOUNDATION_EXPORT const unsigned char KIVBrowserKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <KIVBrowserKit/PublicHeader.h>
 
+#import "KIVWebVC.h"
 

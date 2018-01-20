@@ -10,6 +10,7 @@
 #import "ArticleListItem.h"
 
 @interface HistroyReadTVCell()
+@property (weak, nonatomic) IBOutlet UIImageView *liImageView;
 @property (weak, nonatomic) IBOutlet UILabel *aticleNameLabel;
 
 @end
@@ -18,7 +19,12 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    self.liImageView.layer.cornerRadius = 6;
+    self.liImageView.clipsToBounds = YES;
+    self.liImageView.backgroundColor = [UIColor kGreen];
+    
+    self.aticleNameLabel.textColor = [UIColor blackGray];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -7,7 +7,7 @@
 //
 
 #import "KIVHomeCVHeaderCell.h"
-#import "KIVWebVC.h"
+//#import "KIVWebVC.h"
 
 @interface KIVHomeCVHeaderCell () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *searchTextField;

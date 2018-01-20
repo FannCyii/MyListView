@@ -14,8 +14,6 @@
 		8F12F5F81FC72BF800D65E9A /* KIVLogVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F5F61FC72BF800D65E9A /* KIVLogVC.xib */; };
 		8F12F6001FC72EEC00D65E9A /* KIVLogMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F5FE1FC72EEC00D65E9A /* KIVLogMainCell.m */; };
 		8F12F6011FC72EEC00D65E9A /* KIVLogMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F5FF1FC72EEC00D65E9A /* KIVLogMainCell.xib */; };
-		8F12F6061FC7324900D65E9A /* KIVWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F6041FC7324900D65E9A /* KIVWebVC.m */; };
-		8F12F6071FC7324900D65E9A /* KIVWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F12F6051FC7324900D65E9A /* KIVWebVC.xib */; };
 		8F12F60A1FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F12F6091FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m */; };
 		8F39ED091FE6BF93003E2330 /* KIVHomeCVHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F39ED071FE6BF93003E2330 /* KIVHomeCVHeaderCell.m */; };
 		8F39ED0A1FE6BF93003E2330 /* KIVHomeCVHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F39ED081FE6BF93003E2330 /* KIVHomeCVHeaderCell.xib */; };
@@ -44,8 +42,6 @@
 		8F8E6E0B1FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F8E6E0A1FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.m */; };
 		8FA8B0D91FE02FC2009C52C9 /* ArticleListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0D81FE02FC2009C52C9 /* ArticleListItem.m */; };
 		8FA8B0DC1FE02FDF009C52C9 /* FolderListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0DB1FE02FDF009C52C9 /* FolderListItem.m */; };
-		8FA8B0E11FE032F5009C52C9 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0DF1FE032F5009C52C9 /* HomeVC.m */; };
-		8FA8B0E21FE032F5009C52C9 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FA8B0E01FE032F5009C52C9 /* HomeVC.xib */; };
 		8FA8B0E51FE034E0009C52C9 /* KIVCVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0E41FE034E0009C52C9 /* KIVCVDataSource.m */; };
 		8FA8B0E91FE0350D009C52C9 /* KIVCVBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0E81FE0350D009C52C9 /* KIVCVBaseItem.m */; };
 		8FA8B0EC1FE03602009C52C9 /* KIVCVBaseSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B0EB1FE03602009C52C9 /* KIVCVBaseSection.m */; };
@@ -55,7 +51,6 @@
 		8FA8B1471FE145FC009C52C9 /* HomeListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FA8B1451FE145FC009C52C9 /* HomeListCell.xib */; };
 		8FA8B14E1FE14798009C52C9 /* HomeItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B14C1FE14798009C52C9 /* HomeItemCell.m */; };
 		8FA8B14F1FE14798009C52C9 /* HomeItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FA8B14D1FE14798009C52C9 /* HomeItemCell.xib */; };
-		8FA8B1521FE14AFA009C52C9 /* HomeVC+DataHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B1511FE14AFA009C52C9 /* HomeVC+DataHandle.m */; };
 		8FA8B1C01FE40C14009C52C9 /* DataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B1BF1FE40C14009C52C9 /* DataParser.m */; };
 		8FA8B24C1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA8B24B1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.m */; };
 		8FC24F261FF12AFB00250E4F /* ViewController+CellDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC24F251FF12AFB00250E4F /* ViewController+CellDelegate.m */; };
@@ -71,6 +66,12 @@
 		B73F50062007BA72008891D8 /* KIVCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F50072007BA72008891D8 /* KIVCommon.framework */; };
 		B770E7C41FFFBD8A003D78F3 /* HistroyReadTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B770E7C21FFFBD8A003D78F3 /* HistroyReadTVCell.m */; };
 		B770E7C51FFFBD8A003D78F3 /* HistroyReadTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B770E7C31FFFBD8A003D78F3 /* HistroyReadTVCell.xib */; };
+		B7C6529120138FD5007271DE /* KIVFloatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C6529020138FD5007271DE /* KIVFloatViewController.m */; };
+		B7C6529420138FFC007271DE /* KIVFloatViewPC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C6529320138FFC007271DE /* KIVFloatViewPC.m */; };
+		B7C6529B2013971C007271DE /* UIColor+KIVBaseColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C6529A2013971C007271DE /* UIColor+KIVBaseColor.m */; };
+		B7C6529E2013972C007271DE /* UIFont+KIVBaseFont.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C6529D2013972C007271DE /* UIFont+KIVBaseFont.m */; };
+		B7D95A762010FFD600793DB4 /* KIVBrowserKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D95A782010FFD600793DB4 /* KIVBrowserKit.framework */; };
+		B7D95A772010FFD600793DB4 /* KIVListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D95A792010FFD600793DB4 /* KIVListKit.framework */; };
 		B7DBFB3E20023F3200E49D2D /* UserInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DBFB3D20023F3200E49D2D /* UserInfoVC.xib */; };
 		B7DBFB3F200249A300E49D2D /* KIVDispatchCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBFB40200249A300E49D2D /* KIVDispatchCenter.framework */; };
 		B7FB6E1A1FF5285A003A72F2 /* libDemo_Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7FB6E1B1FF5285A003A72F2 /* libDemo_Network.a */; };
@@ -97,9 +98,6 @@
 		8F12F5FD1FC72EEC00D65E9A /* KIVLogMainCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVLogMainCell.h; sourceTree = "<group>"; };
 		8F12F5FE1FC72EEC00D65E9A /* KIVLogMainCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVLogMainCell.m; sourceTree = "<group>"; };
 		8F12F5FF1FC72EEC00D65E9A /* KIVLogMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVLogMainCell.xib; sourceTree = "<group>"; };
-		8F12F6031FC7324900D65E9A /* KIVWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVWebVC.h; sourceTree = "<group>"; };
-		8F12F6041FC7324900D65E9A /* KIVWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVWebVC.m; sourceTree = "<group>"; };
-		8F12F6051FC7324900D65E9A /* KIVWebVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVWebVC.xib; sourceTree = "<group>"; };
 		8F12F6081FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIVDSDataSource+EditeHandel.h"; sourceTree = "<group>"; };
 		8F12F6091FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "KIVDSDataSource+EditeHandel.m"; sourceTree = "<group>"; };
 		8F39ED061FE6BF93003E2330 /* KIVHomeCVHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVHomeCVHeaderCell.h; sourceTree = "<group>"; };
@@ -148,9 +146,6 @@
 		8FA8B0D81FE02FC2009C52C9 /* ArticleListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArticleListItem.m; sourceTree = "<group>"; };
 		8FA8B0DA1FE02FDF009C52C9 /* FolderListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FolderListItem.h; sourceTree = "<group>"; };
 		8FA8B0DB1FE02FDF009C52C9 /* FolderListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FolderListItem.m; sourceTree = "<group>"; };
-		8FA8B0DE1FE032F5009C52C9 /* HomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
-		8FA8B0DF1FE032F5009C52C9 /* HomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
-		8FA8B0E01FE032F5009C52C9 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		8FA8B0E31FE034E0009C52C9 /* KIVCVDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVCVDataSource.h; sourceTree = "<group>"; };
 		8FA8B0E41FE034E0009C52C9 /* KIVCVDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVCVDataSource.m; sourceTree = "<group>"; };
 		8FA8B0E71FE0350D009C52C9 /* KIVCVBaseItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVCVBaseItem.h; sourceTree = "<group>"; };
@@ -167,9 +162,6 @@
 		8FA8B14B1FE14798009C52C9 /* HomeItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeItemCell.h; sourceTree = "<group>"; };
 		8FA8B14C1FE14798009C52C9 /* HomeItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeItemCell.m; sourceTree = "<group>"; };
 		8FA8B14D1FE14798009C52C9 /* HomeItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeItemCell.xib; sourceTree = "<group>"; };
-		8FA8B1501FE14AFA009C52C9 /* HomeVC+DataHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeVC+DataHandle.h"; sourceTree = "<group>"; };
-		8FA8B1511FE14AFA009C52C9 /* HomeVC+DataHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HomeVC+DataHandle.m"; sourceTree = "<group>"; };
-		8FA8B1781FE163A7009C52C9 /* libDemo_XMLParser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libDemo_XMLParser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FA8B1BE1FE40C14009C52C9 /* DataParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataParser.h; sourceTree = "<group>"; };
 		8FA8B1BF1FE40C14009C52C9 /* DataParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataParser.m; sourceTree = "<group>"; };
 		8FA8B24A1FE512F8009C52C9 /* DataParser+ObjectiveGumbo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataParser+ObjectiveGumbo.h"; sourceTree = "<group>"; };
@@ -184,11 +176,9 @@
 		8FF0E4271FC85C6A00A89C3D /* UIView+screenShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+screenShot.h"; path = "Demolibrarys/UIView+screenShot.h"; sourceTree = SOURCE_ROOT; };
 		8FF0E4281FC85C6A00A89C3D /* UIView+screenShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+screenShot.m"; path = "Demolibrarys/UIView+screenShot.m"; sourceTree = SOURCE_ROOT; };
 		94E298A6932E8E91D18B4B8B /* Pods-Demolibrarys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demolibrarys.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demolibrarys/Pods-Demolibrarys.release.xcconfig"; sourceTree = "<group>"; };
-		B702D23120066406006DF256 /* KIVBrowserKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVBrowserKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B702D23220066CF5006DF256 /* AddArticleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddArticleVC.h; sourceTree = "<group>"; };
 		B702D23320066CF5006DF256 /* AddArticleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddArticleVC.m; sourceTree = "<group>"; };
 		B702D23420066CF5006DF256 /* AddArticleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddArticleVC.xib; sourceTree = "<group>"; };
-		B702D23820066EA4006DF256 /* KIVBrowserKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVBrowserKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B73F4FF12007A3AF008891D8 /* UserInfoPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoPC.h; sourceTree = "<group>"; };
 		B73F4FF22007A3AF008891D8 /* UserInfoPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoPC.m; sourceTree = "<group>"; };
 		B73F4FF92007A80B008891D8 /* UserInfoTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoTVCell.h; sourceTree = "<group>"; };
@@ -198,6 +188,16 @@
 		B770E7C11FFFBD8A003D78F3 /* HistroyReadTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistroyReadTVCell.h; sourceTree = "<group>"; };
 		B770E7C21FFFBD8A003D78F3 /* HistroyReadTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistroyReadTVCell.m; sourceTree = "<group>"; };
 		B770E7C31FFFBD8A003D78F3 /* HistroyReadTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistroyReadTVCell.xib; sourceTree = "<group>"; };
+		B7C6528F20138FD5007271DE /* KIVFloatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVFloatViewController.h; sourceTree = "<group>"; };
+		B7C6529020138FD5007271DE /* KIVFloatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVFloatViewController.m; sourceTree = "<group>"; };
+		B7C6529220138FFC007271DE /* KIVFloatViewPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVFloatViewPC.h; sourceTree = "<group>"; };
+		B7C6529320138FFC007271DE /* KIVFloatViewPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVFloatViewPC.m; sourceTree = "<group>"; };
+		B7C652992013971C007271DE /* UIColor+KIVBaseColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+KIVBaseColor.h"; sourceTree = "<group>"; };
+		B7C6529A2013971C007271DE /* UIColor+KIVBaseColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+KIVBaseColor.m"; sourceTree = "<group>"; };
+		B7C6529C2013972C007271DE /* UIFont+KIVBaseFont.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+KIVBaseFont.h"; sourceTree = "<group>"; };
+		B7C6529D2013972C007271DE /* UIFont+KIVBaseFont.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+KIVBaseFont.m"; sourceTree = "<group>"; };
+		B7D95A782010FFD600793DB4 /* KIVBrowserKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVBrowserKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7D95A792010FFD600793DB4 /* KIVListKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVListKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DBFB3D20023F3200E49D2D /* UserInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoVC.xib; sourceTree = "<group>"; };
 		B7DBFB40200249A300E49D2D /* KIVDispatchCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVDispatchCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FB6E131FF5235C003A72F2 /* libPods-Demo_Network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-Demo_Network.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +231,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D95A762010FFD600793DB4 /* KIVBrowserKit.framework in Frameworks */,
+				B7D95A772010FFD600793DB4 /* KIVListKit.framework in Frameworks */,
 				B73F50062007BA72008891D8 /* KIVCommon.framework in Frameworks */,
 				B7DBFB3F200249A300E49D2D /* KIVDispatchCenter.framework in Frameworks */,
 				B7FB6E1A1FF5285A003A72F2 /* libDemo_Network.a in Frameworks */,
@@ -249,9 +251,9 @@
 		12A93E5F477BC752DC6A6B7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7D95A782010FFD600793DB4 /* KIVBrowserKit.framework */,
+				B7D95A792010FFD600793DB4 /* KIVListKit.framework */,
 				B73F50072007BA72008891D8 /* KIVCommon.framework */,
-				B702D23820066EA4006DF256 /* KIVBrowserKit.framework */,
-				B702D23120066406006DF256 /* KIVBrowserKit.framework */,
 				B7DBFB40200249A300E49D2D /* KIVDispatchCenter.framework */,
 				B7FB6EBA1FFB4F57003A72F2 /* KIVDispatchCenter.framework */,
 				B7FB6E321FF543E1003A72F2 /* KIVCommon.framework */,
@@ -260,7 +262,6 @@
 				B7FB6E151FF5254C003A72F2 /* libDemo_Network.a */,
 				B7FB6E131FF5235C003A72F2 /* libPods-Demo_Network.a */,
 				8F39ED131FE6CBA2003E2330 /* ExternalAccessory.framework */,
-				8FA8B1781FE163A7009C52C9 /* libDemo_XMLParser.a */,
 				8F810F951FDD77A7004D1BA8 /* libDemo_Network.a */,
 				8F839B4F1FBDE0A50014B1C6 /* libDemo_Crash.a */,
 				8F839B501FBDE0A50014B1C6 /* libDemo_libHeaders.a */,
@@ -321,9 +322,6 @@
 		8F12F6021FC7322F00D65E9A /* WebShow */ = {
 			isa = PBXGroup;
 			children = (
-				8F12F6031FC7324900D65E9A /* KIVWebVC.h */,
-				8F12F6041FC7324900D65E9A /* KIVWebVC.m */,
-				8F12F6051FC7324900D65E9A /* KIVWebVC.xib */,
 			);
 			path = WebShow;
 			sourceTree = "<group>";
@@ -390,6 +388,8 @@
 		8F839A7E1FBDC4A30014B1C6 /* Demolibrarys */ = {
 			isa = PBXGroup;
 			children = (
+				B7C65295201396C9007271DE /* Base */,
+				B7C6528E20138FBB007271DE /* Test */,
 				B7FB6F171FFBA449003A72F2 /* UserInfoVC */,
 				B7FB6E8F1FF7F591003A72F2 /* ImportWebServer */,
 				8F12F6021FC7322F00D65E9A /* WebShow */,
@@ -460,11 +460,6 @@
 			children = (
 				8FA8B13F1FE1455E009C52C9 /* Cell */,
 				8FA8B0E61FE034E4009C52C9 /* DataSource */,
-				8FA8B0DE1FE032F5009C52C9 /* HomeVC.h */,
-				8FA8B0DF1FE032F5009C52C9 /* HomeVC.m */,
-				8FA8B0E01FE032F5009C52C9 /* HomeVC.xib */,
-				8FA8B1501FE14AFA009C52C9 /* HomeVC+DataHandle.h */,
-				8FA8B1511FE14AFA009C52C9 /* HomeVC+DataHandle.m */,
 			);
 			path = Home_XXXX;
 			sourceTree = "<group>";
@@ -553,6 +548,28 @@
 				B770E7C31FFFBD8A003D78F3 /* HistroyReadTVCell.xib */,
 			);
 			path = subCell;
+			sourceTree = "<group>";
+		};
+		B7C6528E20138FBB007271DE /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B7C6528F20138FD5007271DE /* KIVFloatViewController.h */,
+				B7C6529020138FD5007271DE /* KIVFloatViewController.m */,
+				B7C6529220138FFC007271DE /* KIVFloatViewPC.h */,
+				B7C6529320138FFC007271DE /* KIVFloatViewPC.m */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		B7C65295201396C9007271DE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B7C652992013971C007271DE /* UIColor+KIVBaseColor.h */,
+				B7C6529A2013971C007271DE /* UIColor+KIVBaseColor.m */,
+				B7C6529C2013972C007271DE /* UIFont+KIVBaseFont.h */,
+				B7C6529D2013972C007271DE /* UIFont+KIVBaseFont.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		B7FB6E8F1FF7F591003A72F2 /* ImportWebServer */ = {
@@ -682,10 +699,8 @@
 				B7FB6E931FF7F591003A72F2 /* DemoWebServerVC.xib in Resources */,
 				8F12F5F81FC72BF800D65E9A /* KIVLogVC.xib in Resources */,
 				8F39ED0A1FE6BF93003E2330 /* KIVHomeCVHeaderCell.xib in Resources */,
-				8FA8B0E21FE032F5009C52C9 /* HomeVC.xib in Resources */,
 				8FA8B14F1FE14798009C52C9 /* HomeItemCell.xib in Resources */,
 				B770E7C51FFFBD8A003D78F3 /* HistroyReadTVCell.xib in Resources */,
-				8F12F6071FC7324900D65E9A /* KIVWebVC.xib in Resources */,
 				B7FB6F301FFBB241003A72F2 /* KIVHomeCVUserCell.xib in Resources */,
 				8F839A871FBDC4A30014B1C6 /* Main.storyboard in Resources */,
 				8FC24F2B1FF145AA00250E4F /* kivMiddleItemCell.xib in Resources */,
@@ -777,12 +792,11 @@
 				8FA8B0DC1FE02FDF009C52C9 /* FolderListItem.m in Sources */,
 				8F8E6E071FE6AAF000E656DF /* SettingVC.m in Sources */,
 				8F8E6E0B1FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.m in Sources */,
+				B7C6529420138FFC007271DE /* KIVFloatViewPC.m in Sources */,
 				8F8E6DFD1FE5825800E656DF /* KIVLogVC+DataHandle.m in Sources */,
-				8FA8B1521FE14AFA009C52C9 /* HomeVC+DataHandle.m in Sources */,
 				B770E7C41FFFBD8A003D78F3 /* HistroyReadTVCell.m in Sources */,
 				B73F4FF32007A3AF008891D8 /* UserInfoPC.m in Sources */,
 				8FA8B1C01FE40C14009C52C9 /* DataParser.m in Sources */,
-				8FA8B0E11FE032F5009C52C9 /* HomeVC.m in Sources */,
 				8FF0E4261FC84AD600A89C3D /* KIVTogetherTouchRecogizer.m in Sources */,
 				8F810F9B1FDD8B77004D1BA8 /* DemoLogVO.m in Sources */,
 				8F12F60A1FC7A9FA00D65E9A /* KIVDSDataSource+EditeHandel.m in Sources */,
@@ -801,10 +815,10 @@
 				8F12F6001FC72EEC00D65E9A /* KIVLogMainCell.m in Sources */,
 				8F839A8F1FBDC4A30014B1C6 /* main.m in Sources */,
 				8FA8B0D91FE02FC2009C52C9 /* ArticleListItem.m in Sources */,
-				8F12F6061FC7324900D65E9A /* KIVWebVC.m in Sources */,
 				8F39ED0E1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.m in Sources */,
 				B7FB6F251FFBACDE003A72F2 /* KIVHomeCVHeaderADCell.m in Sources */,
 				8FA8B1421FE14582009C52C9 /* KIVBaseCVCell.m in Sources */,
+				B7C6529B2013971C007271DE /* UIColor+KIVBaseColor.m in Sources */,
 				8F839B4A1FBDDF4E0014B1C6 /* DemoTVC.m in Sources */,
 				8F8E6E011FE6AAD900E656DF /* ViewController.m in Sources */,
 				B7FB6E941FF7F591003A72F2 /* DemoWebServerVC.m in Sources */,
@@ -816,6 +830,8 @@
 				8FC24F261FF12AFB00250E4F /* ViewController+CellDelegate.m in Sources */,
 				B7FB6F2F1FFBB241003A72F2 /* KIVHomeCVUserCell.m in Sources */,
 				8FC24F2A1FF145AA00250E4F /* kivMiddleItemCell.m in Sources */,
+				B7C6529E2013972C007271DE /* UIFont+KIVBaseFont.m in Sources */,
+				B7C6529120138FD5007271DE /* KIVFloatViewController.m in Sources */,
 				8F810F9E1FDD96A6004D1BA8 /* KIVLogVC+ResponeData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -955,10 +971,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WTFJP34N3T;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/Demo_modules/KIVDispatchCenter/**",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demolibrarys/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -971,6 +984,7 @@
 					"$(SRCROOT)/Demo_modules/KIVDispatchCenter/KIVDispatchCenter/**",
 					"$(SRCROOT)/Demo_modules/KIVBrowserKit/KIVBrowserKit",
 					"$(SRCROOT)/Demo_modules/KIVCommon/KIVCommon",
+					"$(SRCROOT)/Demo_modules/KIVListKit/KIVListKit/**",
 				);
 				INFOPLIST_FILE = Demolibrarys/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -988,6 +1002,7 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/XXRouter\"",
 					"$(SRCROOT)/Demo_modules/KIVDispatchCenter",
 					"$(SRCROOT)/Demo_modules/KIVBrowserKit",
+					"$(SRCROOT)/Demo_modules/KIVListKit",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1034,10 +1049,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = WTFJP34N3T;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/Demo_modules/KIVDispatchCenter/**",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demolibrarys/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1050,6 +1062,7 @@
 					"$(SRCROOT)/Demo_modules/KIVDispatchCenter/KIVDispatchCenter/**",
 					"$(SRCROOT)/Demo_modules/KIVBrowserKit/KIVBrowserKit",
 					"$(SRCROOT)/Demo_modules/KIVCommon/KIVCommon",
+					"$(SRCROOT)/Demo_modules/KIVListKit/KIVListKit/**",
 				);
 				INFOPLIST_FILE = Demolibrarys/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
@@ -1067,6 +1080,7 @@
 					"\"$PODS_CONFIGURATION_BUILD_DIR/XXRouter\"",
 					"$(SRCROOT)/Demo_modules/KIVDispatchCenter",
 					"$(SRCROOT)/Demo_modules/KIVBrowserKit",
+					"$(SRCROOT)/Demo_modules/KIVListKit",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

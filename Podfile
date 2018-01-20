@@ -35,3 +35,16 @@ target 'Demo_TableView' do
     project './Demo_modules/Demo_TableView/Demo_TableView.xcodeproj'
     pod 'PureLayout'
 end
+
+target 'KIVBrowserKit' do
+    project './Demo_modules/KIVBrowserKit/KIVBrowserKit.xcodeproj'
+    pod 'PureLayout'
+
+end
+
+target 'KIVDemo_Brower' do
+    project './Demo_modules/KIVBrowserKit/KIVBrowserKit.xcodeproj'
+    pod 'PureLayout'
+    
+end
+

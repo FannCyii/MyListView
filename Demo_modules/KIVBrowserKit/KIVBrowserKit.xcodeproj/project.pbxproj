@@ -7,13 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C6D4B2D99504C490365E693 /* libPods-KIVBrowserKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3294A5381D80942F074D1D /* libPods-KIVBrowserKit.a */; };
 		B702D22A200663CE006DF256 /* KIVBrowserKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B702D228200663CE006DF256 /* KIVBrowserKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73B7A23200B3B4B00E18C22 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73B7A22200B3B4B00E18C22 /* MainViewController.m */; };
+		B73B7A26200B5E3B00E18C22 /* KIVBrowserTBC.h in Headers */ = {isa = PBXBuildFile; fileRef = B73B7A24200B5E3B00E18C22 /* KIVBrowserTBC.h */; };
+		B73B7A27200B5E3B00E18C22 /* KIVBrowserTBC.m in Sources */ = {isa = PBXBuildFile; fileRef = B73B7A25200B5E3B00E18C22 /* KIVBrowserTBC.m */; };
+		B73B7A31200B611700E18C22 /* KIVHomeBrowserVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B73B7A2E200B611700E18C22 /* KIVHomeBrowserVC.h */; };
+		B73B7A32200B611700E18C22 /* KIVHomeBrowserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B73B7A2F200B611700E18C22 /* KIVHomeBrowserVC.m */; };
+		B73B7A33200B611700E18C22 /* KIVHomeBrowserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73B7A30200B611700E18C22 /* KIVHomeBrowserVC.xib */; };
+		B73B7A35200B61BB00E18C22 /* KIVHomeBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73B7A34200B61BB00E18C22 /* KIVHomeBottomView.xib */; };
+		B73B7A3C200B669B00E18C22 /* KIVHomeBottomView.h in Headers */ = {isa = PBXBuildFile; fileRef = B73B7A3A200B669B00E18C22 /* KIVHomeBottomView.h */; };
+		B73B7A3D200B669B00E18C22 /* KIVHomeBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B73B7A3B200B669B00E18C22 /* KIVHomeBottomView.m */; };
+		B73F501A200B30B6008891D8 /* KIVWebVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F5017200B30B6008891D8 /* KIVWebVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73F501B200B30B6008891D8 /* KIVWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F5018200B30B6008891D8 /* KIVWebVC.m */; };
+		B73F501C200B30B6008891D8 /* KIVWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73F5019200B30B6008891D8 /* KIVWebVC.xib */; };
+		B73F501F200B339B008891D8 /* KIVDispatchCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F5020200B339B008891D8 /* KIVDispatchCenter.framework */; };
+		B73F5029200B37C1008891D8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F5028200B37C1008891D8 /* AppDelegate.m */; };
+		B73F502C200B37C1008891D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F502B200B37C1008891D8 /* ViewController.m */; };
+		B73F5031200B37C1008891D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B73F5030200B37C1008891D8 /* Assets.xcassets */; };
+		B73F5034200B37C1008891D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B73F5032200B37C1008891D8 /* LaunchScreen.storyboard */; };
+		B73F5037200B37C1008891D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F5036200B37C1008891D8 /* main.m */; };
+		B73F503B200B37F8008891D8 /* KIVBrowserKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B702D225200663CE006DF256 /* KIVBrowserKit.framework */; };
+		B73F503E200B3911008891D8 /* KIVBrowserNV.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F503C200B3911008891D8 /* KIVBrowserNV.h */; };
+		B73F503F200B3911008891D8 /* KIVBrowserNV.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F503D200B3911008891D8 /* KIVBrowserNV.m */; };
+		B7F3C55C200B6B4300F3D910 /* KIVWebVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73F5019200B30B6008891D8 /* KIVWebVC.xib */; };
+		B7F3C55D200B6B4300F3D910 /* KIVHomeBrowserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73B7A30200B611700E18C22 /* KIVHomeBrowserVC.xib */; };
+		B7F3C55E200B6B4300F3D910 /* KIVHomeBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73B7A34200B61BB00E18C22 /* KIVHomeBottomView.xib */; };
+		DDC9D8284B54670E68939253 /* libPods-KIVDemo_Brower.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E33C7C2825A2F395A91FD1 /* libPods-KIVDemo_Brower.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B7F3C558200B6AFF00F3D910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B702D21C200663CE006DF256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B73B7A41200B6A0600E18C22;
+			remoteInfo = KIVBrowserKitBundle;
+		};
+		B7F3C55A200B6B2D00F3D910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B702D21C200663CE006DF256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B73B7A41200B6A0600E18C22;
+			remoteInfo = KIVBrowserKitBundle;
+		};
+		B7F3C55F200B6C0E00F3D910 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B702D21C200663CE006DF256 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B702D224200663CE006DF256;
+			remoteInfo = KIVBrowserKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3B3294A5381D80942F074D1D /* libPods-KIVBrowserKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KIVBrowserKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47082AE6A0AA58122192D125 /* Pods-KIVDemo_Brower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIVDemo_Brower.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-KIVDemo_Brower/Pods-KIVDemo_Brower.debug.xcconfig"; sourceTree = "<group>"; };
+		5A468E8A800DB8ED2024E332 /* Pods-KIVBrowserKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIVBrowserKit.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-KIVBrowserKit/Pods-KIVBrowserKit.release.xcconfig"; sourceTree = "<group>"; };
+		81C1DD60DC9C2160E73FDEF4 /* Pods-KIVDemo_Brower.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIVDemo_Brower.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-KIVDemo_Brower/Pods-KIVDemo_Brower.release.xcconfig"; sourceTree = "<group>"; };
 		B702D225200663CE006DF256 /* KIVBrowserKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KIVBrowserKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B702D228200663CE006DF256 /* KIVBrowserKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVBrowserKit.h; sourceTree = "<group>"; };
 		B702D229200663CE006DF256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73B7A21200B3B4B00E18C22 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		B73B7A22200B3B4B00E18C22 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		B73B7A24200B5E3B00E18C22 /* KIVBrowserTBC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVBrowserTBC.h; sourceTree = "<group>"; };
+		B73B7A25200B5E3B00E18C22 /* KIVBrowserTBC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVBrowserTBC.m; sourceTree = "<group>"; };
+		B73B7A2E200B611700E18C22 /* KIVHomeBrowserVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVHomeBrowserVC.h; sourceTree = "<group>"; };
+		B73B7A2F200B611700E18C22 /* KIVHomeBrowserVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVHomeBrowserVC.m; sourceTree = "<group>"; };
+		B73B7A30200B611700E18C22 /* KIVHomeBrowserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVHomeBrowserVC.xib; sourceTree = "<group>"; };
+		B73B7A34200B61BB00E18C22 /* KIVHomeBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KIVHomeBottomView.xib; sourceTree = "<group>"; };
+		B73B7A3A200B669B00E18C22 /* KIVHomeBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVHomeBottomView.h; sourceTree = "<group>"; };
+		B73B7A3B200B669B00E18C22 /* KIVHomeBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVHomeBottomView.m; sourceTree = "<group>"; };
+		B73B7A42200B6A0600E18C22 /* KIVBrowserKitBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIVBrowserKitBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73B7A44200B6A0600E18C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73F5017200B30B6008891D8 /* KIVWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVWebVC.h; sourceTree = "<group>"; };
+		B73F5018200B30B6008891D8 /* KIVWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVWebVC.m; sourceTree = "<group>"; };
+		B73F5019200B30B6008891D8 /* KIVWebVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KIVWebVC.xib; sourceTree = "<group>"; };
+		B73F5020200B339B008891D8 /* KIVDispatchCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KIVDispatchCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73F5025200B37C0008891D8 /* KIVDemo_Brower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIVDemo_Brower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73F5027200B37C1008891D8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B73F5028200B37C1008891D8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B73F502A200B37C1008891D8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B73F502B200B37C1008891D8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B73F5030200B37C1008891D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B73F5033200B37C1008891D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B73F5035200B37C1008891D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B73F5036200B37C1008891D8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B73F503C200B3911008891D8 /* KIVBrowserNV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVBrowserNV.h; sourceTree = "<group>"; };
+		B73F503D200B3911008891D8 /* KIVBrowserNV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVBrowserNV.m; sourceTree = "<group>"; };
+		C4E33C7C2825A2F395A91FD1 /* libPods-KIVDemo_Brower.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KIVDemo_Brower.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55CB6B894543B47D039A690 /* Pods-KIVBrowserKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIVBrowserKit.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-KIVBrowserKit/Pods-KIVBrowserKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +104,60 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73F501F200B339B008891D8 /* KIVDispatchCenter.framework in Frameworks */,
+				9C6D4B2D99504C490365E693 /* libPods-KIVBrowserKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B73B7A3F200B6A0600E18C22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B73F5022200B37C0008891D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B73F503B200B37F8008891D8 /* KIVBrowserKit.framework in Frameworks */,
+				DDC9D8284B54670E68939253 /* libPods-KIVDemo_Brower.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		163B70FA86B87C55D842646B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5020200B339B008891D8 /* KIVDispatchCenter.framework */,
+				3B3294A5381D80942F074D1D /* libPods-KIVBrowserKit.a */,
+				C4E33C7C2825A2F395A91FD1 /* libPods-KIVDemo_Brower.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C7EC8A29135F18A2F4659CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E55CB6B894543B47D039A690 /* Pods-KIVBrowserKit.debug.xcconfig */,
+				5A468E8A800DB8ED2024E332 /* Pods-KIVBrowserKit.release.xcconfig */,
+				47082AE6A0AA58122192D125 /* Pods-KIVDemo_Brower.debug.xcconfig */,
+				81C1DD60DC9C2160E73FDEF4 /* Pods-KIVDemo_Brower.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B702D21B200663CE006DF256 = {
 			isa = PBXGroup;
 			children = (
 				B702D227200663CE006DF256 /* KIVBrowserKit */,
+				B73F5026200B37C1008891D8 /* KIVDemo_Brower */,
+				B73B7A43200B6A0600E18C22 /* KIVBrowserKitBundle */,
 				B702D226200663CE006DF256 /* Products */,
+				8C7EC8A29135F18A2F4659CB /* Pods */,
+				163B70FA86B87C55D842646B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				B702D225200663CE006DF256 /* KIVBrowserKit.framework */,
+				B73F5025200B37C0008891D8 /* KIVDemo_Brower.app */,
+				B73B7A42200B6A0600E18C22 /* KIVBrowserKitBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +174,48 @@
 		B702D227200663CE006DF256 /* KIVBrowserKit */ = {
 			isa = PBXGroup;
 			children = (
+				B73F5017200B30B6008891D8 /* KIVWebVC.h */,
+				B73F5018200B30B6008891D8 /* KIVWebVC.m */,
+				B73F5019200B30B6008891D8 /* KIVWebVC.xib */,
 				B702D228200663CE006DF256 /* KIVBrowserKit.h */,
 				B702D229200663CE006DF256 /* Info.plist */,
+				B73F503C200B3911008891D8 /* KIVBrowserNV.h */,
+				B73F503D200B3911008891D8 /* KIVBrowserNV.m */,
+				B73B7A24200B5E3B00E18C22 /* KIVBrowserTBC.h */,
+				B73B7A25200B5E3B00E18C22 /* KIVBrowserTBC.m */,
+				B73B7A2E200B611700E18C22 /* KIVHomeBrowserVC.h */,
+				B73B7A2F200B611700E18C22 /* KIVHomeBrowserVC.m */,
+				B73B7A30200B611700E18C22 /* KIVHomeBrowserVC.xib */,
+				B73B7A3A200B669B00E18C22 /* KIVHomeBottomView.h */,
+				B73B7A3B200B669B00E18C22 /* KIVHomeBottomView.m */,
+				B73B7A34200B61BB00E18C22 /* KIVHomeBottomView.xib */,
 			);
 			path = KIVBrowserKit;
+			sourceTree = "<group>";
+		};
+		B73B7A43200B6A0600E18C22 /* KIVBrowserKitBundle */ = {
+			isa = PBXGroup;
+			children = (
+				B73B7A44200B6A0600E18C22 /* Info.plist */,
+			);
+			path = KIVBrowserKitBundle;
+			sourceTree = "<group>";
+		};
+		B73F5026200B37C1008891D8 /* KIVDemo_Brower */ = {
+			isa = PBXGroup;
+			children = (
+				B73F5027200B37C1008891D8 /* AppDelegate.h */,
+				B73F5028200B37C1008891D8 /* AppDelegate.m */,
+				B73F502A200B37C1008891D8 /* ViewController.h */,
+				B73F502B200B37C1008891D8 /* ViewController.m */,
+				B73F5030200B37C1008891D8 /* Assets.xcassets */,
+				B73F5032200B37C1008891D8 /* LaunchScreen.storyboard */,
+				B73F5035200B37C1008891D8 /* Info.plist */,
+				B73F5036200B37C1008891D8 /* main.m */,
+				B73B7A21200B3B4B00E18C22 /* MainViewController.h */,
+				B73B7A22200B3B4B00E18C22 /* MainViewController.m */,
+			);
+			path = KIVDemo_Brower;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +225,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73B7A3C200B669B00E18C22 /* KIVHomeBottomView.h in Headers */,
+				B73B7A26200B5E3B00E18C22 /* KIVBrowserTBC.h in Headers */,
 				B702D22A200663CE006DF256 /* KIVBrowserKit.h in Headers */,
+				B73F501A200B30B6008891D8 /* KIVWebVC.h in Headers */,
+				B73F503E200B3911008891D8 /* KIVBrowserNV.h in Headers */,
+				B73B7A31200B611700E18C22 /* KIVHomeBrowserVC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +241,61 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B702D22D200663CE006DF256 /* Build configuration list for PBXNativeTarget "KIVBrowserKit" */;
 			buildPhases = (
+				B9C07618003DF493D4F798CF /* [CP] Check Pods Manifest.lock */,
 				B702D220200663CE006DF256 /* Sources */,
 				B702D221200663CE006DF256 /* Frameworks */,
 				B702D222200663CE006DF256 /* Headers */,
 				B702D223200663CE006DF256 /* Resources */,
+				221441EC755F614B64B3CDC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B7F3C559200B6AFF00F3D910 /* PBXTargetDependency */,
 			);
 			name = KIVBrowserKit;
 			productName = KIVBrowserKit;
 			productReference = B702D225200663CE006DF256 /* KIVBrowserKit.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		B73B7A41200B6A0600E18C22 /* KIVBrowserKitBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B73B7A45200B6A0600E18C22 /* Build configuration list for PBXNativeTarget "KIVBrowserKitBundle" */;
+			buildPhases = (
+				B73B7A3E200B6A0600E18C22 /* Sources */,
+				B73B7A3F200B6A0600E18C22 /* Frameworks */,
+				B73B7A40200B6A0600E18C22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIVBrowserKitBundle;
+			productName = KIVBrowserKitBundle;
+			productReference = B73B7A42200B6A0600E18C22 /* KIVBrowserKitBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		B73F5024200B37C0008891D8 /* KIVDemo_Brower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B73F5038200B37C1008891D8 /* Build configuration list for PBXNativeTarget "KIVDemo_Brower" */;
+			buildPhases = (
+				F660B9B951429552F5F4DACA /* [CP] Check Pods Manifest.lock */,
+				B73F5021200B37C0008891D8 /* Sources */,
+				B73F5022200B37C0008891D8 /* Frameworks */,
+				B73F5023200B37C0008891D8 /* Resources */,
+				C6E1CA7D9C257FDBA0C26CAC /* [CP] Embed Pods Frameworks */,
+				DAE1F758DE202370B8F682FE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7F3C560200B6C0E00F3D910 /* PBXTargetDependency */,
+				B7F3C55B200B6B2D00F3D910 /* PBXTargetDependency */,
+			);
+			name = KIVDemo_Brower;
+			productName = KIVDemo_Brower;
+			productReference = B73F5025200B37C0008891D8 /* KIVDemo_Brower.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +310,14 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					B73B7A41200B6A0600E18C22 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B73F5024200B37C0008891D8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = B702D21F200663CE006DF256 /* Build configuration list for PBXProject "KIVBrowserKit" */;
@@ -105,6 +326,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B702D21B200663CE006DF256;
 			productRefGroup = B702D226200663CE006DF256 /* Products */;
@@ -112,6 +334,8 @@
 			projectRoot = "";
 			targets = (
 				B702D224200663CE006DF256 /* KIVBrowserKit */,
+				B73F5024200B37C0008891D8 /* KIVDemo_Brower */,
+				B73B7A41200B6A0600E18C22 /* KIVBrowserKitBundle */,
 			);
 		};
 /* End PBXProject section */
@@ -121,20 +345,178 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73F501C200B30B6008891D8 /* KIVWebVC.xib in Resources */,
+				B73B7A35200B61BB00E18C22 /* KIVHomeBottomView.xib in Resources */,
+				B73B7A33200B611700E18C22 /* KIVHomeBrowserVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B73B7A40200B6A0600E18C22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7F3C55C200B6B4300F3D910 /* KIVWebVC.xib in Resources */,
+				B7F3C55D200B6B4300F3D910 /* KIVHomeBrowserVC.xib in Resources */,
+				B7F3C55E200B6B4300F3D910 /* KIVHomeBottomView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B73F5023200B37C0008891D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B73F5034200B37C1008891D8 /* LaunchScreen.storyboard in Resources */,
+				B73F5031200B37C1008891D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		221441EC755F614B64B3CDC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-KIVBrowserKit/Pods-KIVBrowserKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9C07618003DF493D4F798CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KIVBrowserKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E1CA7D9C257FDBA0C26CAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-KIVDemo_Brower/Pods-KIVDemo_Brower-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE1F758DE202370B8F682FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-KIVDemo_Brower/Pods-KIVDemo_Brower-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F660B9B951429552F5F4DACA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KIVDemo_Brower-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B702D220200663CE006DF256 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B73F501B200B30B6008891D8 /* KIVWebVC.m in Sources */,
+				B73B7A32200B611700E18C22 /* KIVHomeBrowserVC.m in Sources */,
+				B73F503F200B3911008891D8 /* KIVBrowserNV.m in Sources */,
+				B73B7A27200B5E3B00E18C22 /* KIVBrowserTBC.m in Sources */,
+				B73B7A3D200B669B00E18C22 /* KIVHomeBottomView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B73B7A3E200B6A0600E18C22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B73F5021200B37C0008891D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B73F502C200B37C1008891D8 /* ViewController.m in Sources */,
+				B73F5037200B37C1008891D8 /* main.m in Sources */,
+				B73F5029200B37C1008891D8 /* AppDelegate.m in Sources */,
+				B73B7A23200B3B4B00E18C22 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7F3C559200B6AFF00F3D910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B73B7A41200B6A0600E18C22 /* KIVBrowserKitBundle */;
+			targetProxy = B7F3C558200B6AFF00F3D910 /* PBXContainerItemProxy */;
+		};
+		B7F3C55B200B6B2D00F3D910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B73B7A41200B6A0600E18C22 /* KIVBrowserKitBundle */;
+			targetProxy = B7F3C55A200B6B2D00F3D910 /* PBXContainerItemProxy */;
+		};
+		B7F3C560200B6C0E00F3D910 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B702D224200663CE006DF256 /* KIVBrowserKit */;
+			targetProxy = B7F3C55F200B6C0E00F3D910 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B73F5032200B37C1008891D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B73F5033200B37C1008891D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B702D22B200663CE006DF256 /* Debug */ = {
@@ -249,6 +631,7 @@
 		};
 		B702D22E200663CE006DF256 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E55CB6B894543B47D039A690 /* Pods-KIVBrowserKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -258,8 +641,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GCDWebServer\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MGJRouter\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ObjectiveGumbo\"",
+					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+					"\"${PODS_ROOT}/Headers/Public/XXRouter\"",
+					"$(SRCROOT)/Demo_modules/KIVDispatchCenter/KIVDispatchCenter/**",
+				);
 				INFOPLIST_FILE = KIVBrowserKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = kivan.common.com.KIVBrowserKit;
@@ -271,6 +669,7 @@
 		};
 		B702D22F200663CE006DF256 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A468E8A800DB8ED2024E332 /* Pods-KIVBrowserKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -279,13 +678,108 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GCDWebServer\"",
+					"\"${PODS_ROOT}/Headers/Public/JSONModel\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/MGJRouter\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ObjectiveGumbo\"",
+					"\"${PODS_ROOT}/Headers/Public/PureLayout\"",
+					"\"${PODS_ROOT}/Headers/Public/Toast\"",
+					"\"${PODS_ROOT}/Headers/Public/XXRouter\"",
+					"$(SRCROOT)/Demo_modules/KIVDispatchCenter/KIVDispatchCenter/**",
+				);
 				INFOPLIST_FILE = KIVBrowserKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				PRODUCT_BUNDLE_IDENTIFIER = kivan.common.com.KIVBrowserKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B73B7A46200B6A0600E18C22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = YAEL4C965W;
+				INFOPLIST_FILE = KIVBrowserKitBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = kivan.common.com.KIVBrowserKitBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B73B7A47200B6A0600E18C22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEVELOPMENT_TEAM = YAEL4C965W;
+				INFOPLIST_FILE = KIVBrowserKitBundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = kivan.common.com.KIVBrowserKitBundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B73F5039200B37C1008891D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47082AE6A0AA58122192D125 /* Pods-KIVDemo_Brower.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YAEL4C965W;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Demo_modules/KIVBrowserKit/KIVBrowserKit",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KIVDemo_Brower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = "kivan.common.com.KIVDemo-Brower";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B73F503A200B37C1008891D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81C1DD60DC9C2160E73FDEF4 /* Pods-KIVDemo_Brower.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YAEL4C965W;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/Demo_modules/KIVBrowserKit/KIVBrowserKit",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KIVDemo_Brower/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
+				PRODUCT_BUNDLE_IDENTIFIER = "kivan.common.com.KIVDemo-Brower";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -307,6 +801,24 @@
 			buildConfigurations = (
 				B702D22E200663CE006DF256 /* Debug */,
 				B702D22F200663CE006DF256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B73B7A45200B6A0600E18C22 /* Build configuration list for PBXNativeTarget "KIVBrowserKitBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B73B7A46200B6A0600E18C22 /* Debug */,
+				B73B7A47200B6A0600E18C22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B73F5038200B37C1008891D8 /* Build configuration list for PBXNativeTarget "KIVDemo_Brower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B73F5039200B37C1008891D8 /* Debug */,
+				B73F503A200B37C1008891D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

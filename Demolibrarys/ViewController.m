@@ -14,6 +14,11 @@
 #import "KIVCVDataSource.h"
 #import "KIVArchiverManager.h"
 #import "UserInfoVC.h"
+#import "KIVCVBaseItem.h"
+#import "KIVFloatViewController.h"
+#import "KIVFloatViewPC.h"
+
+#import <KIVListKit.h>
 
 //view
 #import "KIVSearchHeaderView.h"
@@ -46,7 +51,7 @@
 //    [settingBtn setTitle:@"设置" forState:UIControlStateNormal];
     [settingBtn setImage:[UIImage imageNamed:@"nav_right_button"] forState:UIControlStateNormal];
     settingBtn.titleLabel.font = [UIFont systemFontOfSize:14];
-    [settingBtn addTarget:self action:@selector(selectedSetting:) forControlEvents:UIControlEventTouchUpInside];
+    [settingBtn addTarget:self action:@selector(rightNaviItemButton:) forControlEvents:UIControlEventTouchUpInside];
     [settingBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:settingBtn];
     
@@ -95,11 +100,22 @@
     [super didReceiveMemoryWarning];
 }
 #pragma mark - Actions
-- (void)selectedSetting:(UIButton *)button
+- (void)rightNaviItemButton:(UIButton *)button
 {
-    SettingVC *vc = [SettingVC new];
-    [self.navigationController pushViewController:vc animated:YES];
+//    SettingVC *vc = [SettingVC new];
+//    [self.navigationController pushViewController:vc animated:YES];
+    
+    KIVFloatViewController *vc = [KIVFloatViewController new];
+//    KIVFloatViewPC *pc = [KIVFloatViewPC new];
+    KIVVCTransition *transition = [[KIVVCTransition alloc] initSamVCTransitionWithPresentationAnimatorClassName:@"AnimatorPopping" presentationControllerClassName:@"KIVFloatViewPC"];
+    
+    vc.transitioningDelegate = transition;
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    
+    [self presentViewController:vc animated:YES completion:nil];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
+
 
 - (void)userInfoSetting:(UIButton *)button
 {

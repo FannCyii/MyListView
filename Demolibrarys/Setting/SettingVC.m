@@ -9,10 +9,10 @@
 #import "SettingVC.h"
 #import "KIVCVDataSource.h"
 
-#import "KIVWebVC.h"
+//#import "KIVWebVC.h"
 #import "KIVLogVC.h"
 #import "DemoWebServerVC.h"
-#import "HomeVC.h"
+//#import "HomeVC.h"
 #import <PureLayout/PureLayout.h>
 
 @interface SettingVC ()
@@ -73,15 +73,6 @@
     serverRow.rowHeight = 45;
     serverRow.cellData = @"导入数据";
     [settingList insertRow:serverRow];
-    
-    KIVDSBaseRow *homeRow = [KIVDSBaseRow new];
-    homeRow.selectedBlock = ^(id listView, NSIndexPath *indexPath) {
-        HomeVC *vc = [HomeVC new];
-        [self.navigationController pushViewController:vc animated:YES];
-    };
-    homeRow.rowHeight = 45;
-    homeRow.cellData = @"首页";
-    [settingList insertRow:homeRow];
     
     [self.tableView addSection:settingList];
     [self.tableView refreshData];

@@ -164,10 +164,10 @@
 		8F839B081FBDDC380014B1C6 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				8F839B091FBDDC380014B1C6 /* KIVTimer.m */,
-				8F839B0A1FBDDC380014B1C6 /* TimerViewController.m */,
 				8F839B0B1FBDDC380014B1C6 /* KIVTimer.h */,
+				8F839B091FBDDC380014B1C6 /* KIVTimer.m */,
 				8F839B0C1FBDDC380014B1C6 /* TimerViewController.h */,
+				8F839B0A1FBDDC380014B1C6 /* TimerViewController.m */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -185,9 +185,9 @@
 		8F839B141FBDDC390014B1C6 /* Safe */ = {
 			isa = PBXGroup;
 			children = (
-				8F839B151FBDDC390014B1C6 /* KIVSafeDataClassVC.h */,
 				8F839B161FBDDC390014B1C6 /* NSArray+SafeArray.h */,
 				8F839B171FBDDC390014B1C6 /* NSArray+SafeArray.m */,
+				8F839B151FBDDC390014B1C6 /* KIVSafeDataClassVC.h */,
 				8F839B181FBDDC390014B1C6 /* KIVSafeDataClassVC.m */,
 			);
 			path = Safe;

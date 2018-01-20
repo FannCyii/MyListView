@@ -62,7 +62,7 @@
     KIVCVBaseItem *itemGoogle = [KIVCVBaseItem new];
     itemGoogle.cellClassName = @"kivMiddleItemCell";
     itemGoogle.height = 100;
-    itemGoogle.with = 100;
+    itemGoogle.with = 80;
 //    itemGoogle.rowColor = [UIColor yellowColor];
     itemGoogle.cellData = @"Google搜索";
     [array addObject:itemGoogle];
@@ -83,7 +83,7 @@
         KIVCVBaseItem *item = [KIVCVBaseItem new];
         item.cellClassName = @"kivMiddleItemCell";
         item.height = 100;
-        item.with = 80;
+        item.with = 78;
 //        item.rowColor = [UIColor yellowColor];
         NSDictionary *dirData = logsCollections[i];
         item.cellData = [dirData objectForKey:LOGSTITLE];
@@ -113,6 +113,7 @@
 {
     if(!_collectionView){
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+        layout.sectionInset = UIEdgeInsetsMake(0, 15, 0, 0);
 //        layout.itemSize = CGSizeMake(60, 60);
         layout.minimumLineSpacing = 10;
         layout.minimumInteritemSpacing = 10;

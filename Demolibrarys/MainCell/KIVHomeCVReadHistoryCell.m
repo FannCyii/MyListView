@@ -21,7 +21,7 @@
     [super awakeFromNib];
     
     self.tableView = [[UITableView alloc] initWithFrame:CGRectZero];
-    
+    self.tableView.scrollEnabled = NO;
     [self.contentView addSubview:self.tableView];
     [self.tableView autoPinEdgesToSuperviewEdges];
 

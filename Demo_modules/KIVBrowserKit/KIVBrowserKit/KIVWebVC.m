@@ -9,8 +9,10 @@
 #import "KIVWebVC.h"
 #import "PureLayout.h"
 #import <WebKit/WebKit.h>
-#import "UIView+Toast.h"
-#import <MGJRouter/MGJRouter.h>
+//#import "UIView+Toast.h"
+//#import <MGJRouter/MGJRouter.h>
+//#import <KIVDispatchCenter/KIVRouter.h>
+
 
 @interface KIVWebVC ()
 @property (nonatomic, strong) WKWebView *webView;
@@ -23,27 +25,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectZero];
-    self.progressView.backgroundColor = [UIColor whiteColor];
+//    self.progressView.backgroundColor = [UIColor whiteColor];
     self.webView = [[WKWebView alloc] initWithFrame:CGRectZero];
     [self.view addSubview:self.webView];
     [self.view addSubview:self.progressView];
     
-    [self.webView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:66];
+    [self.webView autoPinEdgeToSuperviewEdge:ALEdgeTop];
     [self.webView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
     [self.webView autoPinEdgeToSuperviewEdge:ALEdgeRight];
     [self.webView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
-//    [self.progressView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
+
     [self.progressView autoPinEdgeToSuperviewEdge:ALEdgeRight];
     [self.progressView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
-    [self.progressView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:64];
-    [self.progressView autoSetDimension:ALDimensionHeight toSize:2];
+    [self.progressView autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:22];
+    [self.progressView autoSetDimension:ALDimensionHeight toSize:1];
     
-    if (self.routerParamsDir) {
-        self.url = [self.routerParamsDir objectForKey:@"url"];
-    }
+//    if (self.routerParamsDir) {
+//        self.url = [self.routerParamsDir objectForKey:@"url"];
+//    }
     
     if(self.url.length == 0){
-        return;
+//        return;
+        self.url = @"https://www.google.com";
     }
     
     if(!([self.url hasPrefix:@"http://"] || [self.url hasPrefix:@"https://"])){

@@ -30,15 +30,17 @@
 {
     [self addDimmingView];
     
-//    CGRect frame = self.presentingViewController.view.frame;
+    CGRect frame = self.presentingViewController.view.frame;
 //    self.presentedView.frame = CGRectMake(0, frame.size.height, frame.size.width, frame.size.width);
+    
+    self.presentedView.frame = CGRectMake(frame.size.width - 110, 0, 100, 210);
     
     [self.presentedViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
 //        self.presentedView.frame = CGRectMake(0, frame.size.height - 220, frame.size.width, 220);
-        
+        self.presentedView.frame = CGRectMake(frame.size.width - 110, 50, 100, 210);
         self.presentedView.alpha = 1;
         
-        self.dimmingView.backgroundColor = [UIColor colorWithWhite:0.2 alpha:0.5];
+        self.dimmingView.backgroundColor = [UIColor colorWithWhite:0.3 alpha:0.1];
     } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
         
     }];
@@ -46,9 +48,10 @@
 
 - (void)dismissalTransitionWillBegin
 {
+    CGRect frame = self.presentedViewController.view.frame;
     [self.presentedViewController.transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
         self.dimmingView.alpha = 0.0;
-        
+        self.presentedView.frame = CGRectMake(frame.origin.x + frame.size.width, frame.origin.y, 0, 0);
         self.presentedView.alpha = 0;
     } completion:nil];
 }

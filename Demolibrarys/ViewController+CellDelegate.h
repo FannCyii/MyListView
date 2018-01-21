@@ -11,6 +11,6 @@
 #import "KIVHomeCVMiddelCell.h"
 #import "KIVSearchHeaderView.h"
 
-@interface ViewController (CellDelegate)<KIVSearchHeaderViewDelegate,KIVHomeCVMiddelCellDelegate,KIVCVCellDelegate>
+@interface ViewController (CellDelegate)<KIVSearchHeaderViewDelegate,KIVHomeCVMiddelCellDelegate>
 
 @end

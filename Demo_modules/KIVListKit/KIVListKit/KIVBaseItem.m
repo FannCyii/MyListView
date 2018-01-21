@@ -10,7 +10,6 @@
 
 @implementation KIVBaseItem
 
-
 - (NSString *)itemIdentifier
 {
     return self.itemClassName;

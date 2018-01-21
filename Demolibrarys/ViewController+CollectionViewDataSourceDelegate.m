@@ -7,17 +7,13 @@
 //
 
 #import "ViewController+CollectionViewDataSourceDelegate.h"
-#import "KIVCVDataSource.h"
-#import "KIVCVBaseSection.h"
-#import "KIVCVBaseItem.h"
-#import "UICollectionView+KIVDS.h"
 
 #import "AddArticleVC.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) UICollectionView * collectionView;
-@property (nonatomic, strong) KIVCVDataSource * dataSource;
+@property (nonatomic, strong) KIVCollectionViewProtocol * dataSource;
 
 @end
 
@@ -25,8 +21,8 @@
 
 - (void)handleMainData
 {
-    NSMutableArray *array = [NSMutableArray array];
-
+    KIVCVCellSection *section = [KIVCVCellSection new];
+    
 //    KIVCVBaseItem *item = [KIVCVBaseItem new];
 //    item.cellClassName = @"KIVHomeCVHeaderCell";
 //    item.height = 100;
@@ -34,21 +30,23 @@
 //    item.rowColor = [UIColor yellowColor];
 //    [array addObject:item];
     
-    KIVCVBaseItem *item = [KIVCVBaseItem new];
-    item.cellClassName = @"KIVHomeCVHeaderADCell";
+    KIVCVCellItem *item = [KIVCVCellItem new];
+    item.itemClassName = @"KIVHomeCVHeaderADCell";
     item.height = 58;
-    item.with = [UIScreen mainScreen].bounds.size.width;
-    item.selectedBlock = ^(id listView, NSIndexPath *indexPath) {
+    item.width = [UIScreen mainScreen].bounds.size.width;
+    item.selectedHandleBlock = ^(id data, id list, NSIndexPath *indexPath) {
         [self addLogsAlert];
     };
-    [array addObject:item];
+    [section addItem:item];
     
-    KIVCVBaseItem *middelItem = [KIVCVBaseItem new];
-    middelItem.cellClassName = @"KIVHomeCVMiddelCell";
+    KIVCVCellItem *middelItem = [KIVCVCellItem new];
+    middelItem.itemClassName = @"KIVHomeCVMiddelCell";
     middelItem.height = 100;
-    middelItem.with = [UIScreen mainScreen].bounds.size.width;
-    middelItem.rowColor = [UIColor whiteColor];
-    [array addObject:middelItem];
+    middelItem.width = [UIScreen mainScreen].bounds.size.width;
+    middelItem.itemColor = [UIColor whiteColor];
+    middelItem.canNotSelected = YES;
+    middelItem.delegateTarget = self;
+    [section addItem:middelItem];
     
     
 //    KIVCVBaseItem *userInfoItem = [KIVCVBaseItem new];
@@ -59,18 +57,16 @@
 //    [array addObject:userInfoItem];
     
     //    KIVHomeCVReadHistoryCell
-    KIVCVBaseItem *historiesItem = [KIVCVBaseItem new];
-    historiesItem.cellClassName = @"KIVHomeCVReadHistoryCell";
+    KIVCVCellItem *historiesItem = [KIVCVCellItem new];
+    historiesItem.itemClassName = @"KIVHomeCVReadHistoryCell";
     historiesItem.height = 80 * 10;
-    historiesItem.with = [UIScreen mainScreen].bounds.size.width;
-    historiesItem.rowColor = [UIColor colorWithWhite:0.9 alpha:0.7];
-    [array addObject:historiesItem];
-    
+    historiesItem.width = [UIScreen mainScreen].bounds.size.width;
+    historiesItem.itemColor = [UIColor colorWithWhite:0.9 alpha:0.7];
+    [section addItem:historiesItem];
 
-    
-    [self.collectionView registerItmes:array];
-    self.dataSource.itemArray = array;
-    [self.collectionView reloadData];
+    [self.collectionView registeKivProtocol:self.dataSource];
+    [self.collectionView addSection:section];
+    [self.collectionView kiv_reloadData];
 }
 
 - (void)addLogsAlert

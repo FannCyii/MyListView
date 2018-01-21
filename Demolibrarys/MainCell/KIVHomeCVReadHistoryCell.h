@@ -6,8 +6,8 @@
 //  Copyright © 2018 kivan. All rights reserved.
 //
 
-#import "KIVBaseCVCell.h"
+#import <UIKit/UIKit.h>
 
-@interface KIVHomeCVReadHistoryCell : KIVBaseCVCell
+@interface KIVHomeCVReadHistoryCell : UICollectionViewCell <KIVBaseCellInterface>
 
 @end

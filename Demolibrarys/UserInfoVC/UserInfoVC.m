@@ -12,7 +12,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *infoImageView;
 
-@property (nonatomic, strong) KIVDSDataSource *dataSource;
+@property (nonatomic, strong) KIVTableViewProtocol *dataSource;
 
 @end
 
@@ -38,50 +38,50 @@
 
 - (void)dataHandle
 {
-    KIVDSBaseSection *section = [KIVDSBaseSection new];
+    KIVTVCellSection *section = [KIVTVCellSection new];
     
-    KIVDSBaseRow *row1 = [KIVDSBaseRow new];
-    row1.cellData = @"关于";
-    row1.cellClassName = @"UserInfoTVCell";
-    row1.rowHeight = 60;
-    [section insertRow:row1];
+    KIVTVCellItem *row1 = [KIVTVCellItem new];
+    row1.itemData = @"关于";
+    row1.itemClassName = @"UserInfoTVCell";
+    row1.height = 60;
+    [section addItem:row1];
     
-    KIVDSBaseRow *row2 = [KIVDSBaseRow new];
-    row2.cellData = @"用户建议";
-    row2.rowHeight = 60;
-    row2.cellClassName = @"UserInfoTVCell";
-    [section insertRow:row2];
+    KIVTVCellItem *row2 = [KIVTVCellItem new];
+    row2.itemData = @"用户建议";
+    row2.height = 60;
+    row2.itemClassName = @"UserInfoTVCell";
+    [section addItem:row2];
     
-    KIVDSBaseRow *row3 = [KIVDSBaseRow new];
-    row3.cellData = @"主题";
-    row3.rowHeight = 60;
-    row3.cellClassName = @"UserInfoTVCell";
-    [section insertRow:row3];
+    KIVTVCellItem *row3 = [KIVTVCellItem new];
+    row3.itemData = @"主题";
+    row3.height = 60;
+    row3.itemClassName = @"UserInfoTVCell";
+    [section addItem:row3];
     
-    KIVDSBaseRow *row4 = [KIVDSBaseRow new];
-    row4.cellData = @"设置";
-    row4.rowHeight = 60;
-    row4.cellClassName = @"UserInfoTVCell";
-    [section insertRow:row4];
+    KIVTVCellItem *row4 = [KIVTVCellItem new];
+    row4.itemData = @"设置";
+    row4.height = 60;
+    row4.itemClassName = @"UserInfoTVCell";
+    [section addItem:row4];
     
-    KIVDSBaseRow *row5 = [KIVDSBaseRow new];
-    row5.cellData = @"其他";
-    row5.rowHeight = 60;
-    row5.cellClassName = @"UserInfoTVCell";
-    [section insertRow:row5];
+    KIVTVCellItem *row5 = [KIVTVCellItem new];
+    row5.itemData = @"其他";
+    row5.height = 60;
+    row5.itemClassName = @"UserInfoTVCell";
+    [section addItem:row5];
     
-    [self.tableView addSection:section];
-    [self.tableView registerKivDataSource:self.dataSource];
-    [self.tableView refreshData];
+    [self.tableView addSections:@[section]];
+    [self.tableView registeKivProtocol:self.dataSource];
+    [self.tableView kiv_reloadData];
     
 }
 
 
 #pragma mark - Accessor
-- (KIVDSDataSource *)dataSource
+- (KIVTableViewProtocol *)dataSource
 {
     if(!_dataSource){
-        _dataSource = [KIVDSDataSource new];
+        _dataSource = [KIVTableViewProtocol new];
     }
     return _dataSource;
 }

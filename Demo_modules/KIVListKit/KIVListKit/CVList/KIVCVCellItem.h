@@ -10,6 +10,6 @@
 
 @interface KIVCVCellItem : KIVBaseItem
 
-@property (nonatomic, assign) CGFloat itemWidth;
+@property (nonatomic, assign) CGFloat width;
 
 @end

@@ -7,30 +7,31 @@
 //
 
 #import "ViewController.h"
-#import "SettingVC.h"
 #import <PureLayout/PureLayout.h>
 #import "ViewController+CellDelegate.h"
 #import "ViewController+CollectionViewDataSourceDelegate.h"
-#import "KIVCVDataSource.h"
 #import "KIVArchiverManager.h"
 #import "UserInfoVC.h"
-#import "KIVCVBaseItem.h"
 #import "KIVFloatViewController.h"
 #import "KIVFloatViewPC.h"
-
+#import "ViewController+ScrolleHandle.h"
 #import <KIVListKit.h>
 
 //view
 #import "KIVSearchHeaderView.h"
 
-@interface ViewController ()<KIVCVDataSourceDelegate>
+@interface ViewController ()
 @property (nonatomic, strong) UICollectionView * collectionView;
-@property (nonatomic, strong) KIVCVDataSource * dataSource;
+@property (nonatomic, strong) KIVCollectionViewProtocol * dataSource;
 
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
 
 @property (nonatomic, strong) KIVSearchHeaderView * searchHeader;
 @property (nonatomic, strong) KIVVCTransition *trasition;
+
+@property (nonatomic, strong) NSLayoutConstraint *searchHeaderTopConstraint;
+@property (nonatomic, strong) NSLayoutConstraint *searchHeaderWidthConstraint;
+
 @end
 
 @implementation ViewController
@@ -47,15 +48,17 @@
     self.trasition = [[KIVVCTransition alloc] initSamVCTransitionWithPresentationAnimatorClassName:@"AnimatorLeft" presentationControllerClassName:@"UserInfoPC"];
     
     
-    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    UIButton *settingBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
 //    [settingBtn setTitle:@"设置" forState:UIControlStateNormal];
+    settingBtn.imageEdgeInsets =UIEdgeInsetsMake(0, 20, 0, 0);
     [settingBtn setImage:[UIImage imageNamed:@"nav_right_button"] forState:UIControlStateNormal];
     settingBtn.titleLabel.font = [UIFont systemFontOfSize:14];
     [settingBtn addTarget:self action:@selector(rightNaviItemButton:) forControlEvents:UIControlEventTouchUpInside];
     [settingBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:settingBtn];
     
-    UIButton *leftBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
+    UIButton *leftBtn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+    leftBtn.imageEdgeInsets =UIEdgeInsetsMake(0, -20, 0, 0);
 //    [leftBtn setTitle:@"信息" forState:UIControlStateNormal];
     [leftBtn setImage:[UIImage imageNamed:@"nav_left_button"] forState:UIControlStateNormal];
     leftBtn.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -67,6 +70,7 @@
     [self subViewConfig];
     [self handleMainData];
     
+    [self keyBoardGestureConfig];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logsArchived:) name:NOTIFICATION_ARCHIVER_LOGS object:nil];
 }
@@ -78,22 +82,37 @@
     self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 }
 
+- (void)keyBoardGestureConfig
+{
+    UITapGestureRecognizer *gusterConfig = [[UITapGestureRecognizer alloc] init];
+    
+    [gusterConfig addTarget:self.view action:@selector(tapGestureRecongnizerAction:)];
+    
+}
+
+- (void)tapGestureRecongnizerAction:(UIGestureRecognizer *)gesture
+{
+    [self.view endEditing:YES];
+}
+
 - (void)subViewConfig
 {
     [self.view addSubview:self.collectionView];
     [self.view addSubview:self.searchHeader];
     
-    [self.searchHeader autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:64];
-    [self.searchHeader autoPinEdgeToSuperviewEdge:ALEdgeRight];
-    [self.searchHeader autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+    self.searchHeaderTopConstraint = [self.searchHeader autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:64];
+//    [self.searchHeader autoPinEdgeToSuperviewEdge:ALEdgeRight];
+//    [self.searchHeader autoPinEdgeToSuperviewEdge:ALEdgeLeft];
+    [self.searchHeader autoAlignAxisToSuperviewAxis:ALAxisVertical];
+    self.searchHeaderWidthConstraint = [self.searchHeader autoSetDimension:ALDimensionWidth toSize:self.view.frame.size.width];
     [self.searchHeader autoSetDimension:ALDimensionHeight toSize:60];
     [self.collectionView autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.searchHeader];
     [self.collectionView autoPinEdgeToSuperviewEdge:ALEdgeRight];
     [self.collectionView autoPinEdgeToSuperviewEdge:ALEdgeLeft];
     [self.collectionView autoPinEdgeToSuperviewEdge:ALEdgeBottom];
-    
-    self.collectionView.delegate = self.dataSource;
-    self.collectionView.dataSource = self.dataSource;
+//    
+//    self.collectionView.delegate = self.dataSource;
+//    self.collectionView.dataSource = self.dataSource;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -158,11 +177,12 @@
     return _collectionView;
 }
 
-- (KIVCVDataSource *)dataSource
+- (KIVCollectionViewProtocol *)dataSource
 {
     if(!_dataSource){
-        _dataSource = [KIVCVDataSource new];
-        _dataSource.delegate = self;
+        _dataSource = [KIVCollectionViewProtocol new];
+        _dataSource.collectionViewScrollDelegate = self;
+//        _dataSource.delegate = self;
     }
     return _dataSource;
 }
@@ -188,7 +208,7 @@
 
 
 #pragma mark - KIVCVDataSourceDelegate
-- (id)getTargetVCWihtDataSource:(KIVCVDataSource *)dataSource
+- (id)getTargetVCWihtDataSource:(KIVCollectionViewProtocol *)dataSource
 {
     return self;
 }

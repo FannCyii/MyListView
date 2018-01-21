@@ -7,8 +7,8 @@
 //
 
 //#import <Demo_TableView/Demo_TableView.h>
-#import "KIVDSBaseTVCell.h"
+#import <UIKit/UIKit.h>
 
-@interface KIVLogMainCell : KIVDSBaseTVCell
+@interface KIVLogMainCell : UITableViewCell <KIVBaseCellInterface>
 
 @end

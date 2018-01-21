@@ -6,8 +6,8 @@
 //  Copyright © 2017 kivan. All rights reserved.
 //
 
-#import "KIVBaseCVCell.h"
+#import <UIKit/UIKit.h>
 
-@interface kivMiddleItemCell : KIVBaseCVCell
+@interface kivMiddleItemCell : UICollectionViewCell <KIVBaseCellInterface>
 
 @end

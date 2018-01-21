@@ -9,7 +9,7 @@
 #import "HistroyReadTVCell.h"
 #import "ArticleListItem.h"
 
-@interface HistroyReadTVCell()
+@interface HistroyReadTVCell() 
 @property (weak, nonatomic) IBOutlet UIImageView *liImageView;
 @property (weak, nonatomic) IBOutlet UILabel *aticleNameLabel;
 
@@ -33,10 +33,13 @@
     // Configure the view for the selected state
 }
 
-- (void)updateDataWithData:(id)aData
+- (void)updataCellWithItemData:(id)itemData
 {
-    ElementInfo *item = (ElementInfo *)aData;
-    self.aticleNameLabel.text = item.title;    
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    ElementInfo *item = (ElementInfo *)itemData;
+    self.aticleNameLabel.text = item.title;
 }
+
 
 @end

@@ -9,14 +9,12 @@
 #import "KIVWebVC.h"
 #import "PureLayout.h"
 #import <WebKit/WebKit.h>
-//#import "UIView+Toast.h"
-//#import <MGJRouter/MGJRouter.h>
-//#import <KIVDispatchCenter/KIVRouter.h>
+#import "KIVHomeBottomView.h"
 
 
 @interface KIVWebVC ()
 @property (nonatomic, strong) WKWebView *webView;
-
+@property (nonatomic, strong) KIVHomeBottomView *bottomView;
 @property (nonatomic, strong) UIProgressView *progressView;
 @end
 
@@ -24,6 +22,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self navigationConfig];
+    
+    
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectZero];
 //    self.progressView.backgroundColor = [UIColor whiteColor];
     self.webView = [[WKWebView alloc] initWithFrame:CGRectZero];
@@ -105,6 +106,19 @@
     else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
+}
+
+- (void)navigationConfig
+{
+    UIButton *backButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
+    [backButton addTarget:self action:@selector(leftAction:) forControlEvents:UIControlEventTouchUpInside];
+    [backButton setImage:[UIImage imageNamed:@"Back"] forState:UIControlStateNormal];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+}
+
+- (void)leftAction:(UIButton *)button
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

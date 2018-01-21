@@ -37,13 +37,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B7F3C558200B6AFF00F3D910 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B702D21C200663CE006DF256 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B73B7A41200B6A0600E18C22;
-			remoteInfo = KIVBrowserKitBundle;
-		};
 		B7F3C55A200B6B2D00F3D910 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B702D21C200663CE006DF256 /* Project object */;
@@ -251,7 +244,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B7F3C559200B6AFF00F3D910 /* PBXTargetDependency */,
 			);
 			name = KIVBrowserKit;
 			productName = KIVBrowserKit;
@@ -490,11 +482,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B7F3C559200B6AFF00F3D910 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B73B7A41200B6A0600E18C22 /* KIVBrowserKitBundle */;
-			targetProxy = B7F3C558200B6AFF00F3D910 /* PBXContainerItemProxy */;
-		};
 		B7F3C55B200B6B2D00F3D910 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B73B7A41200B6A0600E18C22 /* KIVBrowserKitBundle */;

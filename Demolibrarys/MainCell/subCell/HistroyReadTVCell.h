@@ -6,8 +6,8 @@
 //  Copyright © 2018 kivan. All rights reserved.
 //
 
-#import "KIVDSBaseTVCell.h"
+#import <UIKit/UIKit.h>
 
-@interface HistroyReadTVCell : KIVDSBaseTVCell
+@interface HistroyReadTVCell : UITableViewCell <KIVBaseCellInterface>
 
 @end

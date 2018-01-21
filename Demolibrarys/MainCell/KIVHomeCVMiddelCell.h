@@ -6,7 +6,7 @@
 //  Copyright © 2017 kivan. All rights reserved.
 //
 
-#import "KIVBaseCVCell.h"
+#import <UIKit/UIKit.h>
 
 @class KIVHomeCVMiddelCell;
 @protocol KIVHomeCVMiddelCellDelegate <NSObject>
@@ -16,7 +16,8 @@
 - (void)kivHomeCVMiddelCell:(KIVHomeCVMiddelCell *)cell selectedIndexPath:(NSIndexPath *)indexPath cellData:(id)aData;
 @end
 
+@interface KIVHomeCVMiddelCell : UICollectionViewCell <KIVBaseCellInterface>
 
-@interface KIVHomeCVMiddelCell : KIVBaseCVCell
+@property (nonatomic, weak) id<KIVHomeCVMiddelCellDelegate> delegate;
 
 @end

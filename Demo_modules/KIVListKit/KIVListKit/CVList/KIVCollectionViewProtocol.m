@@ -17,12 +17,6 @@
 
 
 #pragma mark - Initialize
-//- (void)registeWithCollectionView:(UICollectionView *)collectionView
-//{
-//    collectionView.delegate = self;
-//    collectionView.dataSource = self;
-//
-//}
 
 #pragma mark - Update
 - (void)updateWithData:(NSArray <KIVCVCellSection *> *)sections
@@ -64,13 +58,17 @@
     KIVCVCellSection *cellSection = [self.dataArray objectAtIndex:indexPath.section];
     KIVCVCellItem *cellItem = [cellSection.items objectAtIndex:indexPath.item];
     NSLog(@"[WARNING]The size of item(%@) is invalid,height or width may 0",cellItem);
-    return CGSizeMake(cellItem.itemWidth, cellItem.itemHeight);
+    return CGSizeMake(cellItem.width, cellItem.height);
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     KIVCVCellSection *cellSection = [self.dataArray objectAtIndex:indexPath.section];
     KIVCVCellItem *cellItem = [cellSection.items objectAtIndex:indexPath.item];
+    
+    if (cellItem.canNotSelected) {
+        return;
+    }
     
     if (cellItem.selectedHandleBlock) {
         cellItem.selectedHandleBlock(cellSection, collectionView, indexPath);

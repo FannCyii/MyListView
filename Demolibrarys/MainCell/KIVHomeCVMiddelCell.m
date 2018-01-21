@@ -12,9 +12,9 @@
 #import "KIVArchiverManager.h"
 #import "CommonHeader.h"
 
-@interface KIVHomeCVMiddelCell () <KIVCVDataSourceDelegate>
+@interface KIVHomeCVMiddelCell ()
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) KIVCVDataSource * dataSource;
+@property (nonatomic, strong) KIVCollectionViewProtocol * dataSource;
 
 @end
 
@@ -56,19 +56,19 @@
 {
     KIVArchiverManager *archiverManager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_ARCHIVER_IDENTIFIOR];
     NSArray *logsCollections = [archiverManager getAllLogs];
-    NSMutableArray *array = [NSMutableArray array];
-    
+    KIVCVCellSection *array = [KIVCVCellSection new];
     //独立的一个item 用于google搜索
-    KIVCVBaseItem *itemGoogle = [KIVCVBaseItem new];
-    itemGoogle.cellClassName = @"kivMiddleItemCell";
+    KIVCVCellItem *itemGoogle = [KIVCVCellItem new];
+    itemGoogle.itemClassName = @"kivMiddleItemCell";
     itemGoogle.height = 100;
-    itemGoogle.with = 80;
+    itemGoogle.width = 80;
 //    itemGoogle.rowColor = [UIColor yellowColor];
-    itemGoogle.cellData = @"Google搜索";
-    [array addObject:itemGoogle];
+    itemGoogle.itemData = @"Google搜索";
+    itemGoogle.delegateTarget = self;
+    [array addItem:itemGoogle];
     
     WEAKSElF
-    itemGoogle.selectedBlock = ^(id listView, NSIndexPath *indexPath) {
+    itemGoogle.selectedHandleBlock = ^(id data, id list, NSIndexPath *indexPath) {
         STRONGSELF
         if([self.delegate respondsToSelector:@selector(kivHomeCVMiddelCell:selectedIndexPath:cellData:)]){
             NSDictionary *aData = logsCollections[indexPath.row ];
@@ -80,16 +80,16 @@
     };
     
     for (NSInteger i = 0; i < logsCollections.count; ++i) {
-        KIVCVBaseItem *item = [KIVCVBaseItem new];
-        item.cellClassName = @"kivMiddleItemCell";
+        KIVCVCellItem *item = [KIVCVCellItem new];
+        item.itemClassName = @"kivMiddleItemCell";
         item.height = 100;
-        item.with = 78;
+        item.width = 78;
 //        item.rowColor = [UIColor yellowColor];
         NSDictionary *dirData = logsCollections[i];
-        item.cellData = [dirData objectForKey:LOGSTITLE];
+        item.itemData = [dirData objectForKey:LOGSTITLE];
         
         WEAKSElF
-        item.selectedBlock = ^(id listView, NSIndexPath *indexPath) {
+        item.selectedHandleBlock = ^(id data, id list, NSIndexPath *indexPath) {
             STRONGSELF
             if([self.delegate respondsToSelector:@selector(kivHomeCVMiddelCell:selectedIndexPath:cellData:)]){
                 NSDictionary *aData = logsCollections[indexPath.row -1];
@@ -100,12 +100,12 @@
             }
         };
         
-        [array addObject:item];
+        [array addItem:item];
     }
     
-    [self.collectionView registerItmes:array];
-    self.dataSource.itemArray = array;
-    [self.collectionView reloadData];
+    [self.collectionView registeKivProtocol:self.dataSource];
+    [self.collectionView addSection:array];
+    [self.collectionView kiv_reloadData];
 }
 
 #pragma mark - Accessor
@@ -126,23 +126,23 @@
     return  _collectionView;
 }
 
-- (KIVCVDataSource *)dataSource
+- (KIVCollectionViewProtocol *)dataSource
 {
     if(!_dataSource){
-        _dataSource = [KIVCVDataSource new];
-        _dataSource.delegate = self;
+        _dataSource = [KIVCollectionViewProtocol new];
+//        _dataSource.delegate = self;
     }
     return _dataSource;
 }
 
 #pragma mark -updata
-- (void)updataCVCellWithData:(id)aData
+- (void)updateCellWithItem:(KIVCVCellItem *)item
 {
-    
+    self.delegate = item.delegateTarget;
 }
 
 #pragma mark - KIVCVDataSourceDelegate
-- (id)getTargetVCWihtDataSource:(KIVCVDataSource *)dataSource
+- (id)getTargetVCWihtDataSource:(KIVCollectionViewProtocol *)dataSource
 {
     return self;
 }

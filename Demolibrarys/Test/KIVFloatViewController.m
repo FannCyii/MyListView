@@ -7,8 +7,14 @@
 //
 
 #import "KIVFloatViewController.h"
+//#import "UITableView+KIVListHandle.h"
 
 @interface KIVFloatViewController ()
+
+@property (nonatomic, strong) UITableView *tableView;
+//@property (nonatomic, strong) KIVTableViewProtocol *protocol;
+
+@property (nonatomic, strong) UIView *triangleView;
 
 @end
 
@@ -16,17 +22,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    UIView *tempView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 50, 150)];
-    [self.view addSubview:tempView];
     self.view.backgroundColor = [UIColor clearColor];
-    tempView.backgroundColor = [UIColor grayColor];
     
-    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(15, 15, 40, 40)];
-    [self.view addSubview:button];
-    button.backgroundColor = [UIColor greenColor];
+    self.triangleView = [[UIView alloc] initWithFrame:CGRectMake(10, 0, 13, 10)];
+    [self.view addSubview:self.triangleView];
+    self.triangleView.backgroundColor = [UIColor clearColor];
     
-    [button addTarget:self action:@selector(dissmissVC:) forControlEvents:UIControlEventTouchUpInside];
+//    CAShapeLayer *shapeLayer = [[CAShapeLayer alloc] init];
+    
+    [self drawTriangle];
+    [self subViewConfig];
+    [self dataHandle];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -47,6 +53,62 @@
 - (void)dissmissVC:(UIButton *)button
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)subViewConfig
+{
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero];
+    [self.view addSubview:self.tableView];
+    self.tableView.scrollEnabled = NO;
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).width.insets(UIEdgeInsetsMake(10, 0, 0, 0));
+    }];
+    
+}
+
+- (void)dataHandle
+{
+    KIVTableViewProtocol *protocol = [KIVTableViewProtocol new];
+    [self.tableView registeKivProtocol:protocol];
+    
+    KIVTVCellSection *section = [KIVTVCellSection new];
+    WEAKSElF
+    section.selectedHandleBlock = ^(id data, id list, NSIndexPath *indexPath) {
+        STRONGSELF
+        [self dismissViewControllerAnimated:YES completion:nil];
+    };
+    
+    for (int i = 0; i<5; ++i) {
+        KIVTVCellItem *item = [KIVTVCellItem new];
+        item.itemClassName = @"KIVFloatTVCell";
+        item.height = 30;
+        item.itemData = @"选项";
+        [section addItem:item];
+    }
+    
+    [self.tableView addSections:@[section].mutableCopy];
+    [self.tableView kiv_reloadData];
+}
+
+- (void)drawTriangle {
+    
+    CAShapeLayer *layer = [CAShapeLayer layer];
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    
+    CGFloat x = 70;
+    //绘制三角形的三个顶点，自己算，能连成三角形就行啦！
+    [path moveToPoint:CGPointMake(x, 0)];
+    [path addLineToPoint:CGPointMake(x-7, 10)];
+    [path addLineToPoint:CGPointMake(x+7, 10)];
+    //连接三个点
+    [path closePath];
+    layer.path = path.CGPath;
+    //填充图形颜色
+    layer.fillColor = [UIColor whiteColor].CGColor;
+    //图形变现颜色
+    layer.strokeColor = [UIColor whiteColor].CGColor;
+    //self.drawView,自己定义一个View，继承UIView
+    [self.triangleView.layer addSublayer:layer];
 }
 
 

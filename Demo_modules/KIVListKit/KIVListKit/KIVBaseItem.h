@@ -14,7 +14,7 @@
  @param list 点击的列表：可能是UITableView或UICollectionView
  @param indexPath 点击的位置
  */
-typedef void(^KIVItemSelectedHandle)(id data,id list,NSIndexPath *indexPath);
+typedef void(^KIVItemSelectedHandle)(id data, id list, NSIndexPath *indexPath);
 
 @interface KIVBaseItem : NSObject
 
@@ -24,12 +24,16 @@ typedef void(^KIVItemSelectedHandle)(id data,id list,NSIndexPath *indexPath);
 
 
 @property (nonatomic, strong) id itemData;
-@property (nonatomic, assign) CGFloat itemHeight;
+@property (nonatomic, assign) CGFloat height;
 @property (nonatomic, strong) UIColor *itemColor;
+
+@property (nonatomic, assign) BOOL canNotSelected;
+
+@property (nonatomic, weak) id delegateTarget;
 
 /*
  点击处理 item优先处理，section的后处理，如果设置了section的这个选项则section下所有的item点击时都会触发
  */
-@property (nonatomic, assign) KIVItemSelectedHandle selectedHandleBlock;
+@property (nonatomic, copy) KIVItemSelectedHandle selectedHandleBlock;
 
 @end

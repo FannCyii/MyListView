@@ -9,10 +9,6 @@
 #import "KIVLogVC+ResponeData.h"
 #import "Demo_Network.h"
 #import "DemoLogVO.h"
-#import "KIVDSBaseRow.h"
-#import "KIVDSBaseSection.h"
-//#import "KIVWebVC.h"
-#import "KIVDSDataSource.h"
 
 @interface KIVLogVC ()
 @property (nonatomic, strong) UITableView *mainListTV;
@@ -45,22 +41,25 @@
 //            [self.navigationController pushViewController:webVc animated:YES];
 //        };
         
-        KIVDSBaseRow *row = [KIVDSBaseRow new];
-        row.cellClassName = @"KIVLogMainCell";
-        row.rowHeight = 100;
-        row.cellData = vo;
+        KIVTVCellItem *row = [KIVTVCellItem new];
+        row.itemClassName = @"KIVLogMainCell";
+        row.height = 100;
+        row.itemData = vo;
         __weak typeof(self)weakSelf = self;
-        row.selectedBlock = ^(UITableView *tableView, NSIndexPath *indexPath) {
+        
+        row.selectedHandleBlock = ^(id data, id list, NSIndexPath *indexPath) {
             __strong typeof(weakSelf) strongSelf = weakSelf;
-            KIVDSBaseRow *row = [tableView getRowAtIndexPath:indexPath];
-            DemoLogVO *vo = (DemoLogVO *)row.cellData;
+            NSArray *array = [(UITableView *)list sections];
+            KIVTVCellSection *section = [array objectAtIndex:indexPath.section];
+            KIVTVCellItem *row = [section.items objectAtIndex:indexPath.row];
+            DemoLogVO *vo = (DemoLogVO *)row.itemData;
             KIVWebVC *webVc = [[KIVWebVC alloc] init];
             webVc.url = vo.logurl;
             [strongSelf.navigationController pushViewController:webVc animated:YES];
         };
-        
-        [self.mainListTV addRow:row atSectionInIndex:0];
-        [self.mainListTV refreshData];
+        //更新cell
+//        [self.mainListTV addRow:row atSectionInIndex:0];
+        [self.mainListTV kiv_reloadData];
     }
 }
 

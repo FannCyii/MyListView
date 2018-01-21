@@ -14,6 +14,7 @@
 
 @optional
 
+- (NSString *)cellIdentifier;
 //updateCellWithItem: 和updataCellWithItemData:只能二选一来实现，会优先调用updataCellWithItemData:
 - (void)updateCellWithItem:(KIVBaseItem *)item;
 - (void)updataCellWithItemData:(id)itemData;

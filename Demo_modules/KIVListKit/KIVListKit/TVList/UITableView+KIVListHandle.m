@@ -67,6 +67,8 @@
     }
 }
 
+#pragma mark -Data Update & Refresh
+
 - (void)registeKivProtocol:(KIVTableViewProtocol *)protocol
 {
     self.delegate = protocol;
@@ -74,7 +76,6 @@
     [self setKivProtocol:protocol];
 }
 
-#pragma mark -Data Update & Refresh
 - (void)kiv_reloadData
 {
     [[self kivProtocol] updateWithData:[self sections]];
@@ -106,6 +107,30 @@
 - (void)addSections:(NSMutableArray *)sections
 {
     [self setSections:sections];
+}
+
+- (void)addSection:(KIVTVCellSection *)section
+{
+    [self addSection:section atIndex:[self sections].count];
+}
+
+- (void)addSection:(KIVTVCellSection *)section atIndex:(NSInteger)index
+{
+    NSMutableArray *sections = [self sections];
+    if (!sections) {
+        sections = [NSMutableArray array];
+    }
+    if (index > sections.count) {
+        index = sections.count;
+    }
+    [sections insertObject:section atIndex:index];
+    [self setSections:sections];
+}
+- (void)addItem:(KIVTVCellItem *)item atIndexPath:(NSIndexPath *)indexPath
+{
+    NSMutableArray *sections = [self sections];
+    KIVTVCellSection *section = [sections objectAtIndex:indexPath.section];
+    [section.items insertObject:item atIndex:indexPath.item];
 }
 
 - (KIVTVCellItem *)getRowAtIndexPath:(NSIndexPath *)indexPath

@@ -9,7 +9,6 @@
 #import "KIVLogMainCell.h"
 #import "KIVTogetherTouchRecogizer.h"
 #import "DemoLogVO.h"
-#import "KIVDSBaseSection.h"
 #import "FolderListItem.h"
 #import "ArticleListItem.h"
 #import "ElementInfo.h"
@@ -38,16 +37,16 @@
     [super setSelected:selected animated:animated];
 }
 
-- (void)updateDataWithData:(id)aData
+- (void)updataCellWithItemData:(id)itemData
 {
-    ElementInfo *element = (ElementInfo *)aData;
+    ElementInfo *element = (ElementInfo *)itemData;
     if (element.elementType == ElementInfoTypeOfFolder) {
 //        FolderListItem *folder = (FolderListItem *)aData;
         self.descriptionLabel.text = @"文件夹";
         self.urlLabel.text = @"";
-        self.backgroundColor = [UIColor yellowColor];
+//        self.backgroundColor = [UIColor yellowColor];
     }else if(element.elementType == ElementInfoTypeOfArticle){
-        ArticleListItem *folder = (ArticleListItem *)aData;
+        ArticleListItem *folder = (ArticleListItem *)itemData;
         self.urlLabel.text = folder.aUrl;
         self.descriptionLabel.text = @"文章";
         self.backgroundColor = [UIColor whiteColor];

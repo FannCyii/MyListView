@@ -6,13 +6,13 @@
 //  Copyright © 2017 kivan. All rights reserved.
 //
 
-#import "KIVBaseCVCell.h"
+#import <UIKit/UIKit.h>
 
 @class KIVHomeCVHeaderCell;
 @protocol KIVHomeCVHeaderCellDelegate <NSObject>
 - (void)kivHomeCVHeaderCell:(KIVHomeCVHeaderCell *)cell didReturnWihtTextField:(UITextField *)textField;
 @end
 
-@interface KIVHomeCVHeaderCell : KIVBaseCVCell
-//@property (nonatomic, weak) id <KIVHomeCVHeaderCellDelegate> delegate;
+@interface KIVHomeCVHeaderCell : UICollectionViewCell
+@property (nonatomic, weak) id <KIVHomeCVHeaderCellDelegate> delegate;
 @end

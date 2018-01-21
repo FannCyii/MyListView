@@ -7,7 +7,6 @@
 //
 
 #import "KIVLogVC.h"
-#import "KIVDSDataSource.h"
 #import <PureLayout/PureLayout.h>
 #import "Demo_Network.h"
 #import "CommonHeader.h"
@@ -17,7 +16,7 @@
 @interface KIVLogVC () <DemoWebServerDelegate>
 
 @property (nonatomic, strong) UITableView *mainListTV;
-@property (nonatomic, strong) KIVDSDataSource *dataSouce;
+@property (nonatomic, strong) KIVTableViewProtocol *dataSouce;
 @property (nonatomic, strong) UITapGestureRecognizer *tapGesture;
 @end
 
@@ -61,13 +60,15 @@
 - (void)dataConfig
 {
     FolderListItem *rootFolder = self.folder;
-    KIVDSBaseSection *section = [KIVDSBaseSection new];
+    KIVTVCellSection *section = [KIVTVCellSection new];
     //这里可以优化成indexPath
     WEAKSElF
-    section.didSelectedBlock = ^(UITableView *tableView, KIVDSBaseSection *section, NSUInteger index) {
+    section.selectedHandleBlock = ^(id data, id list, NSIndexPath *indexPath) {
         STRONGSELF
-        KIVDSBaseRow *row = [section.rows objectAtIndex:index];
-        ElementInfo *element = (ElementInfo *)row.cellData;
+        NSArray *sections = [(UITableView *)list sections];
+        KIVTVCellSection *section = [sections objectAtIndex:indexPath.section];
+        KIVTVCellItem *row = [section.items objectAtIndex:indexPath.row];
+        ElementInfo *element = (ElementInfo *)row.itemData;
         if(element.elementType == ElementInfoTypeOfFolder){
             KIVLogVC *logvc = [[KIVLogVC alloc] init];
             FolderListItem *item = (FolderListItem *)element;
@@ -75,9 +76,9 @@
             logvc.logsTitle = rootFolder.title;
             [self.navigationController pushViewController:logvc animated:YES];
         }else{
-//            KIVWebVC *webVc = [[KIVWebVC alloc] init];
-//            webVc.url = element.aUrl;
-//            [self.navigationController pushViewController:webVc animated:YES];
+            //            KIVWebVC *webVc = [[KIVWebVC alloc] init];
+            //            webVc.url = element.aUrl;
+            //            [self.navigationController pushViewController:webVc animated:YES];
             
             KIVArchiverManager *manager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_READ_HISTORIES completeHandle:^{
                 [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_ARCHIVER_HISTORIES object:nil];
@@ -90,30 +91,58 @@
             
         }
     };
+    
+//
+//    section.didSelectedBlock = ^(UITableView *tableView, KIVDSBaseSection *section, NSUInteger index) {
+//        STRONGSELF
+//        KIVDSBaseRow *row = [section.rows objectAtIndex:index];
+//        ElementInfo *element = (ElementInfo *)row.cellData;
+//        if(element.elementType == ElementInfoTypeOfFolder){
+//            KIVLogVC *logvc = [[KIVLogVC alloc] init];
+//            FolderListItem *item = (FolderListItem *)element;
+//            logvc.folder = item;
+//            logvc.logsTitle = rootFolder.title;
+//            [self.navigationController pushViewController:logvc animated:YES];
+//        }else{
+////            KIVWebVC *webVc = [[KIVWebVC alloc] init];
+////            webVc.url = element.aUrl;
+////            [self.navigationController pushViewController:webVc animated:YES];
+//
+//            KIVArchiverManager *manager = [[KIVArchiverManager alloc] initWithIdentifior:FOLDER_ARTICLE_READ_HISTORIES completeHandle:^{
+//                [[NSNotificationCenter defaultCenter] postNotificationName:NOTIFICATION_ARCHIVER_HISTORIES object:nil];
+//            }];
+//
+//            [manager saveLogs:element keyWord:element.title];
+//
+//            NSDictionary *params =@{@"url":element.aUrl};
+//            [[KIVRouter sharedInstance] routeToModulesOfKey:@"webreadervc" withParams:params];
+//
+//        }
+//    };
   
     for (int i = 0; i < rootFolder.subElements.count; ++i) {
-        KIVDSBaseRow *row = [KIVDSBaseRow new];
-        row.cellClassName = @"KIVLogMainCell";
+        KIVTVCellItem *row = [KIVTVCellItem new];
+        row.itemClassName = @"KIVLogMainCell";
         ElementInfo *info = rootFolder.subElements[i];
         if(info.elementType == ElementInfoTypeOfFolder){
-            row.rowHeight = 60;
+            row.height = 60;
         }else{
-            row.rowHeight = 100;
+            row.height = 100;
         }
-        row.cellData = info;
-        [section insertRow:row];
+        row.itemData = info;
+        [section addItem:row];
     }
 
-    [self.mainListTV addSection:section];
-    [self.mainListTV refreshData];
+    [self.mainListTV addSections:@[section]];
+    [self.mainListTV kiv_reloadData];
 }
 #pragma mark - Accessor
 - (UITableView *)mainListTV
 {
     if(!_mainListTV){
         _mainListTV = [[UITableView alloc] initWithFrame:CGRectZero];
-        _dataSouce = [KIVDSDataSource new];
-        [_mainListTV registerKivDataSource:_dataSouce];
+        _dataSouce = [KIVTableViewProtocol new];
+        [_mainListTV registeKivProtocol:_dataSouce];
     }
     return _mainListTV;
 }

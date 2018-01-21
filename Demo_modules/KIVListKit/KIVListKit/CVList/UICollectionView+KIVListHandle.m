@@ -125,6 +125,30 @@
     [self setSections:sections];
 }
 
+- (void)addSection:(KIVCVCellSection *)section
+{
+    [self addSection:section atIndex:[self sections].count];
+}
+
+- (void)addSection:(KIVCVCellSection *)section atIndex:(NSInteger)index
+{
+    NSMutableArray *sections = [self sections];
+    if (!sections) {
+        sections = [NSMutableArray array];
+    }
+    if (index > sections.count) {
+        index = sections.count;
+    }
+    [sections insertObject:section atIndex:index];
+    [self setSections:sections];
+}
+- (void)addItem:(KIVCVCellItem *)item atIndexPath:(NSIndexPath *)indexPath
+{
+    NSMutableArray *sections = [self sections];
+    KIVCVCellSection *section = [sections objectAtIndex:indexPath.section];
+    [section.items insertObject:item atIndex:indexPath.item];
+}
+
 - (KIVCVCellItem *)getRowAtIndexPath:(NSIndexPath *)indexPath
 {
     KIVCVCellSection *cellSection = [[self sections] objectAtIndex:indexPath.section];

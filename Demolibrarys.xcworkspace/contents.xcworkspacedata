@@ -34,8 +34,5 @@
       <FileRef
          location = "group:Demo_modules/Demo_Tools/Demo_Tools.xcodeproj">
       </FileRef>
-      <FileRef
-         location = "group:Demo_modules/Demo_TableView/Demo_TableView.xcodeproj">
-      </FileRef>
    </Group>
 </Workspace>

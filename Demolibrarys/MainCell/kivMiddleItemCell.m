@@ -20,11 +20,10 @@
     // Initialization code
 }
 
-
-- (void)updataCVCellWithData:(id)aData
+- (void)updateCellWithItem:(KIVCVCellItem *)item
 {
-    if ([aData isKindOfClass:[NSString class]]) {
-        self.titleLabel.text = (NSString *)aData;
+    if ([item.itemData isKindOfClass:[NSString class]]) {
+        self.titleLabel.text = (NSString *)item.itemData;
     }
 }
 @end

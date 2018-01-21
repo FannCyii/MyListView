@@ -20,6 +20,12 @@
 - (void)kiv_reloadData;
 - (void)reloadCellWithData:(id)data atIndexPath:(NSIndexPath *)indexPath;
 - (void)updateItemWithNew:(KIVCVCellItem *)newItem atIndexPath:(NSIndexPath *)indexPath;
+
 //data getter and setter
 - (void)addSections:(NSMutableArray *)sections;
+- (void)addSection:(KIVCVCellSection *)section;
+- (void)addSection:(KIVCVCellSection *)section atIndex:(NSInteger)index;
+- (void)addItem:(KIVCVCellItem *)item atIndexPath:(NSIndexPath *)indexPath;
+
+
 @end

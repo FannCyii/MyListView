@@ -1,19 +1,20 @@
 //
-//  UserInfoTVCell.m
+//  KIVFloatTVCell.m
 //  Demolibrarys
 //
-//  Created by Fann on 11/01/2018.
+//  Created by Fann on 21/01/2018.
 //  Copyright © 2018 kivan. All rights reserved.
 //
 
-#import "UserInfoTVCell.h"
+#import "KIVFloatTVCell.h"
 
-@interface UserInfoTVCell()
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
+@interface KIVFloatTVCell() <KIVBaseCellInterface>
+@property (weak, nonatomic) IBOutlet UIImageView *cellImageView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end
 
-@implementation UserInfoTVCell
+@implementation KIVFloatTVCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -28,8 +29,8 @@
 
 - (void)updataCellWithItemData:(id)itemData
 {
-    self.textLabel.text = (NSString *)itemData;
+    self.titleLabel.textColor = [UIColor blackGray];
+    self.textLabel.text = itemData;
 }
-
 
 @end

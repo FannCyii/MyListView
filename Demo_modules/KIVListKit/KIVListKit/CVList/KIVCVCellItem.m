@@ -12,7 +12,8 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"CV cell Item, className:%@ size:<w:%.2f,h:%.2f> color:%@" ,self.itemClassName,self.itemWidth,self.itemHeight,self.itemColor];
+    return [NSString stringWithFormat:@"CV cell Item, className:%@ size:<w:%.2f,h:%.2f> color:%@" ,self.itemClassName,self.width,self.height,self.itemColor];
 }
+
 
 @end

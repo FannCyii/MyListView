@@ -13,4 +13,16 @@
 
 @interface UITableView (KIVListHandle)
 
+- (NSMutableArray *)sections;
+
+//register
+- (void)registeKivProtocol:(KIVTableViewProtocol *)kivProtocol;
+
+
+- (void)kiv_reloadData;
+
+- (void)addSections:(NSMutableArray *)sections;
+- (void)addSection:(KIVTVCellSection *)section;
+- (void)addSection:(KIVTVCellSection *)section atIndex:(NSInteger)index;
+- (void)addItem:(KIVTVCellItem *)item atIndexPath:(NSIndexPath *)indexPath;
 @end

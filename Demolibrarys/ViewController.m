@@ -146,7 +146,6 @@
     [[KIVRouter sharedInstance] routerVC:self toVC:infoVc withParams:nil vcTransition:self.trasition completeBlock:^(UIViewController *vc, NSError *error) {
         
     }];
-    
 }
 
 - (void)hiddenKeyBoard:(UITapGestureRecognizer *)gesture

@@ -11,8 +11,6 @@
 		B73F50012007B20A008891D8 /* KIVArchiveManger.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F4FFF2007B20A008891D8 /* KIVArchiveManger.m */; };
 		B73F50042007BA3C008891D8 /* KIVArchiverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F50022007BA3B008891D8 /* KIVArchiverManager.m */; };
 		B73F50052007BA3C008891D8 /* KIVArchiverManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B73F50032007BA3C008891D8 /* KIVArchiverManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B7C6528C2012EFD0007271DE /* KIVFloatView.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C6528A2012EFD0007271DE /* KIVFloatView.h */; };
-		B7C6528D2012EFD0007271DE /* KIVFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C6528B2012EFD0007271DE /* KIVFloatView.m */; };
 		B7C652B0201485B7007271DE /* KIVBaseVC.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C652AE201485B7007271DE /* KIVBaseVC.h */; };
 		B7C652B1201485B7007271DE /* KIVBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C652AF201485B7007271DE /* KIVBaseVC.m */; };
 		B7FB6E2B1FF54394003A72F2 /* KIVCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = B7FB6E291FF54394003A72F2 /* KIVCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,8 +21,6 @@
 		B73F4FFF2007B20A008891D8 /* KIVArchiveManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVArchiveManger.m; sourceTree = "<group>"; };
 		B73F50022007BA3B008891D8 /* KIVArchiverManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIVArchiverManager.m; sourceTree = "<group>"; };
 		B73F50032007BA3C008891D8 /* KIVArchiverManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIVArchiverManager.h; sourceTree = "<group>"; };
-		B7C6528A2012EFD0007271DE /* KIVFloatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVFloatView.h; sourceTree = "<group>"; };
-		B7C6528B2012EFD0007271DE /* KIVFloatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVFloatView.m; sourceTree = "<group>"; };
 		B7C652AE201485B7007271DE /* KIVBaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVBaseVC.h; sourceTree = "<group>"; };
 		B7C652AF201485B7007271DE /* KIVBaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVBaseVC.m; sourceTree = "<group>"; };
 		B7FB6E261FF54394003A72F2 /* KIVCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KIVCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,15 +39,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B7C652892012EF2D007271DE /* 悬浮选项框 */ = {
-			isa = PBXGroup;
-			children = (
-				B7C6528A2012EFD0007271DE /* KIVFloatView.h */,
-				B7C6528B2012EFD0007271DE /* KIVFloatView.m */,
-			);
-			path = "悬浮选项框";
-			sourceTree = "<group>";
-		};
 		B7C652B2201485C3007271DE /* BaseObject */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				B7C652B2201485C3007271DE /* BaseObject */,
-				B7C652892012EF2D007271DE /* 悬浮选项框 */,
 				B73F50032007BA3C008891D8 /* KIVArchiverManager.h */,
 				B73F50022007BA3B008891D8 /* KIVArchiverManager.m */,
 				B7FB6E291FF54394003A72F2 /* KIVCommon.h */,
@@ -103,7 +89,6 @@
 				B73F50052007BA3C008891D8 /* KIVArchiverManager.h in Headers */,
 				B7FB6E2B1FF54394003A72F2 /* KIVCommon.h in Headers */,
 				B7C652B0201485B7007271DE /* KIVBaseVC.h in Headers */,
-				B7C6528C2012EFD0007271DE /* KIVFloatView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +163,6 @@
 				B7C652B1201485B7007271DE /* KIVBaseVC.m in Sources */,
 				B73F50042007BA3C008891D8 /* KIVArchiverManager.m in Sources */,
 				B73F50012007B20A008891D8 /* KIVArchiveManger.m in Sources */,
-				B7C6528D2012EFD0007271DE /* KIVFloatView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

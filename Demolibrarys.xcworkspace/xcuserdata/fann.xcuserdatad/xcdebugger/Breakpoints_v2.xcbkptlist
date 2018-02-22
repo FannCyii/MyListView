@@ -100,7 +100,7 @@
                   moduleName = "Demolibrarys"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fann/Createspace/mylog/MyListView/Demolibrarys/ImportWebServer/DemoWebServerVC.m"
-                  timestampString = "538235079.428857"
+                  timestampString = "540963026.835253"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "82"
@@ -115,7 +115,7 @@
                   moduleName = "Demolibrarys"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fann/Createspace/mylog/MyListView/Demolibrarys/ImportWebServer/DemoWebServerVC.m"
-                  timestampString = "538235079.430858"
+                  timestampString = "540963026.8390059"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "83"
@@ -243,30 +243,6 @@
             endingLineNumber = "119"
             landmarkName = "-addSection:atIndex:"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "Yes"
-            filePath = "Demolibrarys/MainCell/KIVHomeCVMiddelCell.m"
-            timestampString = "538236987.1649441"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "-updateCellWithItem:"
-            landmarkType = "7">
-            <Actions>
-               <BreakpointActionProxy
-                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
-                  <ActionContent
-                     consoleCommand = "po itemData.delegateTarget">
-                  </ActionContent>
-               </BreakpointActionProxy>
-            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

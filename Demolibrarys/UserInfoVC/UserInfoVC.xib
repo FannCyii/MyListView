@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +31,7 @@
                         <action selector="closeButtonAction:" destination="-1" eventType="touchUpInside" id="fjX-dw-Bwl"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8v6-PZ-tnA">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon1" translatesAutoresizingMaskIntoConstraints="NO" id="8v6-PZ-tnA">
                     <rect key="frame" x="137" y="84" width="100" height="100"/>
                     <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -41,7 +40,7 @@
                     </constraints>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5A5-de-evy">
-                    <rect key="frame" x="0.0" y="240" width="375" height="357"/>
+                    <rect key="frame" x="0.0" y="238.5" width="375" height="358.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bg-UI-srE">
@@ -51,10 +50,10 @@
                         <constraint firstAttribute="height" constant="60" id="k9I-Py-QUh"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是鼓励的语句" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP3-Cg-wcy">
-                    <rect key="frame" x="10" y="204" width="355" height="21"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                    <nil key="textColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阅读让你与众不同" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NP3-Cg-wcy">
+                    <rect key="frame" x="10" y="204" width="355" height="19.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -79,6 +78,7 @@
         </view>
     </objects>
     <resources>
+        <image name="AppIcon1" width="60" height="60"/>
         <image name="Header" width="15" height="14"/>
     </resources>
 </document>

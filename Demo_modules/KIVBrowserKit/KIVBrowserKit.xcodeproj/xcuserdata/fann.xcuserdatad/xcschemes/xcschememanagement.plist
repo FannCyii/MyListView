@@ -7,17 +7,17 @@
 		<key>KIVBrowserKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>23</integer>
 		</dict>
 		<key>KIVBrowserKitBundle.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>19</integer>
+			<integer>25</integer>
 		</dict>
 		<key>KIVDemo_Brower.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>24</integer>
 		</dict>
 	</dict>
 </dict>

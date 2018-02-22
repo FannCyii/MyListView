@@ -45,6 +45,16 @@
     [super viewDidLoad];
     self.navigationItem.title = @"MY BOOKMARKS";
     
+    
+    if ([UIApplication sharedApplication].supportsAlternateIcons) {
+        [[UIApplication sharedApplication] setAlternateIconName:@"myicon" completionHandler:^(NSError * _Nullable error) {
+            if (error) {
+                NSLog(@"error:%@",error.localizedDescription);
+            }
+        }];
+    }
+    
+
     self.trasition = [[KIVVCTransition alloc] initSamVCTransitionWithPresentationAnimatorClassName:@"AnimatorLeft" presentationControllerClassName:@"UserInfoPC"];
     
     

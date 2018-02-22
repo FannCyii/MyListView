@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'ABEC3026CE584D6C5A85E6C133910924'
+               BlueprintIdentifier = '6C44A8E2FC8510C7D8F4C8509A320AC3'
                BlueprintName = 'XXRouter'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXXRouter.a'>

@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "KIVVCTransition.h"
 
+//typedef NS_ENUM(NSInteger, KVIParamType){
+//    KVIAnimateBoolParam = @"AnimateBool",
+//    
+//};
+
+
 typedef void (^KIVRouteCompleteBlock)(UIViewController *vc, NSError *error);
 typedef void (^KIVRouteHandleBlock)(UIViewController *vc, NSError *error);
 

@@ -19,6 +19,7 @@ target 'Demolibrarys' do
   pod 'MGJRouter', '~>0.9.0'
   pod 'XXRouter'
   pod 'Masonry'
+  pod 'AFNetworking'
 end
 
 target 'Demo_Network' do
@@ -31,10 +32,10 @@ target 'Demo_Tools' do
     pod 'PureLayout'
 end
 
-target 'Demo_TableView' do
-    project './Demo_modules/Demo_TableView/Demo_TableView.xcodeproj'
-    pod 'PureLayout'
-end
+#target 'Demo_TableView' do
+#    project './Demo_modules/Demo_TableView/Demo_TableView.xcodeproj'
+#    pod 'PureLayout'
+#end
 
 target 'KIVBrowserKit' do
     project './Demo_modules/KIVBrowserKit/KIVBrowserKit.xcodeproj'

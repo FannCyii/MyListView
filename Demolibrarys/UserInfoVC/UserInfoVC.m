@@ -7,6 +7,7 @@
 //
 
 #import "UserInfoVC.h"
+#import "AboutViewController.h"
 
 @interface UserInfoVC ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -25,6 +26,7 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     [self dataHandle];
+    [self network];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,12 +46,20 @@
     row1.itemData = @"关于";
     row1.itemClassName = @"UserInfoTVCell";
     row1.height = 60;
+    WEAKSElF;
+    row1.selectedHandleBlock = ^(id data, id list, NSIndexPath *indexPath) {
+        STRONGSELF;
+        [self goToItemVCWithKey:@"aboutvc"];
+    };
     [section addItem:row1];
     
     KIVTVCellItem *row2 = [KIVTVCellItem new];
     row2.itemData = @"用户建议";
     row2.height = 60;
     row2.itemClassName = @"UserInfoTVCell";
+    row2.selectedHandleBlock = ^(id data, id list, NSIndexPath *indexPath) {
+        [self goToItemVCWithKey:@"advicevc"];
+    };
     [section addItem:row2];
     
     KIVTVCellItem *row3 = [KIVTVCellItem new];
@@ -84,5 +94,21 @@
         _dataSource = [KIVTableViewProtocol new];
     }
     return _dataSource;
+}
+
+#pragma mark - Action
+- (void)goToItemVCWithKey:(NSString *)moduleKey
+{
+    [self dismissViewControllerAnimated:NO completion:^{
+        [[KIVRouter sharedInstance] routeToModulesOfKey:moduleKey];
+    }];
+}
+
+- (void)network
+{
+    AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
+    
+    manger.baseURL = [NSURL URLWithString:@""];
+    
 }
 @end

@@ -43,12 +43,20 @@
 		8FF0E4291FC85C6B00A89C3D /* UIView+screenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0E4281FC85C6A00A89C3D /* UIView+screenShot.m */; };
 		B702D23520066CF5006DF256 /* AddArticleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B702D23320066CF5006DF256 /* AddArticleVC.m */; };
 		B702D23620066CF5006DF256 /* AddArticleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B702D23420066CF5006DF256 /* AddArticleVC.xib */; };
+		B7197DAA203E6CB1003E9DE5 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7197DA8203E6CB1003E9DE5 /* AboutViewController.m */; };
+		B7197DAB203E6CB1003E9DE5 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7197DA9203E6CB1003E9DE5 /* AboutViewController.xib */; };
+		B7197DB0203E7404003E9DE5 /* AdviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7197DAE203E7404003E9DE5 /* AdviceViewController.m */; };
+		B7197DB1203E7404003E9DE5 /* AdviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7197DAF203E7404003E9DE5 /* AdviceViewController.xib */; };
 		B73F4FF32007A3AF008891D8 /* UserInfoPC.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F4FF22007A3AF008891D8 /* UserInfoPC.m */; };
 		B73F4FFC2007A80B008891D8 /* UserInfoTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B73F4FFA2007A80B008891D8 /* UserInfoTVCell.m */; };
 		B73F4FFD2007A80B008891D8 /* UserInfoTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B73F4FFB2007A80B008891D8 /* UserInfoTVCell.xib */; };
 		B73F50062007BA72008891D8 /* KIVCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B73F50072007BA72008891D8 /* KIVCommon.framework */; };
 		B770E7C41FFFBD8A003D78F3 /* HistroyReadTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B770E7C21FFFBD8A003D78F3 /* HistroyReadTVCell.m */; };
 		B770E7C51FFFBD8A003D78F3 /* HistroyReadTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B770E7C31FFFBD8A003D78F3 /* HistroyReadTVCell.xib */; };
+		B773CC82202FDDBE00A22FAE /* myicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B773CC80202FDDBA00A22FAE /* myicon@2x.png */; };
+		B773CC83202FDDBE00A22FAE /* myicon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B773CC81202FDDBC00A22FAE /* myicon@3x.png */; };
+		B773CC86202FDE7F00A22FAE /* myicon2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B773CC84202FDE7E00A22FAE /* myicon2@2x.png */; };
+		B773CC87202FDE7F00A22FAE /* myicon2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B773CC85202FDE7F00A22FAE /* myicon2@3x.png */; };
 		B7C6529120138FD5007271DE /* KIVFloatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C6529020138FD5007271DE /* KIVFloatViewController.m */; };
 		B7C6529420138FFC007271DE /* KIVFloatViewPC.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C6529320138FFC007271DE /* KIVFloatViewPC.m */; };
 		B7C6529B2013971C007271DE /* UIColor+KIVBaseColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C6529A2013971C007271DE /* UIColor+KIVBaseColor.m */; };
@@ -138,6 +146,12 @@
 		B702D23220066CF5006DF256 /* AddArticleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddArticleVC.h; sourceTree = "<group>"; };
 		B702D23320066CF5006DF256 /* AddArticleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddArticleVC.m; sourceTree = "<group>"; };
 		B702D23420066CF5006DF256 /* AddArticleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddArticleVC.xib; sourceTree = "<group>"; };
+		B7197DA7203E6CB1003E9DE5 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		B7197DA8203E6CB1003E9DE5 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		B7197DA9203E6CB1003E9DE5 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		B7197DAD203E7404003E9DE5 /* AdviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdviceViewController.h; sourceTree = "<group>"; };
+		B7197DAE203E7404003E9DE5 /* AdviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdviceViewController.m; sourceTree = "<group>"; };
+		B7197DAF203E7404003E9DE5 /* AdviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdviceViewController.xib; sourceTree = "<group>"; };
 		B73F4FF12007A3AF008891D8 /* UserInfoPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoPC.h; sourceTree = "<group>"; };
 		B73F4FF22007A3AF008891D8 /* UserInfoPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoPC.m; sourceTree = "<group>"; };
 		B73F4FF92007A80B008891D8 /* UserInfoTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoTVCell.h; sourceTree = "<group>"; };
@@ -147,6 +161,10 @@
 		B770E7C11FFFBD8A003D78F3 /* HistroyReadTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HistroyReadTVCell.h; sourceTree = "<group>"; };
 		B770E7C21FFFBD8A003D78F3 /* HistroyReadTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HistroyReadTVCell.m; sourceTree = "<group>"; };
 		B770E7C31FFFBD8A003D78F3 /* HistroyReadTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistroyReadTVCell.xib; sourceTree = "<group>"; };
+		B773CC80202FDDBA00A22FAE /* myicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myicon@2x.png"; sourceTree = "<group>"; };
+		B773CC81202FDDBC00A22FAE /* myicon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myicon@3x.png"; sourceTree = "<group>"; };
+		B773CC84202FDE7E00A22FAE /* myicon2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myicon2@2x.png"; sourceTree = "<group>"; };
+		B773CC85202FDE7F00A22FAE /* myicon2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "myicon2@3x.png"; sourceTree = "<group>"; };
 		B7C6528F20138FD5007271DE /* KIVFloatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVFloatViewController.h; sourceTree = "<group>"; };
 		B7C6529020138FD5007271DE /* KIVFloatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIVFloatViewController.m; sourceTree = "<group>"; };
 		B7C6529220138FFC007271DE /* KIVFloatViewPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIVFloatViewPC.h; sourceTree = "<group>"; };
@@ -334,6 +352,12 @@
 		8F839A7E1FBDC4A30014B1C6 /* Demolibrarys */ = {
 			isa = PBXGroup;
 			children = (
+				B7197DAC203E73F2003E9DE5 /* advice */,
+				B7197DA6203E6BB1003E9DE5 /* About */,
+				B773CC80202FDDBA00A22FAE /* myicon@2x.png */,
+				B773CC81202FDDBC00A22FAE /* myicon@3x.png */,
+				B773CC84202FDE7E00A22FAE /* myicon2@2x.png */,
+				B773CC85202FDE7F00A22FAE /* myicon2@3x.png */,
 				B7C65295201396C9007271DE /* Base */,
 				B7C6528E20138FBB007271DE /* Test */,
 				B7FB6F171FFBA449003A72F2 /* UserInfoVC */,
@@ -404,6 +428,26 @@
 				94E298A6932E8E91D18B4B8B /* Pods-Demolibrarys.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7197DA6203E6BB1003E9DE5 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				B7197DA7203E6CB1003E9DE5 /* AboutViewController.h */,
+				B7197DA8203E6CB1003E9DE5 /* AboutViewController.m */,
+				B7197DA9203E6CB1003E9DE5 /* AboutViewController.xib */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		B7197DAC203E73F2003E9DE5 /* advice */ = {
+			isa = PBXGroup;
+			children = (
+				B7197DAD203E7404003E9DE5 /* AdviceViewController.h */,
+				B7197DAE203E7404003E9DE5 /* AdviceViewController.m */,
+				B7197DAF203E7404003E9DE5 /* AdviceViewController.xib */,
+			);
+			path = advice;
 			sourceTree = "<group>";
 		};
 		B73F4FF82007A7C6008891D8 /* Cell */ = {
@@ -562,9 +606,13 @@
 				8F839A891FBDC4A30014B1C6 /* Assets.xcassets in Resources */,
 				B7FB6F2B1FFBADAC003A72F2 /* KIVHomeCVReadHistoryCell.xib in Resources */,
 				8F8E6E021FE6AAD900E656DF /* ViewController.xib in Resources */,
+				B773CC86202FDE7F00A22FAE /* myicon2@2x.png in Resources */,
+				B773CC82202FDDBE00A22FAE /* myicon@2x.png in Resources */,
 				B702D23620066CF5006DF256 /* AddArticleVC.xib in Resources */,
+				B773CC83202FDDBE00A22FAE /* myicon@3x.png in Resources */,
 				B7FB6F261FFBACDE003A72F2 /* KIVHomeCVHeaderADCell.xib in Resources */,
 				8F12F6011FC72EEC00D65E9A /* KIVLogMainCell.xib in Resources */,
+				B7197DB1203E7404003E9DE5 /* AdviceViewController.xib in Resources */,
 				B7FB6E931FF7F591003A72F2 /* DemoWebServerVC.xib in Resources */,
 				8F12F5F81FC72BF800D65E9A /* KIVLogVC.xib in Resources */,
 				8F39ED0A1FE6BF93003E2330 /* KIVHomeCVHeaderCell.xib in Resources */,
@@ -574,7 +622,9 @@
 				8FC24F2B1FF145AA00250E4F /* kivMiddleItemCell.xib in Resources */,
 				B73F4FFD2007A80B008891D8 /* UserInfoTVCell.xib in Resources */,
 				B7C652AD20144388007271DE /* KIVFloatTVCell.xib in Resources */,
+				B773CC87202FDE7F00A22FAE /* myicon2@3x.png in Resources */,
 				B7DBFB3E20023F3200E49D2D /* UserInfoVC.xib in Resources */,
+				B7197DAB203E6CB1003E9DE5 /* AboutViewController.xib in Resources */,
 				8F39ED0F1FE6C5DD003E2330 /* KIVHomeCVMiddelCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,6 +712,7 @@
 				B7C652B82014CAF9007271DE /* KIVCollectionViewProtocol+ScrollViewHandle.m in Sources */,
 				8F8E6E0B1FE6B81600E656DF /* ViewController+CollectionViewDataSourceDelegate.m in Sources */,
 				B7C6529420138FFC007271DE /* KIVFloatViewPC.m in Sources */,
+				B7197DB0203E7404003E9DE5 /* AdviceViewController.m in Sources */,
 				8F8E6DFD1FE5825800E656DF /* KIVLogVC+DataHandle.m in Sources */,
 				B770E7C41FFFBD8A003D78F3 /* HistroyReadTVCell.m in Sources */,
 				B73F4FF32007A3AF008891D8 /* UserInfoPC.m in Sources */,
@@ -688,6 +739,7 @@
 				8F839A811FBDC4A30014B1C6 /* AppDelegate.m in Sources */,
 				B7C652AC20144388007271DE /* KIVFloatTVCell.m in Sources */,
 				8FC24F261FF12AFB00250E4F /* ViewController+CellDelegate.m in Sources */,
+				B7197DAA203E6CB1003E9DE5 /* AboutViewController.m in Sources */,
 				B7FB6F2F1FFBB241003A72F2 /* KIVHomeCVUserCell.m in Sources */,
 				8FC24F2A1FF145AA00250E4F /* kivMiddleItemCell.m in Sources */,
 				B7C6529E2013972C007271DE /* UIFont+KIVBaseFont.m in Sources */,
@@ -846,7 +898,7 @@
 					"$(SRCROOT)/Demo_modules/KIVListKit/KIVListKit/**",
 				);
 				INFOPLIST_FILE = Demolibrarys/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -923,7 +975,7 @@
 					"$(SRCROOT)/Demo_modules/KIVListKit/KIVListKit/**",
 				);
 				INFOPLIST_FILE = Demolibrarys/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

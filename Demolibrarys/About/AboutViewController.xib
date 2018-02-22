@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController">
+            <connections>
+                <outlet property="backButton" destination="1Nl-yC-c4a" id="meU-ur-3gA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blogy V1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckN-m6-wyF">
+                    <rect key="frame" x="140" y="233" width="94" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="highlightedColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qay-wb-KBl">
+                    <rect key="frame" x="53.5" y="274" width="268" height="21"/>
+                    <string key="text">By Kivan: 	blogyditech@gmail.com</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon1" translatesAutoresizingMaskIntoConstraints="NO" id="8Nw-sD-r1c">
+                    <rect key="frame" x="147.5" y="113" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="D9b-6T-Sup"/>
+                        <constraint firstAttribute="height" constant="80" id="Y2k-3M-f86"/>
+                    </constraints>
+                </imageView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nl-yC-c4a">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="i20-fY-iw0"/>
+                        <constraint firstAttribute="height" constant="50" id="tch-4Q-1Fu"/>
+                    </constraints>
+                    <state key="normal" image="Header"/>
+                    <connections>
+                        <action selector="backButtonAction:" destination="-1" eventType="touchUpInside" id="huN-ak-cSW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ckN-m6-wyF" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" constant="-100" id="4Ip-jf-NWb"/>
+                <constraint firstItem="ckN-m6-wyF" firstAttribute="top" secondItem="8Nw-sD-r1c" secondAttribute="bottom" constant="40" id="9O7-ZM-Jra"/>
+                <constraint firstItem="1Nl-yC-c4a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9zk-PM-Ndz"/>
+                <constraint firstItem="qay-wb-KBl" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="DgH-8e-FOT"/>
+                <constraint firstItem="1Nl-yC-c4a" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="IIM-bq-5Mw"/>
+                <constraint firstItem="qay-wb-KBl" firstAttribute="top" secondItem="ckN-m6-wyF" secondAttribute="bottom" constant="20" id="WtJ-hC-bMf"/>
+                <constraint firstItem="8Nw-sD-r1c" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="nsE-j5-xqX"/>
+                <constraint firstItem="ckN-m6-wyF" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="vQS-6S-uDJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AppIcon1" width="60" height="60"/>
+        <image name="Header" width="15" height="14"/>
+    </resources>
+</document>

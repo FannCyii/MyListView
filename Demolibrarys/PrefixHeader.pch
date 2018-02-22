@@ -24,5 +24,6 @@
 //pods
 #import <PureLayout/PureLayout.h>
 #import "Masonry.h"
+#import "AFNetworking.h"
 
 #endif /* PrefixHeader_pch */

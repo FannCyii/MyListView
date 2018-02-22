@@ -65,6 +65,8 @@
              @"webreadervc":@"KIVWebVC",
              @"userinfovc":@"UserInfoVC",
              @"importlogvc":@"DemoWebServerVC",
+             @"aboutvc":@"AboutViewController",
+             @"advicevc":@"AdviceViewController",
              };
 }
 
